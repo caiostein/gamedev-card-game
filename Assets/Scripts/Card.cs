@@ -30,11 +30,9 @@ public class Card : MonoBehaviour
 			camAnim.SetTrigger("shake");
 			anim.SetTrigger("move");
 
-			transform.position += Vector3.up * 3f;
+			transform.position += Vector3.down * 3;
 			hasBeenPlayed = true;
 			gm.availableCardSlots[handIndex] = true;
-			Invoke("MoveToDiscardPile", 2f);
-
 			
 		}
 	}
