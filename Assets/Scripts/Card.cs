@@ -7,6 +7,9 @@ public class Card : MonoBehaviour
 	public bool hasBeenPlayed;
 	public int handIndex;
 
+	public int cost;
+	public int valuePoints;
+
 	GameManager gm;
 
 	private Animator anim;
@@ -23,7 +26,8 @@ public class Card : MonoBehaviour
 	}
 	private void OnMouseDown()
 	{
-		if (!hasBeenPlayed)
+		Debug.Log(gm.costPointsRemaining);
+		if (!hasBeenPlayed && cost <= gm.costPointsRemaining) 
 		{
 			Instantiate(hollowCircle, transform.position, Quaternion.identity);
 			
@@ -33,15 +37,24 @@ public class Card : MonoBehaviour
 			transform.position += Vector3.down * 3;
 			hasBeenPlayed = true;
 			gm.availableCardSlots[handIndex] = true;
+
+			gm.costPointsRemaining -= cost;
+			gm.totalScore += valuePoints;
 			
+		}
+		else if (hasBeenPlayed)
+		{
+			Invoke("MoveToDiscardPile", 1f);
 		}
 	}
 
 	void MoveToDiscardPile()
 	{
-		Instantiate(effect, transform.position, Quaternion.identity);
-		gm.discardPile.Add(this);
-		gameObject.SetActive(false);
+		
+			Instantiate(effect, transform.position, Quaternion.identity);
+			gm.discardPile.Add(this);
+			gameObject.SetActive(false);
+		
 	}
 
 

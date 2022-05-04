@@ -15,7 +15,15 @@ public class GameManager : MonoBehaviour
 	public List<Card> discardPile;
 	public TextMeshProUGUI discardPileSizeText;
 
+	public int costPointsRemaining = 5;
+	public TextMeshProUGUI costPointsRemainingText;
+
+	public int totalScore = 0;
+	public TextMeshProUGUI totalScoreText;
+
 	private Animator camAnim;
+
+	public TextMeshProUGUI cardCostText; // aqui eu criei um teste, fora da estrutura da carta para checar o comportamento
 
 	private void Start()
 	{
@@ -29,6 +37,7 @@ public class GameManager : MonoBehaviour
 			camAnim.SetTrigger("shake");
 
 			Card randomCard = deck[Random.Range(0, deck.Count)];
+			cardCostText.text = randomCard.cost.ToString();
 			for (int i = 0; i < availableCardSlots.Length; i++)
 			{
 				if (availableCardSlots[i] == true)
@@ -36,6 +45,16 @@ public class GameManager : MonoBehaviour
 					randomCard.gameObject.SetActive(true);
 					randomCard.handIndex = i;
 					randomCard.transform.position = cardSlots[i].position;
+					
+					Transform organizeText = randomCard.transform.Find("CardCost");
+					organizeText.localPosition = new Vector3(1.2f, 1.7f, 0);
+
+					randomCard.GetComponentInChildren<TextMeshProUGUI>().text = randomCard.cost.ToString();
+					
+					Debug.Log("Posição do texto: " + organizeText.localPosition);
+					Debug.Log("custo da carta: " + randomCard.cost);
+					Debug.Log("texto no filho da carta: " + randomCard.GetComponentInChildren<TextMeshProUGUI>().text);
+
 					randomCard.hasBeenPlayed = false;
 					deck.Remove(randomCard);
 					availableCardSlots[i] = false;
@@ -61,6 +80,8 @@ public class GameManager : MonoBehaviour
 	{
 		deckSizeText.text = deck.Count.ToString();
 		discardPileSizeText.text = discardPile.Count.ToString();
+		totalScoreText.text = totalScore.ToString();
+		costPointsRemainingText.text = costPointsRemaining.ToString();
 	}
 
 }

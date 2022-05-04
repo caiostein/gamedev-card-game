@@ -39,3 +39,6 @@ sysinfo.txt
 #Log Files
 *.log
 *.dwlt
+*.log
+*.log
+Logs/AssetImportWorker0-prev.log
