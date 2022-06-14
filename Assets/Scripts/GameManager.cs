@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Networking;
+using System.Text;
 
 public class GameManager : MonoBehaviour
 {
@@ -24,6 +26,8 @@ public class GameManager : MonoBehaviour
 	private Animator camAnim;
 
 	public TextMeshProUGUI cardCostText; // aqui eu criei um teste, fora da estrutura da carta para checar o comportamento
+
+	public ScoreObject playerScore;
 
 	private void Start()
 	{
@@ -76,12 +80,56 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
+	public void SetScore()
+    {
+		Debug.Log($"Salvando Pontuação de: {totalScore} no banco de dados");
+
+		ScoreObject scoreToUpload = new() { scoreValue = totalScore.ToString() };
+
+		StartCoroutine(UploadScore(scoreToUpload.Stringify()));
+	}
+
+	public IEnumerator UploadScore(string profile, System.Action<bool> callback = null)
+    {
+
+		using (UnityWebRequest request = new UnityWebRequest("https://us-east-1.aws.data.mongodb-api.com/app/dbtest-ivtvy/endpoint/playerData", "POST"))
+		{
+			request.SetRequestHeader("Content-Type", "application/json");
+			byte[] bodyRaw = Encoding.UTF8.GetBytes(profile);
+			request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+			request.downloadHandler = new DownloadHandlerBuffer();
+			yield return request.SendWebRequest();
+
+			if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+			{
+				Debug.Log(request.error);
+				if (callback != null)
+				{
+					callback.Invoke(false);
+				}
+			}
+			else
+			{
+				if (callback != null)
+				{
+					callback.Invoke(request.downloadHandler.text != "{}");
+				}
+			}
+		}
+	}
+
 	private void Update()
 	{
 		deckSizeText.text = deck.Count.ToString();
 		discardPileSizeText.text = discardPile.Count.ToString();
-		totalScoreText.text = totalScore.ToString();
+	
+		if (!totalScoreText.text.Equals(totalScore.ToString()))
+        {
+			totalScoreText.text = totalScore.ToString();
+        }
+
 		costPointsRemainingText.text = costPointsRemaining.ToString();
+		
 	}
 
 }
