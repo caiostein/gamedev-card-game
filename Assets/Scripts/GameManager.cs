@@ -128,7 +128,7 @@ public class GameManager : MonoBehaviour
 			totalScoreText.text = totalScore.ToString();
         }
 
-		costPointsRemainingText.text = costPointsRemaining.ToString();
+		costPointsRemainingText.text = "Remaining Points: " + costPointsRemaining.ToString();
 		
 	}
 
