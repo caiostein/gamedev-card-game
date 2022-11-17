@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 196572362281845334, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Name
-      value: Warrior
+      value: Espada
       objectReference: {fileID: 0}
     - target: {fileID: 196572362281845334, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_IsActive
@@ -1387,6 +1387,16 @@ Transform:
   m_Father: {fileID: 78529839}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -7.251}
+--- !u!1 &433960112 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2461831492913637501, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+  m_PrefabInstance: {fileID: 1702965779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &433960113 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+  m_PrefabInstance: {fileID: 1702965779}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &443985389
 GameObject:
   m_ObjectHideFlags: 0
@@ -1606,6 +1616,119 @@ Transform:
   m_Father: {fileID: 78529839}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -4.896}
+--- !u!1001 &515884188
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1338434782}
+    m_Modifications:
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4751036
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.662509
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.8739195
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4053831
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.6038709
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1926142833172295769, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_text
+      value: Reino Medieval
+      objectReference: {fileID: 0}
+    - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1574825112, guid: 8fbaa9a9a27d030488517d81b1966dc4, type: 3}
+    - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461831492913637501, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_Name
+      value: Reino Medieval
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461831492913637501, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_text
+      value: Tem castelos lindos!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8337483817385464268, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 4.1157
+      objectReference: {fileID: 0}
+    - target: {fileID: 8337483817385464268, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1.6029
+      objectReference: {fileID: 0}
+    - target: {fileID: 8337483817385464268, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -537.1519
+      objectReference: {fileID: 0}
+    - target: {fileID: 8337483817385464268, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -292.5785
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2300,6 +2423,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1926142833172295769, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_text
+      value: Espada
+      objectReference: {fileID: 0}
     - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2322,11 +2449,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2461831492913637501, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_Name
-      value: CardDescription
+      value: Espada
       objectReference: {fileID: 0}
     - target: {fileID: 2461831492913637501, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_text
+      value: Ela faz swoosh swoosh!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
@@ -2974,6 +3105,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &831153515 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2461831492913637501, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+  m_PrefabInstance: {fileID: 515884188}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &831153516 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+  m_PrefabInstance: {fileID: 515884188}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &835979013
 GameObject:
   m_ObjectHideFlags: 0
@@ -3458,7 +3599,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 196572362281845334, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Name
-      value: Reaper
+      value: Cidade Cyberpunk
       objectReference: {fileID: 0}
     - target: {fileID: 196572362281845334, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_IsActive
@@ -3467,7 +3608,7 @@ PrefabInstance:
     - target: {fileID: 232972788841019143, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -50235737, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
+      objectReference: {fileID: -50235737, guid: 4064d10f3389205408d1d64ac798118a, type: 3}
     - target: {fileID: 232972788841019143, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -3508,6 +3649,10 @@ PrefabInstance:
       propertyPath: hollowCircle
       value: 
       objectReference: {fileID: 6307824639786034265, guid: c4be0973762ae534b9c0805fdc772559, type: 3}
+    - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
+      propertyPath: cardDescription
+      value: 
+      objectReference: {fileID: 433960112}
     - target: {fileID: 2385181695201347091, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3744,6 +3889,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 694958981}
+  - {fileID: 831153516}
+  - {fileID: 433960113}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4063,7 +4210,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 196572362281845334, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Name
-      value: Masked Monster
+      value: Reino Medieval
       objectReference: {fileID: 0}
     - target: {fileID: 196572362281845334, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_IsActive
@@ -4072,7 +4219,7 @@ PrefabInstance:
     - target: {fileID: 232972788841019143, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 871237640, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
+      objectReference: {fileID: 871237640, guid: 4064d10f3389205408d1d64ac798118a, type: 3}
     - target: {fileID: 232972788841019143, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -4113,6 +4260,10 @@ PrefabInstance:
       propertyPath: hollowCircle
       value: 
       objectReference: {fileID: 6307824639786034265, guid: c4be0973762ae534b9c0805fdc772559, type: 3}
+    - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
+      propertyPath: cardDescription
+      value: 
+      objectReference: {fileID: 831153515}
     - target: {fileID: 2385181695201347091, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4661,6 +4812,127 @@ Transform:
   m_Father: {fileID: 78529839}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -21.65}
+--- !u!1001 &1702965779
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1338434782}
+    m_Modifications:
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4751036
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.662509
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.8739195
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4053831
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.6038709
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1926142833172295769, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_text
+      value: Cidade Cyberpunk
+      objectReference: {fileID: 0}
+    - target: {fileID: 1926142833172295769, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_fontSize
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1926142833172295769, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1400038162, guid: 8fbaa9a9a27d030488517d81b1966dc4, type: 3}
+    - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461831492913637501, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_Name
+      value: Cidade Cyberpunk
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461831492913637501, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_text
+      value: Tecnologia desenfreada!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8337483817385464268, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 3.9128
+      objectReference: {fileID: 0}
+    - target: {fileID: 8337483817385464268, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1.6966
+      objectReference: {fileID: 0}
+    - target: {fileID: 8337483817385464268, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -537.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 8337483817385464268, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -292.34
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
 --- !u!1001 &1716123646
 PrefabInstance:
   m_ObjectHideFlags: 0
