@@ -131,12 +131,12 @@ TextureImporter:
       name: card_descriptions_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 795
+        x: 19
+        y: 801
         width: 487
         height: 770
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,10 +152,10 @@ TextureImporter:
       name: card_descriptions_1
       rect:
         serializedVersion: 2
-        x: 561
-        y: 811
-        width: 468
-        height: 756
+        x: 543
+        y: 795
+        width: 492
+        height: 778
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,13 +170,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: card_descriptions_2
+      name: card_descriptions_3
       rect:
         serializedVersion: 2
-        x: 1088
-        y: 813
-        width: 491
-        height: 757
+        x: 1628
+        y: 783
+        width: 498
+        height: 793
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,13 +191,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: card_descriptions_3
+      name: card_descriptions_4
       rect:
         serializedVersion: 2
-        x: 1631
-        y: 816
-        width: 491
-        height: 759
+        x: 1610
+        y: 15
+        width: 499
+        height: 765
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,13 +212,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: card_descriptions_4
+      name: card_descriptions_5
       rect:
         serializedVersion: 2
-        x: 3
-        y: 9
-        width: 499
-        height: 759
+        x: 1092
+        y: 17
+        width: 501
+        height: 771
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,13 +233,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: card_descriptions_5
+      name: card_descriptions_6
       rect:
         serializedVersion: 2
-        x: 543
-        y: 7
-        width: 489
-        height: 757
+        x: 557
+        y: 15
+        width: 515
+        height: 773
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,13 +254,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: card_descriptions_6
+      name: card_descriptions_7
       rect:
         serializedVersion: 2
-        x: 1075
-        y: 10
-        width: 502
-        height: 765
+        x: 29
+        y: 14
+        width: 503
+        height: 780
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,13 +275,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: card_descriptions_7
+      name: card_descriptions_2
       rect:
         serializedVersion: 2
-        x: 1634
-        y: 7
-        width: 483
-        height: 766
+        x: 1085
+        y: 794
+        width: 505
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,8 +289,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edb40ea08191f30458fc4c3170aaa861
-      internalID: -1411164704
+      spriteID: f0d27512447f31f4d8b327874b276528
+      internalID: -2088849925
       vertices: []
       indices: 
       edges: []
