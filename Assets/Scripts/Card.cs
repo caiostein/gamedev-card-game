@@ -65,6 +65,7 @@ public class Card : MonoBehaviour
     private void OnMouseEnter()
     {
 		clone = Instantiate(cardDescription, gm.descriptionSlot.transform.position, Quaternion.identity);
+		clone.transform.localScale = new Vector3((float)0.827, (float)0.827, (float)0.827);
 		clone.SetActive(true);
     }
 
