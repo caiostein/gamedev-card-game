@@ -29,17 +29,27 @@ public class Card : MonoBehaviour
 		Debug.Log(gm.costPointsRemaining);
 		if (!hasBeenPlayed && cost <= gm.costPointsRemaining) 
 		{
-			Instantiate(hollowCircle, transform.position, Quaternion.identity);
+
+			for(int i = 0; i < gm.availableSelectedCardSlots.Length; i++){
+				
+				if(gm.availableSelectedCardSlots[i]){
+					
+					Instantiate(hollowCircle, transform.position, Quaternion.identity);
 			
-			camAnim.SetTrigger("shake");
-			anim.SetTrigger("move");
+					camAnim.SetTrigger("shake");
+					anim.SetTrigger("move");
 
-			transform.position += Vector3.down * 3;
-			hasBeenPlayed = true;
-			gm.availableCardSlots[handIndex] = true;
+					transform.position = gm.selectedCardSlots[i].position;
+					hasBeenPlayed = true;
+					gm.availableCardSlots[handIndex] = true;
+					gm.availableSelectedCardSlots[i] = false;
 
-			gm.costPointsRemaining -= cost;
-			gm.totalScore += valuePoints;
+					gm.costPointsRemaining -= cost;
+					gm.totalScore += valuePoints;
+
+					return;
+				}
+			}
 			
 		}
 		else if (hasBeenPlayed)

@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
 	public Transform[] cardSlots;
 	public bool[] availableCardSlots;
 
+	public Transform[] selectedCardSlots;
+	public bool[] availableSelectedCardSlots;
+
 	public List<Card> discardPile;
 	public TextMeshProUGUI discardPileSizeText;
 
@@ -41,7 +44,7 @@ public class GameManager : MonoBehaviour
 			camAnim.SetTrigger("shake");
 
 			Card randomCard = deck[Random.Range(0, deck.Count)];
-			cardCostText.text = randomCard.cost.ToString();
+			cardCostText.text = "Custo anterior: " + randomCard.cost.ToString();
 			for (int i = 0; i < availableCardSlots.Length; i++)
 			{
 				if (availableCardSlots[i] == true)
@@ -128,7 +131,7 @@ public class GameManager : MonoBehaviour
 			totalScoreText.text = totalScore.ToString();
         }
 
-		costPointsRemainingText.text = "Remaining Points: " + costPointsRemaining.ToString();
+		costPointsRemainingText.text = "Mana Restante: " + costPointsRemaining.ToString();
 		
 	}
 
