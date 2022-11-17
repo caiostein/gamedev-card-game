@@ -107,10 +107,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasBeenPlayed: 0
   handIndex: 0
-  cost: 0
+  cost: 6
   valuePoints: 0
   effect: {fileID: 0}
   hollowCircle: {fileID: 0}
+  cardDescription: {fileID: 0}
 --- !u!61 &6717292060567749383
 BoxCollider2D:
   m_ObjectHideFlags: 0
