@@ -18,6 +18,10 @@ public class Card : MonoBehaviour
 	public GameObject effect;
 	public GameObject hollowCircle;
 
+	public GameObject cardDescription;
+
+	private GameObject clone;
+
 	private void Start()
 	{
 		gm = FindObjectOfType<GameManager>();
@@ -58,7 +62,18 @@ public class Card : MonoBehaviour
 		}
 	}
 
-	void MoveToDiscardPile()
+    private void OnMouseEnter()
+    {
+		clone = Instantiate(cardDescription, gm.descriptionSlot.transform.position, Quaternion.identity);
+		clone.SetActive(true);
+    }
+
+    private void OnMouseExit()
+    {
+		GameObject.Destroy(clone);
+    }
+
+    void MoveToDiscardPile()
 	{
 		
 			Instantiate(effect, transform.position, Quaternion.identity);

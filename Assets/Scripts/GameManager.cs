@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 	public List<Card> deck;
 	public TextMeshProUGUI deckSizeText;
 
+	public Transform descriptionSlot;
 	public Transform[] cardSlots;
 	public bool[] availableCardSlots;
 
