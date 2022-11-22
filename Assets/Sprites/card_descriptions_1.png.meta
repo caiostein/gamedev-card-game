@@ -131,12 +131,12 @@ TextureImporter:
       name: card_descriptions_1_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 1725
-        width: 513
-        height: 775
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 8
+        y: 1718
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -153,11 +153,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 538
-        y: 1726
-        width: 513
-        height: 771
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 1718
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,12 +173,12 @@ TextureImporter:
       name: card_descriptions_1_2
       rect:
         serializedVersion: 2
-        x: 1086
-        y: 1726
-        width: 525
-        height: 772
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1089
+        y: 1718
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,12 +194,12 @@ TextureImporter:
       name: card_descriptions_1_3
       rect:
         serializedVersion: 2
-        x: 1615
-        y: 1726
-        width: 531
-        height: 772
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1609
+        y: 1718
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,12 +215,12 @@ TextureImporter:
       name: card_descriptions_1_4
       rect:
         serializedVersion: 2
-        x: 2163
-        y: 1727
-        width: 511
-        height: 771
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2161
+        y: 1718
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -236,12 +236,12 @@ TextureImporter:
       name: card_descriptions_1_5
       rect:
         serializedVersion: 2
-        x: 2692
-        y: 1727
-        width: 532
-        height: 771
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2695
+        y: 1718
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -257,12 +257,12 @@ TextureImporter:
       name: card_descriptions_1_6
       rect:
         serializedVersion: 2
-        x: 3240
-        y: 1728
-        width: 526
-        height: 769
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 3248
+        y: 1718
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,12 +278,12 @@ TextureImporter:
       name: card_descriptions_1_7
       rect:
         serializedVersion: 2
-        x: 3769
-        y: 1727
-        width: 530
-        height: 771
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 3781
+        y: 1716
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,12 +299,12 @@ TextureImporter:
       name: card_descriptions_1_8
       rect:
         serializedVersion: 2
-        x: 4318
-        y: 1726
-        width: 526
-        height: 772
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 4322
+        y: 1718
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -320,12 +320,12 @@ TextureImporter:
       name: card_descriptions_1_9
       rect:
         serializedVersion: 2
-        x: 4848
-        y: 1726
-        width: 530
-        height: 771
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 4856
+        y: 1718
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,12 +341,12 @@ TextureImporter:
       name: card_descriptions_1_10
       rect:
         serializedVersion: 2
-        x: 5412
-        y: 1729
+        x: 5413
+        y: 1718
         width: 516
-        height: 770
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -363,11 +363,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 8
-        y: 887
-        width: 512
-        height: 772
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 874
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -383,12 +383,12 @@ TextureImporter:
       name: card_descriptions_1_12
       rect:
         serializedVersion: 2
-        x: 537
-        y: 888
-        width: 517
-        height: 771
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 538
+        y: 874
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -404,12 +404,12 @@ TextureImporter:
       name: card_descriptions_1_13
       rect:
         serializedVersion: 2
-        x: 1071
-        y: 891
-        width: 544
-        height: 768
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1089
+        y: 874
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -425,12 +425,12 @@ TextureImporter:
       name: card_descriptions_1_14
       rect:
         serializedVersion: 2
-        x: 1619
-        y: 891
-        width: 517
-        height: 769
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1609
+        y: 874
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -446,12 +446,12 @@ TextureImporter:
       name: card_descriptions_1_15
       rect:
         serializedVersion: 2
-        x: 2163
-        y: 891
-        width: 511
-        height: 764
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2161
+        y: 874
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -467,12 +467,12 @@ TextureImporter:
       name: card_descriptions_1_16
       rect:
         serializedVersion: 2
-        x: 2689
-        y: 892
-        width: 532
-        height: 762
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2695
+        y: 874
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -488,12 +488,12 @@ TextureImporter:
       name: card_descriptions_1_17
       rect:
         serializedVersion: 2
-        x: 3239
-        y: 896
-        width: 522
-        height: 757
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3248
+        y: 874
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -509,12 +509,12 @@ TextureImporter:
       name: card_descriptions_1_18
       rect:
         serializedVersion: 2
-        x: 3775
-        y: 895
-        width: 524
-        height: 758
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3781
+        y: 877
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -530,12 +530,12 @@ TextureImporter:
       name: card_descriptions_1_19
       rect:
         serializedVersion: 2
-        x: 4313
-        y: 895
-        width: 531
-        height: 758
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4322
+        y: 874
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -551,12 +551,12 @@ TextureImporter:
       name: card_descriptions_1_20
       rect:
         serializedVersion: 2
-        x: 4853
-        y: 893
-        width: 525
-        height: 760
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4856
+        y: 874
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -572,12 +572,12 @@ TextureImporter:
       name: card_descriptions_1_21
       rect:
         serializedVersion: 2
-        x: 5415
-        y: 890
+        x: 5413
+        y: 874
         width: 516
-        height: 765
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -593,12 +593,12 @@ TextureImporter:
       name: card_descriptions_1_22
       rect:
         serializedVersion: 2
-        x: 12
+        x: 8
         y: 30
-        width: 505
-        height: 779
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -614,12 +614,12 @@ TextureImporter:
       name: card_descriptions_1_23
       rect:
         serializedVersion: 2
-        x: 534
-        y: 31
-        width: 514
-        height: 775
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 538
+        y: 30
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -635,12 +635,12 @@ TextureImporter:
       name: card_descriptions_1_24
       rect:
         serializedVersion: 2
-        x: 1085
-        y: 36
-        width: 526
-        height: 771
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1089
+        y: 30
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -656,12 +656,12 @@ TextureImporter:
       name: card_descriptions_1_25
       rect:
         serializedVersion: 2
-        x: 1618
-        y: 31
-        width: 518
-        height: 775
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1609
+        y: 30
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -677,12 +677,12 @@ TextureImporter:
       name: card_descriptions_1_26
       rect:
         serializedVersion: 2
-        x: 2155
-        y: 34
-        width: 528
-        height: 770
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2161
+        y: 33
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -698,12 +698,12 @@ TextureImporter:
       name: card_descriptions_1_27
       rect:
         serializedVersion: 2
-        x: 2685
-        y: 36
-        width: 534
-        height: 770
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2695
+        y: 30
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -719,12 +719,12 @@ TextureImporter:
       name: card_descriptions_1_28
       rect:
         serializedVersion: 2
-        x: 3238
-        y: 32
-        width: 533
-        height: 774
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3248
+        y: 30
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -740,12 +740,12 @@ TextureImporter:
       name: card_descriptions_1_29
       rect:
         serializedVersion: 2
-        x: 3774
-        y: 31
-        width: 532
-        height: 773
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3781
+        y: 30
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -761,12 +761,12 @@ TextureImporter:
       name: card_descriptions_1_30
       rect:
         serializedVersion: 2
-        x: 4325
-        y: 29
+        x: 4322
+        y: 30
         width: 516
-        height: 777
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -782,12 +782,12 @@ TextureImporter:
       name: card_descriptions_1_31
       rect:
         serializedVersion: 2
-        x: 4862
-        y: 31
-        width: 514
-        height: 773
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4856
+        y: 30
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -803,12 +803,12 @@ TextureImporter:
       name: card_descriptions_1_32
       rect:
         serializedVersion: 2
-        x: 5414
-        y: 35
-        width: 514
-        height: 769
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 5413
+        y: 30
+        width: 516
+        height: 814
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -831,58 +831,39 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cards_1: -2046621808
-      cards_8: 587968530
-      card_descriptions_1_15: 2092207946
-      cards_7: 154936398
-      cards_3: -50235737
-      card_descriptions_3: -1400038162
-      cards_6: -1517973395
-      card_descriptions_0: -877124322
-      card_descriptions_1_6: -883813175
-      card_descriptions_1_1: -1860990837
-      card_descriptions_1_14: 1718631959
-      card_descriptions_1_26: 791377062
-      card_descriptions_1_22: -2143305760
-      card_descriptions_1_2: 1328610371
-      cards_5: 960540728
-      card_descriptions_1_5: -420502060
-      cards_0: -706613799
-      card_descriptions_1_16: 1721676322
-      card_descriptions_1_23: 1440931896
-      card_descriptions_1_9: 1634350839
-      card_descriptions_1_24: -67511595
-      cards_10: -411250730
-      cards_4: 1091858922
-      card_descriptions_1: -1574825112
       card_descriptions_1_18: 50331190
       card_descriptions_1_20: 826956870
       card_descriptions_1_32: 1919581959
-      card_descriptions_7: 368285139
-      card_descriptions_5: 378703746
       card_descriptions_1_17: 1385587377
+      card_descriptions_1_15: 2092207946
       card_descriptions_1_28: -1924908365
       card_descriptions_1_10: -1759956619
-      card_descriptions_2: -2088849925
       card_descriptions_1_11: -450707693
-      cards_2: 871237640
       card_descriptions_1_31: -518188713
       card_descriptions_1_29: 1135468637
       card_descriptions_1_13: 1757079153
-      card_descriptions_4: -421786543
-      card_descriptions_1_25: -1607556817
+      card_descriptions_1_6: -883813175
       card_descriptions_1_21: 556198226
       card_descriptions_1_8: -1954357360
       card_descriptions_1_0: 2010827441
       card_descriptions_1_4: 1211710939
+      card_descriptions_1_1: -1860990837
+      card_descriptions_1_14: 1718631959
       card_descriptions_1_19: 1723202632
+      card_descriptions_1_22: -2143305760
+      card_descriptions_1_25: -1607556817
       card_descriptions_1_27: 785793944
+      card_descriptions_1_2: 1328610371
+      card_descriptions_1_5: -420502060
       card_descriptions_1_3: 1695857286
       card_descriptions_1_12: 199544290
       card_descriptions_1_30: 2055886501
       card_descriptions_1_7: -1446137986
-      card_descriptions_6: 26167862
-      cards_9: -1483767056
+      card_descriptions_1_26: 791377062
+      card_descriptions_1_16: 1721676322
+      card_descriptions_1_23: 1440931896
+      card_descriptions_1_9: 1634350839
+      card_descriptions_1_24: -67511595
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

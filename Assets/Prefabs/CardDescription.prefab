@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -534.5609, y: -291.78113}
+  m_AnchoredPosition: {x: -530.8325, y: -291.90414}
   m_SizeDelta: {x: 0.6935, y: 1.2479}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4794572217689151160
@@ -210,12 +210,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -877124322, guid: 8fbaa9a9a27d030488517d81b1966dc4, type: 3}
+  m_Sprite: {fileID: 2010827441, guid: 8fbaa9a9a27d030488517d81b1966dc4, type: 3}
   m_Color: {r: 0.8490566, g: 0.40450338, b: 0.40450338, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.871178, y: 7.7}
+  m_Size: {x: 5.1606693, y: 8.14}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -373,7 +373,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -537.2314, y: -300.15802}
+  m_AnchoredPosition: {x: -533.54, y: -300.45}
   m_SizeDelta: {x: 5.4127, y: 3.341}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7602459658713524508
@@ -508,9 +508,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -537.23, y: -292.04}
+  m_AnchoredPosition: {x: -533.6435, y: -292.31488}
   m_SizeDelta: {x: 3.9596, y: 0.5259}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.47437975, y: 0.49999735}
 --- !u!222 &6098775217102083595
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -541,8 +541,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Card Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6b9cd1a9da205c64ca24894a0ad1b652, type: 2}
-  m_sharedMaterial: {fileID: 5648841424417533313, guid: 6b9cd1a9da205c64ca24894a0ad1b652, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 746c3a1d44b6dab4aaac328c1d101841, type: 2}
+  m_sharedMaterial: {fileID: 5648841424417533313, guid: 746c3a1d44b6dab4aaac328c1d101841, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
