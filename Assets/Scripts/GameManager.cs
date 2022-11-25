@@ -7,7 +7,7 @@ using System.Text;
 
 public class GameManager : MonoBehaviour
 {
-
+	//Card
 	public List<Card> deck;
 	public TextMeshProUGUI deckSizeText;
 
@@ -17,21 +17,28 @@ public class GameManager : MonoBehaviour
 
 	public Transform[] selectedCardSlots;
 	public bool[] availableSelectedCardSlots;
+	
+	public Card.CardEffects? activeCardEffect;
 
 	public List<Card> discardPile;
 	public TextMeshProUGUI discardPileSizeText;
 
-	public int costPointsRemaining = 5;
+	//Cost
+	public int remainingMana = 5;
 	public TextMeshProUGUI costPointsRemainingText;
 
-	public int totalScore = 0;
-	public TextMeshProUGUI totalScoreText;
-
-	private Animator camAnim;
 
 	public TextMeshProUGUI cardCostText; // aqui eu criei um teste, fora da estrutura da carta para checar o comportamento
 
+	//Score
+	public int totalScore = 0;
+	public TextMeshProUGUI totalScoreText;
 	public ScoreObject playerScore;
+
+	//System
+	private Animator camAnim;
+
+	
 
 	private void Start()
 	{
@@ -45,7 +52,7 @@ public class GameManager : MonoBehaviour
 			camAnim.SetTrigger("shake");
 
 			Card randomCard = deck[Random.Range(0, deck.Count)];
-			cardCostText.text = "Custo anterior: " + randomCard.cost.ToString();
+			cardCostText.text = "Custo anterior: " + randomCard.cardCost.ToString();
 			for (int i = 0; i < availableCardSlots.Length; i++)
 			{
 				if (availableCardSlots[i] == true)
@@ -57,11 +64,7 @@ public class GameManager : MonoBehaviour
 					Transform organizeText = randomCard.transform.Find("CardCost");
 					organizeText.localPosition = new Vector3(1.2f, 1.7f, 0);
 
-					randomCard.GetComponentInChildren<TextMeshProUGUI>().text = randomCard.cost.ToString();
-					
-					Debug.Log("Posição do texto: " + organizeText.localPosition);
-					Debug.Log("custo da carta: " + randomCard.cost);
-					Debug.Log("texto no filho da carta: " + randomCard.GetComponentInChildren<TextMeshProUGUI>().text);
+					randomCard.GetComponentInChildren<TextMeshProUGUI>().text = randomCard.cardCost.ToString();
 
 					randomCard.hasBeenPlayed = false;
 					deck.Remove(randomCard);
@@ -122,6 +125,30 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
+	public void ActivateEffect(int cardEffect)
+    {
+		if (activeCardEffect == null)
+		{
+			activeCardEffect = (Card.CardEffects)cardEffect;
+
+			switch (activeCardEffect)
+			{
+				case Card.CardEffects.Ideias:
+					Debug.Log("IDEIAAAAS");
+					break;
+				case Card.CardEffects.Metadinha:
+					Debug.Log("halinha");
+					break;
+				case Card.CardEffects.Troca:
+					Debug.Log("trader");
+					break;
+			}
+
+			activeCardEffect = null;
+		}
+
+    }
+
 	private void Update()
 	{
 		deckSizeText.text = deck.Count.ToString();
@@ -132,7 +159,7 @@ public class GameManager : MonoBehaviour
 			totalScoreText.text = totalScore.ToString();
         }
 
-		costPointsRemainingText.text = "Mana Restante: " + costPointsRemaining.ToString();
+		costPointsRemainingText.text = "Mana Restante: " + remainingMana.ToString();
 		
 	}
 

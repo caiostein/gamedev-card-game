@@ -7,13 +7,22 @@ public class Card : MonoBehaviour
 	public bool hasBeenPlayed;
 	public int handIndex;
 
-	public int cost;
-	public int valuePoints;
+	public int cardCost;
+	public int cardValue;
 
 	GameManager gm;
 
 	private Animator anim;
 	private Animator camAnim;
+
+	public enum CardEffects
+	{
+		Metadinha = 1,
+		Ideias = 2,
+		Troca = 3
+	}
+
+	public int cardEffect;
 
 	public GameObject effect;
 	public GameObject hollowCircle;
@@ -30,9 +39,9 @@ public class Card : MonoBehaviour
 	}
 	private void OnMouseDown()
 	{
-		Debug.Log(gm.costPointsRemaining);
-		if (!hasBeenPlayed && cost <= gm.costPointsRemaining) 
-		{
+		if (!hasBeenPlayed && cardCost <= gm.remainingMana) 
+		{					
+			gm.ActivateEffect(cardEffect);	            
 
 			for(int i = 0; i < gm.availableSelectedCardSlots.Length; i++){
 				
@@ -48,8 +57,8 @@ public class Card : MonoBehaviour
 					gm.availableCardSlots[handIndex] = true;
 					gm.availableSelectedCardSlots[i] = false;
 
-					gm.costPointsRemaining -= cost;
-					gm.totalScore += valuePoints;
+					gm.remainingMana -= cardCost;
+					gm.totalScore += cardValue;
 
 					return;
 				}
