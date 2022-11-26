@@ -11,14 +11,14 @@ public class CardDescription : MonoBehaviour
     public TextMeshProUGUI cardCostText;
     public int cardCost;
 
-    // Start is called before the first frame update
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
 
         if (gameManager.shouldUseHalfMana)
         {
-            double halfCost = cardCost / 2;
+            FormatHalfManaText();
+            double halfCost = (double)cardCost / 2;
             SetCardCost((int)Math.Ceiling(halfCost));
         } else
         {
@@ -28,7 +28,14 @@ public class CardDescription : MonoBehaviour
 
     public void SetCardCost(int costToSet)
     {
-        cardCostText.text = costToSet.ToString();
+        cardCostText.text = costToSet.ToString();       
+    }
+
+    private void FormatHalfManaText()
+    {
+        cardCostText.colorGradient = new VertexGradient(Color.cyan);
+        cardCostText.outlineColor = Color.black;
+        cardCostText.outlineWidth = (float)0.2;
     }
 
 }

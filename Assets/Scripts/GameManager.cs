@@ -146,7 +146,6 @@ public class GameManager : MonoBehaviour
 					break;
 				case Card.CardEffects.Troca:
 					cardsToDestroy = 2;
-					//
 					break;
 			}
 

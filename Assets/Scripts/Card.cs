@@ -50,6 +50,7 @@ public class Card : MonoBehaviour
 			}
             else if (IsSpecialCard())
 			{
+				gameManager.remainingMana -= cardCost;
 				gameManager.ActivateEffect(cardEffect);
 
 				DestroyCard();
@@ -72,7 +73,7 @@ public class Card : MonoBehaviour
 
 					    if (gameManager.shouldUseHalfMana)
 					    {
-							double halfCost = cardCost / 2;
+							double halfCost = (double)cardCost / 2;
 					        gameManager.remainingMana -= ((int)Math.Ceiling(halfCost));
 
 							gameManager.shouldUseHalfMana = false;
