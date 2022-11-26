@@ -17,14 +17,19 @@ public class GameManager : MonoBehaviour
 
 	public Transform[] selectedCardSlots;
 	public bool[] availableSelectedCardSlots;
-	
-	public Card.CardEffects? activeCardEffect;
 
 	public List<Card> discardPile;
 	public TextMeshProUGUI discardPileSizeText;
 
+	//CardEffects
+	public Card.CardEffects? activeCardEffect;
+	public bool shouldUseHalfMana = false;
+	public int cardsToDestroy;
+
+	private const int manaToIncrease = 3;
+	
 	//Cost
-	public int remainingMana = 5;
+	public int remainingMana;
 	public TextMeshProUGUI costPointsRemainingText;
 
 
@@ -58,7 +63,7 @@ public class GameManager : MonoBehaviour
 				if (availableCardSlots[i] == true)
 				{
 					randomCard.gameObject.SetActive(true);
-					randomCard.handIndex = i;
+					randomCard.tableIndex = i;
 					randomCard.transform.position = cardSlots[i].position;
 					
 					Transform organizeText = randomCard.transform.Find("CardCost");
@@ -133,14 +138,15 @@ public class GameManager : MonoBehaviour
 
 			switch (activeCardEffect)
 			{
-				case Card.CardEffects.Ideias:
-					Debug.Log("IDEIAAAAS");
-					break;
 				case Card.CardEffects.Metadinha:
-					Debug.Log("halinha");
+					shouldUseHalfMana = true;
+					break;
+				case Card.CardEffects.Ideias:
+					remainingMana += manaToIncrease;
 					break;
 				case Card.CardEffects.Troca:
-					Debug.Log("trader");
+					cardsToDestroy = 2;
+					//
 					break;
 			}
 

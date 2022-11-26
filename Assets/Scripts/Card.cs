@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,12 +6,12 @@ using UnityEngine;
 public class Card : MonoBehaviour
 {
 	public bool hasBeenPlayed;
-	public int handIndex;
+	public int tableIndex;
 
 	public int cardCost;
 	public int cardValue;
 
-	GameManager gm;
+	GameManager gameManager;
 
 	private Animator anim;
 	private Animator camAnim;
@@ -29,66 +30,110 @@ public class Card : MonoBehaviour
 
 	public GameObject cardDescription;
 
-	private GameObject clone;
+	private GameObject descriptionOnScreen;
 
 	private void Start()
 	{
-		gm = FindObjectOfType<GameManager>();
+		gameManager = FindObjectOfType<GameManager>();
 		anim = GetComponent<Animator>();
 		camAnim = Camera.main.GetComponent<Animator>();
 	}
 	private void OnMouseDown()
 	{
-		if (!hasBeenPlayed && cardCost <= gm.remainingMana) 
-		{					
-			gm.ActivateEffect(cardEffect);	            
+		if (!hasBeenPlayed && cardCost <= gameManager.remainingMana) 
+		{
 
-			for(int i = 0; i < gm.availableSelectedCardSlots.Length; i++){
-				
-				if(gm.availableSelectedCardSlots[i]){
-					
-					Instantiate(hollowCircle, transform.position, Quaternion.identity);
-			
-					camAnim.SetTrigger("shake");
-					anim.SetTrigger("move");
-
-					transform.position = gm.selectedCardSlots[i].position;
-					hasBeenPlayed = true;
-					gm.availableCardSlots[handIndex] = true;
-					gm.availableSelectedCardSlots[i] = false;
-
-					gm.remainingMana -= cardCost;
-					gm.totalScore += cardValue;
-
-					return;
-				}
+            if (IsDestroyingCards())
+			{
+				DestroyCard();
+				gameManager.cardsToDestroy--;
 			}
+            else if (IsSpecialCard())
+			{
+				gameManager.ActivateEffect(cardEffect);
+
+				DestroyCard();
+			}
+			else 
+            {
+				for(int i = 0; i < gameManager.availableSelectedCardSlots.Length; i++){
+				
+					if(gameManager.availableSelectedCardSlots[i]){
+						
+						Instantiate(hollowCircle, transform.position, Quaternion.identity);
 			
-		}
+						camAnim.SetTrigger("shake");
+						anim.SetTrigger("move");
+
+						transform.position = gameManager.selectedCardSlots[i].position;
+						hasBeenPlayed = true;
+						gameManager.availableCardSlots[tableIndex] = true;
+						gameManager.availableSelectedCardSlots[i] = false;
+
+					    if (gameManager.shouldUseHalfMana)
+					    {
+							double halfCost = cardCost / 2;
+					        gameManager.remainingMana -= ((int)Math.Ceiling(halfCost));
+
+							gameManager.shouldUseHalfMana = false;
+							return;
+					    }
+
+						gameManager.remainingMana -= cardCost;
+						gameManager.totalScore += cardValue;
+
+						return;
+					}
+				}			
+			}
+        }
+
+			
 		else if (hasBeenPlayed)
 		{
 			Invoke("MoveToDiscardPile", 1f);
 		}
 	}
 
-    private void OnMouseEnter()
+    private bool IsSpecialCard()
     {
-		clone = Instantiate(cardDescription, gm.descriptionSlot.transform.position, Quaternion.identity);
-		clone.transform.localScale = new Vector3((float)0.827, (float)0.827, (float)0.827);
-		clone.SetActive(true);
+		return cardEffect > 0;
+    }
+	private bool IsDestroyingCards()
+	{
+		return gameManager.cardsToDestroy > 0;
+	}
+	private void DestroyCard()
+	{
+		gameManager.availableCardSlots[tableIndex] = true;
+		hasBeenPlayed = true;
+
+		Invoke(nameof(MoveToDiscardPile), 1f);
+	}
+
+	private void OnMouseEnter()
+    {
+		descriptionOnScreen = Instantiate(cardDescription, gameManager.descriptionSlot.transform.position, Quaternion.identity);
+		descriptionOnScreen.transform.localScale = new Vector3((float)0.827, (float)0.827, (float)0.827);
+		descriptionOnScreen.SetActive(true);
     }
 
     private void OnMouseExit()
     {
-		GameObject.Destroy(clone);
+        Destroy(descriptionOnScreen);
     }
+
+    private void OnBecameInvisible()
+    {
+		Destroy(descriptionOnScreen);
+	}
 
     void MoveToDiscardPile()
 	{
 		
-			Instantiate(effect, transform.position, Quaternion.identity);
-			gm.discardPile.Add(this);
-			gameObject.SetActive(false);
+		Instantiate(effect, transform.position, Quaternion.identity);
+		gameManager.discardPile.Add(this);
+		gameObject.SetActive(false);
 		
 	}
 
