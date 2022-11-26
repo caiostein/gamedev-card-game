@@ -21,8 +21,10 @@ public class GameManager : MonoBehaviour
 	public List<Card> discardPile;
 	public TextMeshProUGUI discardPileSizeText;
 
+	public int activeLevel;	
+
 	//CardEffects
-	public Card.CardEffects? activeCardEffect;
+	public Enums.CardEffects? activeCardEffect;
 	public bool shouldUseHalfMana = false;
 	public int cardsToDestroy;
 
@@ -42,8 +44,6 @@ public class GameManager : MonoBehaviour
 
 	//System
 	private Animator camAnim;
-
-	
 
 	private void Start()
 	{
@@ -134,17 +134,17 @@ public class GameManager : MonoBehaviour
     {
 		if (activeCardEffect == null)
 		{
-			activeCardEffect = (Card.CardEffects)cardEffect;
+			activeCardEffect = (Enums.CardEffects)cardEffect;
 
 			switch (activeCardEffect)
 			{
-				case Card.CardEffects.Metadinha:
+				case Enums.CardEffects.Metadinha:
 					shouldUseHalfMana = true;
 					break;
-				case Card.CardEffects.Ideias:
+				case Enums.CardEffects.Ideias:
 					remainingMana += manaToIncrease;
 					break;
-				case Card.CardEffects.Troca:
+				case Enums.CardEffects.Troca:
 					cardsToDestroy = 2;
 					break;
 			}

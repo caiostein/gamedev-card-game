@@ -11,17 +11,15 @@ public class Card : MonoBehaviour
 	public int cardCost;
 	public int cardValue;
 
+	public int mecanica;
+	public int narrativa;
+	public int estetica;
+	public int tecnologia;
+
 	GameManager gameManager;
 
 	private Animator anim;
 	private Animator camAnim;
-
-	public enum CardEffects
-	{
-		Metadinha = 1,
-		Ideias = 2,
-		Troca = 3
-	}
 
 	public int cardEffect;
 
@@ -29,6 +27,8 @@ public class Card : MonoBehaviour
 	public GameObject hollowCircle;
 
 	public GameObject cardDescription;
+	
+	public GameObject parent;
 
 	private GameObject descriptionOnScreen;
 
@@ -92,7 +92,7 @@ public class Card : MonoBehaviour
 			
 		else if (hasBeenPlayed)
 		{
-			Invoke("MoveToDiscardPile", 1f);
+			Invoke(nameof(MoveToDiscardPile), 1f);
 		}
 	}
 
@@ -137,7 +137,5 @@ public class Card : MonoBehaviour
 		gameObject.SetActive(false);
 		
 	}
-
-
 
 }

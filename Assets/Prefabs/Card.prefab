@@ -106,12 +106,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasBeenPlayed: 0
-  handIndex: 0
-  cost: 6
-  valuePoints: 0
+  tableIndex: 0
+  cardCost: 0
+  cardValue: 0
+  cardEffect: 0
   effect: {fileID: 0}
   hollowCircle: {fileID: 0}
   cardDescription: {fileID: 0}
+  parent: {fileID: 196572362281845334}
+  affinity: {fileID: 0}
 --- !u!61 &6717292060567749383
 BoxCollider2D:
   m_ObjectHideFlags: 0
