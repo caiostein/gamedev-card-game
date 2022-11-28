@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Card : MonoBehaviour
 {
-	public bool hasBeenPlayed;
+	public bool hasBeenDrawn;
 	public int tableIndex;
 
 	public int cardCost;
@@ -39,20 +39,37 @@ public class Card : MonoBehaviour
 	}
 	private void OnMouseDown()
 	{
-		if (!hasBeenPlayed && cardCost <= gameManager.remainingMana) 
+		int costToUse;
+			
+		if (gameManager.shouldUseHalfMana)
 		{
+			costToUse = (int)Math.Ceiling((double)cardCost / 2);
+		} 
+		else
+        {
+			costToUse = cardCost;
+        }
 
-            if (IsDestroyingCards())
+		if (IsDestroyingCards())
+		{
+			hasBeenDrawn = true;
+			DestroyCard();
+			gameManager.cardsToDestroy--;
+			if (gameManager.cardsToDestroy == 0)
 			{
-				hasBeenPlayed = true;
-				DestroyCard();
-				gameManager.cardsToDestroy--;
+				gameManager.DrawCard();
+				gameManager.DrawCard();
+				gameManager.DrawCard();
 			}
-            else if (IsSpecialCard())
+		}
+
+		if (!hasBeenDrawn && costToUse <= gameManager.remainingMana) 
+		{
+			if (IsSpecialCard())
 			{
 				gameManager.remainingMana -= cardCost;
 				gameManager.ActivateEffect(cardEffect);
-				hasBeenPlayed = true;
+				hasBeenDrawn = true;
 				DestroyCard();
 			}
 			else 
@@ -67,36 +84,21 @@ public class Card : MonoBehaviour
 						anim.SetTrigger("move");
 
 						transform.position = gameManager.handSlots[i].position;
-						hasBeenPlayed = true;
+						hasBeenDrawn = true;
 						gameManager.availableTableSlots[tableIndex] = true;
 						gameManager.availableHandSlots[i] = false;
 
-					    if (gameManager.shouldUseHalfMana)
-					    {
-							double halfCost = (double)cardCost / 2;
-					        gameManager.remainingMana -= ((int)Math.Ceiling(halfCost));
+						gameManager.remainingMana -= costToUse;
 
-							gameManager.shouldUseHalfMana = false;
-
-							gameManager.table.Remove(this);
-							gameManager.hand.Add(this);
-
-							Debug.Log(this.cardCost);
-
-							return;
-					    }
-
-						gameManager.remainingMana -= cardCost;
+						gameManager.shouldUseHalfMana = false;
 
 						ScoreManager.Instance.AddPoints(this);
 						
 						gameManager.table.Remove(this);
 						gameManager.hand.Add(this);
-						Debug.Log(this.cardCost);
 
 						if (gameManager.hand.Count == Const.handSize)
-						{
-							
+						{							
 							gameManager.CalculatePoints();
 						}
 
@@ -121,7 +123,7 @@ public class Card : MonoBehaviour
 		gameManager.availableTableSlots[tableIndex] = true;
 		gameManager.table.Remove(this);
 
-		if (hasBeenPlayed)
+		if (hasBeenDrawn)
         {
 			Invoke(nameof(MoveToDiscardPile), 1f);
         }

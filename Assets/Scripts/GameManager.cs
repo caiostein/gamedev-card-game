@@ -30,17 +30,12 @@ public class GameManager : MonoBehaviour
 	public bool shouldUseHalfMana = false;
 	public int cardsToDestroy;
 	
-	//Cost
+	//Mana
 	public int remainingMana;
-	public TextMeshProUGUI costPointsRemainingText;
+	public TextMeshProUGUI remainingManaText;
 
-
-	public TextMeshProUGUI cardCostText;
-
-	//Score
-	public int totalScore = 0;
-	public TextMeshProUGUI totalScoreText;
-	public ScoreObject playerScore;
+	//Level
+	public TextMeshProUGUI levelDescription;
 
 	//System
 	private Animator camAnim;
@@ -48,19 +43,36 @@ public class GameManager : MonoBehaviour
 	private void Start()
 	{
 		camAnim = Camera.main.GetComponent<Animator>();
+
+		SetLevelDescriptionText();
+
+		StartCoroutine(DrawAtBeginning());
 	}
+
+    private void SetLevelDescriptionText()
+    {
+		string levelDescText;
+		if(Enum.levelDescriptionDict.TryGetValue(ScoreManager.Instance.activeLevel, out levelDescText))
+        {
+			levelDescription.text = levelDescText;
+		}
+	}
+
+    private IEnumerator DrawAtBeginning()
+    {
+		for (int i = 0; i <= table.Capacity; i++)
+		{
+			DrawCard();
+			yield return new WaitForSeconds(0.3f);
+		}			
+	}
+
 	private void Update()
 	{
 		deckSizeText.text = deck.Count.ToString();
 		discardPileSizeText.text = discardPile.Count.ToString();
 
-		if (!totalScoreText.text.Equals(totalScore.ToString()))
-		{
-			totalScoreText.text = totalScore.ToString();
-		}
-
-		costPointsRemainingText.text = "Mana Restante: " + remainingMana.ToString();
-
+		remainingManaText.text = "Mana Restante: " + remainingMana.ToString();
 	}
 
 	public void DrawCard()
@@ -71,9 +83,6 @@ public class GameManager : MonoBehaviour
 
 			Card randomCard = deck[Random.Range(0, deck.Count)];
 
-			//avaliar se possivel deletar
-			cardCostText.text = "Custo anterior: " + randomCard.cardCost.ToString();
-
 			for (int i = 0; i < availableTableSlots.Length; i++)
 			{
 				if (availableTableSlots[i] == true)
@@ -83,14 +92,7 @@ public class GameManager : MonoBehaviour
 					randomCard.transform.position = tableSlots[i].position;
 					table.Add(randomCard);
 
-					Debug.Log(randomCard.cardCost);
-					
-					Transform organizeText = randomCard.transform.Find("CardCost");
-					organizeText.localPosition = new Vector3(1.2f, 1.7f, 0);
-
-					randomCard.GetComponentInChildren<TextMeshProUGUI>().text = randomCard.cardCost.ToString();
-
-					randomCard.hasBeenPlayed = false;
+					randomCard.hasBeenDrawn = false;
 					deck.Remove(randomCard);
 					availableTableSlots[i] = false;
 					return;
@@ -120,11 +122,11 @@ public class GameManager : MonoBehaviour
 
     public void SetScore()
     {
-		Debug.Log($"Salvando Pontuação de: {totalScore} no banco de dados");
+		//Debug.Log($"Salvando Pontuação de: {totalScore} no banco de dados");
 
-		ScoreObject scoreToUpload = new() { scoreValue = totalScore.ToString() };
+		//ScoreObject scoreToUpload = new() { scoreValue = totalScore.ToString() };
 
-		StartCoroutine(UploadScore(scoreToUpload.Stringify()));
+		//StartCoroutine(UploadScore(scoreToUpload.Stringify()));
 	}
 
 	public IEnumerator UploadScore(string profile, System.Action<bool> callback = null)
@@ -182,44 +184,54 @@ public class GameManager : MonoBehaviour
 
 	public void TriggerNextLevel()
     {
-		
-		foreach(Card card in table.ToList())
-        {
-			card.hasBeenPlayed = false;
-			card.DestroyCard();
-			table.Remove(card);
-			deck.Add(card);
-        }
+        ClearCardGroup(table);
 
-		foreach(Card card in hand.ToList())
-        {
-			card.hasBeenPlayed = false;
-			card.DestroyCard();
-			hand.Remove(card);
-			deck.Add(card);
-        }
+        ClearCardGroup(hand);
 
-		foreach(Card card in discardPile.ToList())
-        {
-			card.hasBeenPlayed = false;
-			discardPile.Remove(card);
-			deck.Add(card);
-        }
+        ClearDiscardPile();
 
-		for (int i = 0; i < availableHandSlots.Length; i++)
+        ClearCardSlots();
+
+        remainingMana = Const.maximumMana;
+
+        int levelToSet = ScoreManager.Instance.activeLevel + 1;
+        ScoreManager.Instance.SetActiveLevel(levelToSet);
+
+		StartCoroutine(DrawAtBeginning());
+		SetLevelDescriptionText();
+	}
+
+    private void ClearCardSlots()
+    {
+        for (int i = 0; i < availableHandSlots.Length; i++)
         {
-			availableHandSlots[i] = true;
+            availableHandSlots[i] = true;
         }
 
         for (int i = 0; i < availableTableSlots.Length; i++)
         {
-			availableTableSlots[i] = true;
+            availableTableSlots[i] = true;
         }
+    }
 
-		remainingMana = Const.maximumMana;
-		int activeLevel = ScoreManager.Instance.activeLevel;
-		int levelToSet = activeLevel + 1;
-		ScoreManager.Instance.SetActiveLevel(levelToSet);
+    private void ClearCardGroup(List<Card> listToClear)
+    {
+        foreach (Card card in listToClear.ToList())
+        {
+            card.hasBeenDrawn = false;
+            card.DestroyCard();
+            listToClear.Remove(card);
+            deck.Add(card);
+        }
+    }
+
+	private void ClearDiscardPile()
+    {
+		foreach (Card card in discardPile.ToList())
+		{
+			card.hasBeenDrawn = false;
+			discardPile.Remove(card);
+			deck.Add(card);
+		}
 	}
-
 }
