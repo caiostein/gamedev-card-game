@@ -9,7 +9,6 @@ public class Card : MonoBehaviour
 	public int tableIndex;
 
 	public int cardCost;
-	public int cardValue;
 
 	public int mecanica;
 	public int narrativa;
@@ -45,6 +44,7 @@ public class Card : MonoBehaviour
 
             if (IsDestroyingCards())
 			{
+				hasBeenPlayed = true;
 				DestroyCard();
 				gameManager.cardsToDestroy--;
 			}
@@ -52,24 +52,24 @@ public class Card : MonoBehaviour
 			{
 				gameManager.remainingMana -= cardCost;
 				gameManager.ActivateEffect(cardEffect);
-
+				hasBeenPlayed = true;
 				DestroyCard();
 			}
 			else 
             {
-				for(int i = 0; i < gameManager.availableSelectedCardSlots.Length; i++){
+				for(int i = 0; i < gameManager.availableHandSlots.Length; i++){
 				
-					if(gameManager.availableSelectedCardSlots[i]){
+					if(gameManager.availableHandSlots[i]){
 						
 						Instantiate(hollowCircle, transform.position, Quaternion.identity);
 			
 						camAnim.SetTrigger("shake");
 						anim.SetTrigger("move");
 
-						transform.position = gameManager.selectedCardSlots[i].position;
+						transform.position = gameManager.handSlots[i].position;
 						hasBeenPlayed = true;
-						gameManager.availableCardSlots[tableIndex] = true;
-						gameManager.availableSelectedCardSlots[i] = false;
+						gameManager.availableTableSlots[tableIndex] = true;
+						gameManager.availableHandSlots[i] = false;
 
 					    if (gameManager.shouldUseHalfMana)
 					    {
@@ -77,7 +77,12 @@ public class Card : MonoBehaviour
 					        gameManager.remainingMana -= ((int)Math.Ceiling(halfCost));
 
 							gameManager.shouldUseHalfMana = false;
-							gameManager.cardsOnHand++;
+
+							gameManager.table.Remove(this);
+							gameManager.hand.Add(this);
+
+							Debug.Log(this.cardCost);
+
 							return;
 					    }
 
@@ -85,10 +90,13 @@ public class Card : MonoBehaviour
 
 						ScoreManager.Instance.AddPoints(this);
 						
-						gameManager.cardsOnHand++;
+						gameManager.table.Remove(this);
+						gameManager.hand.Add(this);
+						Debug.Log(this.cardCost);
 
-						if (gameManager.cardsOnHand == gameManager.handSize)
+						if (gameManager.hand.Count == Const.handSize)
 						{
+							
 							gameManager.CalculatePoints();
 						}
 
@@ -98,11 +106,6 @@ public class Card : MonoBehaviour
 				}			
 			}
         }
-			
-		else if (hasBeenPlayed)
-		{
-			Invoke(nameof(MoveToDiscardPile), 1f);
-		}
 	}
 
     private bool IsSpecialCard()
@@ -113,12 +116,18 @@ public class Card : MonoBehaviour
 	{
 		return gameManager.cardsToDestroy > 0;
 	}
-	private void DestroyCard()
+	public void DestroyCard()
 	{
-		gameManager.availableCardSlots[tableIndex] = true;
-		hasBeenPlayed = true;
+		gameManager.availableTableSlots[tableIndex] = true;
+		gameManager.table.Remove(this);
 
-		Invoke(nameof(MoveToDiscardPile), 1f);
+		if (hasBeenPlayed)
+        {
+			Invoke(nameof(MoveToDiscardPile), 1f);
+        }
+
+		Instantiate(effect, transform.position, Quaternion.identity);
+		gameObject.SetActive(false);
 	}
 
 	private void OnMouseEnter()
@@ -139,12 +148,8 @@ public class Card : MonoBehaviour
 	}
 
     void MoveToDiscardPile()
-	{
-		
-		Instantiate(effect, transform.position, Quaternion.identity);
-		gameManager.discardPile.Add(this);
-		gameObject.SetActive(false);
-		
+	{		
+		gameManager.discardPile.Add(this);		
 	}
 
 }

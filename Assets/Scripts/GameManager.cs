@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.Networking;
 using System.Text;
+using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,24 +13,22 @@ public class GameManager : MonoBehaviour
 	public TextMeshProUGUI deckSizeText;
 
 	public Transform descriptionSlot;
-	public Transform[] cardSlots;
-	public bool[] availableCardSlots;
+	public Transform[] tableSlots;
+	public bool[] availableTableSlots;
 
-	public Transform[] selectedCardSlots;
-	public bool[] availableSelectedCardSlots;
+	public Transform[] handSlots;
+	public bool[] availableHandSlots;
 
 	public List<Card> discardPile;
 	public TextMeshProUGUI discardPileSizeText;
 
-	public readonly int handSize = 4;
-	public int cardsOnHand;
+	public List<Card> table;
+	public List<Card> hand;
 
 	//CardEffects
-	public Enums.CardEffects? activeCardEffect;
+	public Enum.CardEffects? activeCardEffect;
 	public bool shouldUseHalfMana = false;
 	public int cardsToDestroy;
-
-	private const int manaToIncrease = 3;
 	
 	//Cost
 	public int remainingMana;
@@ -75,13 +74,16 @@ public class GameManager : MonoBehaviour
 			//avaliar se possivel deletar
 			cardCostText.text = "Custo anterior: " + randomCard.cardCost.ToString();
 
-			for (int i = 0; i < availableCardSlots.Length; i++)
+			for (int i = 0; i < availableTableSlots.Length; i++)
 			{
-				if (availableCardSlots[i] == true)
+				if (availableTableSlots[i] == true)
 				{
 					randomCard.gameObject.SetActive(true);
 					randomCard.tableIndex = i;
-					randomCard.transform.position = cardSlots[i].position;
+					randomCard.transform.position = tableSlots[i].position;
+					table.Add(randomCard);
+
+					Debug.Log(randomCard.cardCost);
 					
 					Transform organizeText = randomCard.transform.Find("CardCost");
 					organizeText.localPosition = new Vector3(1.2f, 1.7f, 0);
@@ -90,7 +92,7 @@ public class GameManager : MonoBehaviour
 
 					randomCard.hasBeenPlayed = false;
 					deck.Remove(randomCard);
-					availableCardSlots[i] = false;
+					availableTableSlots[i] = false;
 					return;
 				}
 			}
@@ -112,7 +114,9 @@ public class GameManager : MonoBehaviour
     internal void CalculatePoints()
     {
 		Debug.Log(ScoreManager.Instance.level1Score);
-    }
+		Invoke(nameof(TriggerNextLevel), 0.2f);
+
+	}
 
     public void SetScore()
     {
@@ -156,17 +160,17 @@ public class GameManager : MonoBehaviour
     {
 		if (activeCardEffect == null)
 		{
-			activeCardEffect = (Enums.CardEffects)cardEffect;
+			activeCardEffect = (Enum.CardEffects)cardEffect;
 
 			switch (activeCardEffect)
 			{
-				case Enums.CardEffects.METADINHA:
+				case Enum.CardEffects.METADINHA:
 					shouldUseHalfMana = true;
 					break;
-				case Enums.CardEffects.IDEIA:
-					remainingMana += manaToIncrease;
+				case Enum.CardEffects.IDEIA:
+					remainingMana += Const.manaToIncrease;
 					break;
-				case Enums.CardEffects.TROCA:
+				case Enum.CardEffects.TROCA:
 					cardsToDestroy = 2;
 					break;
 			}
@@ -175,5 +179,47 @@ public class GameManager : MonoBehaviour
 		}
 
     }
+
+	public void TriggerNextLevel()
+    {
+		
+		foreach(Card card in table.ToList())
+        {
+			card.hasBeenPlayed = false;
+			card.DestroyCard();
+			table.Remove(card);
+			deck.Add(card);
+        }
+
+		foreach(Card card in hand.ToList())
+        {
+			card.hasBeenPlayed = false;
+			card.DestroyCard();
+			hand.Remove(card);
+			deck.Add(card);
+        }
+
+		foreach(Card card in discardPile.ToList())
+        {
+			card.hasBeenPlayed = false;
+			discardPile.Remove(card);
+			deck.Add(card);
+        }
+
+		for (int i = 0; i < availableHandSlots.Length; i++)
+        {
+			availableHandSlots[i] = true;
+        }
+
+        for (int i = 0; i < availableTableSlots.Length; i++)
+        {
+			availableTableSlots[i] = true;
+        }
+
+		remainingMana = Const.maximumMana;
+		int activeLevel = ScoreManager.Instance.activeLevel;
+		int levelToSet = activeLevel + 1;
+		ScoreManager.Instance.SetActiveLevel(levelToSet);
+	}
 
 }

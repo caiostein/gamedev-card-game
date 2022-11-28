@@ -5,7 +5,7 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance;
 
-    public int activeLevel = 1;
+    public int activeLevel;
 
     public int level1Score;
     public int level2Score;
@@ -35,16 +35,16 @@ public class ScoreManager : MonoBehaviour
     {
         switch (activeLevel)
         {
-            case (int)Enums.Levels.MECANICA:
+            case (int)Enum.Levels.MECANICA:
                 level1Score += card.mecanica;
                 break;
-            case (int)Enums.Levels.NARRATIVA:
+            case (int)Enum.Levels.NARRATIVA:
                 level2Score += card.narrativa;
                 break;
-            case (int)Enums.Levels.ESTETICA:
+            case (int)Enum.Levels.ESTETICA:
                 level3Score += card.estetica;
                 break;
-            case (int)Enums.Levels.TECNOLOGIA:
+            case (int)Enum.Levels.TECNOLOGIA:
                 level4Score += card.tecnologia;
                 break;
         }

@@ -371,6 +371,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1043a62b44c153d4f902cac9b865e1df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activeLevel: 0
+  level1Score: 0
+  level2Score: 0
+  level3Score: 0
+  level4Score: 0
   playerName: {fileID: 0}
 --- !u!4 &268219076
 Transform:
@@ -1055,12 +1060,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 268219075}
         m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
-        m_MethodName: SetPlayerNameInput
-        m_Mode: 5
+        m_MethodName: SetActiveLevel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

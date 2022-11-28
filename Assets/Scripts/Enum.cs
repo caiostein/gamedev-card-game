@@ -1,4 +1,4 @@
-﻿public class Enums
+﻿public class Enum
 {
 	public enum Levels
 	{
