@@ -9,8 +9,8 @@
 	}
 	public enum CardEffects
 	{
-		Metadinha = 1,
-		Ideias = 2,
-		Troca = 3
+		METADINHA = 1,
+		IDEIA = 2,
+		TROCA = 3
 	}
 }

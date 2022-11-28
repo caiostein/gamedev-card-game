@@ -21,7 +21,8 @@ public class GameManager : MonoBehaviour
 	public List<Card> discardPile;
 	public TextMeshProUGUI discardPileSizeText;
 
-	public int activeLevel;	
+	public readonly int handSize = 4;
+	public int cardsOnHand;
 
 	//CardEffects
 	public Enums.CardEffects? activeCardEffect;
@@ -35,7 +36,7 @@ public class GameManager : MonoBehaviour
 	public TextMeshProUGUI costPointsRemainingText;
 
 
-	public TextMeshProUGUI cardCostText; // aqui eu criei um teste, fora da estrutura da carta para checar o comportamento
+	public TextMeshProUGUI cardCostText;
 
 	//Score
 	public int totalScore = 0;
@@ -49,6 +50,19 @@ public class GameManager : MonoBehaviour
 	{
 		camAnim = Camera.main.GetComponent<Animator>();
 	}
+	private void Update()
+	{
+		deckSizeText.text = deck.Count.ToString();
+		discardPileSizeText.text = discardPile.Count.ToString();
+
+		if (!totalScoreText.text.Equals(totalScore.ToString()))
+		{
+			totalScoreText.text = totalScore.ToString();
+		}
+
+		costPointsRemainingText.text = "Mana Restante: " + remainingMana.ToString();
+
+	}
 
 	public void DrawCard()
 	{
@@ -57,7 +71,10 @@ public class GameManager : MonoBehaviour
 			camAnim.SetTrigger("shake");
 
 			Card randomCard = deck[Random.Range(0, deck.Count)];
+
+			//avaliar se possivel deletar
 			cardCostText.text = "Custo anterior: " + randomCard.cardCost.ToString();
+
 			for (int i = 0; i < availableCardSlots.Length; i++)
 			{
 				if (availableCardSlots[i] == true)
@@ -92,7 +109,12 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
-	public void SetScore()
+    internal void CalculatePoints()
+    {
+		Debug.Log(ScoreManager.Instance.level1Score);
+    }
+
+    public void SetScore()
     {
 		Debug.Log($"Salvando Pontuação de: {totalScore} no banco de dados");
 
@@ -138,13 +160,13 @@ public class GameManager : MonoBehaviour
 
 			switch (activeCardEffect)
 			{
-				case Enums.CardEffects.Metadinha:
+				case Enums.CardEffects.METADINHA:
 					shouldUseHalfMana = true;
 					break;
-				case Enums.CardEffects.Ideias:
+				case Enums.CardEffects.IDEIA:
 					remainingMana += manaToIncrease;
 					break;
-				case Enums.CardEffects.Troca:
+				case Enums.CardEffects.TROCA:
 					cardsToDestroy = 2;
 					break;
 			}
@@ -153,19 +175,5 @@ public class GameManager : MonoBehaviour
 		}
 
     }
-
-	private void Update()
-	{
-		deckSizeText.text = deck.Count.ToString();
-		discardPileSizeText.text = discardPile.Count.ToString();
-	
-		if (!totalScoreText.text.Equals(totalScore.ToString()))
-        {
-			totalScoreText.text = totalScore.ToString();
-        }
-
-		costPointsRemainingText.text = "Mana Restante: " + remainingMana.ToString();
-		
-	}
 
 }

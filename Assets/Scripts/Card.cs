@@ -77,18 +77,27 @@ public class Card : MonoBehaviour
 					        gameManager.remainingMana -= ((int)Math.Ceiling(halfCost));
 
 							gameManager.shouldUseHalfMana = false;
+							gameManager.cardsOnHand++;
 							return;
 					    }
 
 						gameManager.remainingMana -= cardCost;
-						gameManager.totalScore += cardValue;
+
+						ScoreManager.Instance.AddPoints(this);
+						
+						gameManager.cardsOnHand++;
+
+						if (gameManager.cardsOnHand == gameManager.handSize)
+						{
+							gameManager.CalculatePoints();
+						}
 
 						return;
 					}
+
 				}			
 			}
         }
-
 			
 		else if (hasBeenPlayed)
 		{
