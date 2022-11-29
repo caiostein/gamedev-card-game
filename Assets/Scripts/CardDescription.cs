@@ -19,7 +19,7 @@ public class CardDescription : MonoBehaviour
         {
             FormatHalfManaText();
             double halfCost = (double)cardCost / 2;
-            SetCardCost((int)Math.Ceiling(halfCost));
+            SetCardCost((int)Math.Floor(halfCost));
         } else
         {
             SetCardCost(cardCost);

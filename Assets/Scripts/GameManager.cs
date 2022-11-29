@@ -44,6 +44,8 @@ public class GameManager : MonoBehaviour
 	{
 		camAnim = Camera.main.GetComponent<Animator>();
 
+		remainingMana = Const.maximumMana;
+
 		SetLevelDescriptionText();
 
 		StartCoroutine(DrawAtBeginning());

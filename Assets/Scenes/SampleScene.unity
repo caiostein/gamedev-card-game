@@ -2657,7 +2657,7 @@ MonoBehaviour:
   hand: []
   shouldUseHalfMana: 0
   cardsToDestroy: 0
-  remainingMana: 24
+  remainingMana: 1
   remainingManaText: {fileID: 728832353}
   levelDescription: {fileID: 1740876598}
 --- !u!4 &301529597
@@ -2764,8 +2764,24 @@ PrefabInstance:
       value: -1250463877
       objectReference: {fileID: 0}
     - target: {fileID: 647223443446538934, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.49999076
+      objectReference: {fileID: 0}
+    - target: {fileID: 647223443446538934, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.49999666
+      objectReference: {fileID: 0}
+    - target: {fileID: 647223443446538934, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_RootOrder
       value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 647223443446538934, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -414.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 647223443446538934, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -193.32
       objectReference: {fileID: 0}
     - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: cost
@@ -4365,7 +4381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: tecnologia
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: valuePoints
@@ -8687,6 +8703,14 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 647223443446538934, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -414.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 647223443446538934, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -193.32
+      objectReference: {fileID: 0}
     - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: cost
       value: 10
@@ -10434,7 +10458,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -391, y: -846}
+  m_AnchoredPosition: {x: -368, y: -824}
   m_SizeDelta: {x: 223.69, y: 97.8984}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1363141675
@@ -11176,7 +11200,7 @@ PrefabInstance:
       objectReference: {fileID: 3757043119740318057, guid: 2d563df92650c4c45bfab8ac41590b76, type: 3}
     - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: cardCost
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: estetica
@@ -11192,7 +11216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: tecnologia
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: valuePoints
