@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
 		deckSizeText.text = deck.Count.ToString();
 		discardPileSizeText.text = discardPile.Count.ToString();
 
-		remainingManaText.text = "Mana Restante: " + remainingMana.ToString();
+		remainingManaText.text = remainingMana.ToString();
 	}
 
 	public void DrawCard()
