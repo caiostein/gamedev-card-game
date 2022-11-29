@@ -14863,7 +14863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1926142833172295769, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Motanha Gelida
+      value: "Motanha G\xE9lida"
       objectReference: {fileID: 0}
     - target: {fileID: 1926142833172295769, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_fontSize
@@ -16874,7 +16874,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1926142833172295769, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Bota Magica
+      value: "Bota M\xE1gica"
       objectReference: {fileID: 0}
     - target: {fileID: 1926142833172295769, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_fontSize
