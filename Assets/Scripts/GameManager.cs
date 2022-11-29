@@ -176,6 +176,7 @@ public class GameManager : MonoBehaviour
 					break;
 				case Enum.CardEffects.TROCA:
 					cardsToDestroy = 2;
+					shouldUseHalfMana = false;
 					break;
 			}
 

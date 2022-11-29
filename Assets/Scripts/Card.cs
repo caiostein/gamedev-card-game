@@ -70,7 +70,6 @@ public class Card : MonoBehaviour
 				gameManager.remainingMana -= costToUse;
 				gameManager.ActivateEffect(cardEffect);
 				hasBeenDrawn = true;
-				gameManager.shouldUseHalfMana = false;
 				DestroyCard();
 			}
 			else 
