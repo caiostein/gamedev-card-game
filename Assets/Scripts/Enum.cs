@@ -13,7 +13,8 @@ public class Enum
 	{
 		METADINHA = 1,
 		IDEIA = 2,
-		TROCA = 3
+		TROCA = 3,
+		INSPIRACAO = 4
 	}
 
 	public static IDictionary<int, string> levelDescriptionDict = new Dictionary<int, string>()

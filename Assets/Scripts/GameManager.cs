@@ -122,6 +122,96 @@ public class GameManager : MonoBehaviour
 
 	}
 
+	public void ActivateEffect(int cardEffect)
+    {
+		if (activeCardEffect == null)
+		{
+			activeCardEffect = (Enum.CardEffects)cardEffect;
+
+			switch (activeCardEffect)
+			{
+				case Enum.CardEffects.METADINHA:
+					shouldUseHalfMana = true;
+					break;
+				case Enum.CardEffects.IDEIA:
+					remainingMana += Const.manaToIncrease;
+					break;
+				case Enum.CardEffects.TROCA:
+					cardsToDestroy = 2;
+					shouldUseHalfMana = false;
+					break;
+				case Enum.CardEffects.INSPIRACAO:
+					ClearCardGroup(table);
+					ClearTableSlots();
+					StartCoroutine(DrawAtBeginning());
+					break;
+			}
+
+			activeCardEffect = null;
+		}
+
+    }
+
+	public void TriggerNextLevel()
+    {
+        ClearCardGroup(table);
+
+        ClearCardGroup(hand);
+
+        ClearDiscardPile();
+
+        ClearTableSlots();
+		ClearHandSlots();
+
+        remainingMana = Const.maximumMana;
+
+        int levelToSet = ScoreManager.Instance.activeLevel + 1;
+        ScoreManager.Instance.SetActiveLevel(levelToSet);
+
+		StartCoroutine(DrawAtBeginning());
+		SetLevelDescriptionText();
+	}
+
+	private void ClearHandSlots()
+	{
+		for (int i = 0; i < availableHandSlots.Length; i++)
+        {
+            availableHandSlots[i] = true;
+        }
+	}
+
+	private void ClearTableSlots()
+	{
+		for (int i = 0; i < availableTableSlots.Length; i++)
+        {
+            availableTableSlots[i] = true;
+        }
+	}
+
+    private void ClearCardGroup(List<Card> listToClear)
+    {
+        foreach (Card card in listToClear.ToList())
+        {
+            card.hasBeenDrawn = false;
+            card.DestroyCard();
+            listToClear.Remove(card);
+            deck.Add(card);
+        }
+    }
+
+	private void ClearDiscardPile()
+    {
+		foreach (Card card in discardPile.ToList())
+		{
+			card.hasBeenDrawn = false;
+			discardPile.Remove(card);
+			deck.Add(card);
+		}
+	}
+
+
+	// DB Section
+
     public void SetScore()
     {
 		//Debug.Log($"Salvando Pontuação de: {totalScore} no banco de dados");
@@ -160,81 +250,5 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
-	public void ActivateEffect(int cardEffect)
-    {
-		if (activeCardEffect == null)
-		{
-			activeCardEffect = (Enum.CardEffects)cardEffect;
 
-			switch (activeCardEffect)
-			{
-				case Enum.CardEffects.METADINHA:
-					shouldUseHalfMana = true;
-					break;
-				case Enum.CardEffects.IDEIA:
-					remainingMana += Const.manaToIncrease;
-					break;
-				case Enum.CardEffects.TROCA:
-					cardsToDestroy = 2;
-					shouldUseHalfMana = false;
-					break;
-			}
-
-			activeCardEffect = null;
-		}
-
-    }
-
-	public void TriggerNextLevel()
-    {
-        ClearCardGroup(table);
-
-        ClearCardGroup(hand);
-
-        ClearDiscardPile();
-
-        ClearCardSlots();
-
-        remainingMana = Const.maximumMana;
-
-        int levelToSet = ScoreManager.Instance.activeLevel + 1;
-        ScoreManager.Instance.SetActiveLevel(levelToSet);
-
-		StartCoroutine(DrawAtBeginning());
-		SetLevelDescriptionText();
-	}
-
-    private void ClearCardSlots()
-    {
-        for (int i = 0; i < availableHandSlots.Length; i++)
-        {
-            availableHandSlots[i] = true;
-        }
-
-        for (int i = 0; i < availableTableSlots.Length; i++)
-        {
-            availableTableSlots[i] = true;
-        }
-    }
-
-    private void ClearCardGroup(List<Card> listToClear)
-    {
-        foreach (Card card in listToClear.ToList())
-        {
-            card.hasBeenDrawn = false;
-            card.DestroyCard();
-            listToClear.Remove(card);
-            deck.Add(card);
-        }
-    }
-
-	private void ClearDiscardPile()
-    {
-		foreach (Card card in discardPile.ToList())
-		{
-			card.hasBeenDrawn = false;
-			discardPile.Remove(card);
-			deck.Add(card);
-		}
-	}
 }

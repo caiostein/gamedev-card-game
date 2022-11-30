@@ -68,9 +68,9 @@ public class Card : MonoBehaviour
 			if (IsSpecialCard())
 			{
 				gameManager.remainingMana -= costToUse;
-				gameManager.ActivateEffect(cardEffect);
 				hasBeenDrawn = true;
 				DestroyCard();
+				gameManager.ActivateEffect(cardEffect);
 			}
 			else 
             {
