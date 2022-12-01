@@ -110,7 +110,7 @@ public class Card : MonoBehaviour
         }
 	}
 
-    private bool IsSpecialCard()
+    public bool IsSpecialCard()
     {
 		return cardEffect > 0;
     }

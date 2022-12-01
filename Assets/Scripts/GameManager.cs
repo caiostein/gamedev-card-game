@@ -8,6 +8,8 @@ using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
+	private int specialCardsDrawn;
+
 	//Card
 	public List<Card> deck;
 	public TextMeshProUGUI deckSizeText;
@@ -48,7 +50,7 @@ public class GameManager : MonoBehaviour
 
 		SetLevelDescriptionText();
 
-		StartCoroutine(DrawAtBeginning());
+		StartCoroutine(FillTable());
 	}
 
     private void SetLevelDescriptionText()
@@ -60,14 +62,17 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
-    private IEnumerator DrawAtBeginning()
+    private IEnumerator FillTable()
     {
-		for (int i = 0; i <= table.Capacity; i++)
+
+		while (table.Count < Const.maxTableCards)
 		{
 			DrawCard();
 			yield return new WaitForSeconds(0.3f);
-		}			
+		}		
 	}
+
+
 
 	private void Update()
 	{
@@ -76,6 +81,13 @@ public class GameManager : MonoBehaviour
 
 		remainingManaText.text = remainingMana.ToString();
 	}
+
+	public void DrawCardUsingMana()
+	{
+		DrawCard();
+		remainingMana--;
+	}
+
 
 	public void DrawCard()
 	{
@@ -89,6 +101,19 @@ public class GameManager : MonoBehaviour
 			{
 				if (availableTableSlots[i] == true)
 				{
+					if (randomCard.IsSpecialCard())
+					{
+						if (specialCardsDrawn <= Const.maximumSpecialCards)
+							{
+								specialCardsDrawn++;
+							}	
+						else
+							{
+								specialCardsDrawn--;
+								return;
+							}
+					}
+
 					randomCard.gameObject.SetActive(true);
 					randomCard.tableIndex = i;
 					randomCard.transform.position = tableSlots[i].position;
@@ -143,7 +168,7 @@ public class GameManager : MonoBehaviour
 				case Enum.CardEffects.INSPIRACAO:
 					ClearCardGroup(table);
 					ClearTableSlots();
-					StartCoroutine(DrawAtBeginning());
+					StartCoroutine(FillTable());
 					break;
 			}
 
@@ -168,7 +193,7 @@ public class GameManager : MonoBehaviour
         int levelToSet = ScoreManager.Instance.activeLevel + 1;
         ScoreManager.Instance.SetActiveLevel(levelToSet);
 
-		StartCoroutine(DrawAtBeginning());
+		StartCoroutine(FillTable());
 		SetLevelDescriptionText();
 	}
 
