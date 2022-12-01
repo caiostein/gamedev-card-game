@@ -2799,7 +2799,7 @@ PrefabInstance:
       objectReference: {fileID: 3757043119740318057, guid: 2d563df92650c4c45bfab8ac41590b76, type: 3}
     - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: cardCost
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: cardEffect
@@ -6012,7 +6012,7 @@ PrefabInstance:
       objectReference: {fileID: 3757043119740318057, guid: 2d563df92650c4c45bfab8ac41590b76, type: 3}
     - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: cardCost
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: cardEffect
@@ -9685,7 +9685,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: estetica
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: mecanica
@@ -10424,7 +10424,7 @@ PrefabInstance:
       objectReference: {fileID: 3757043119740318057, guid: 2d563df92650c4c45bfab8ac41590b76, type: 3}
     - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: cardCost
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: cardEffect
@@ -11598,7 +11598,7 @@ PrefabInstance:
       objectReference: {fileID: 3757043119740318057, guid: 2d563df92650c4c45bfab8ac41590b76, type: 3}
     - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: cardCost
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: cardEffect
@@ -12087,7 +12087,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8337483817385464268, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 3.9128
+      value: 4.1688
       objectReference: {fileID: 0}
     - target: {fileID: 8337483817385464268, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_SizeDelta.y
@@ -12662,7 +12662,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: estetica
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1023904853984257729, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: mecanica
@@ -14858,7 +14858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8337483817385464268, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_SizeDelta.x

@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
 	{
 		camAnim = Camera.main.GetComponent<Animator>();
 
-		remainingMana = Const.maximumMana;
+		remainingMana = Const.startingMana;
 
 		shouldForceDrawSpecialCard = true;
 
@@ -205,7 +205,7 @@ public class GameManager : MonoBehaviour
         ClearTableSlots();
 		ClearHandSlots();
 
-        remainingMana = Const.maximumMana;
+        remainingMana = Const.startingMana;
 
 		shouldForceDrawSpecialCard = true;
 		drawnSpecialCards = 0;

@@ -1,6 +1,6 @@
 ﻿public class Const
 {
-	public const int maximumMana = 25;
+	public const int startingMana = 26;
 
 	public const int handSize = 4;
 
