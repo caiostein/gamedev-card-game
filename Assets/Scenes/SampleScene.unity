@@ -7101,7 +7101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8337483817385464268, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_SizeDelta.x
@@ -12567,7 +12567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8337483817385464268, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_SizeDelta.x
