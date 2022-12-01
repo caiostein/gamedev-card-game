@@ -10,6 +10,5 @@ public class PlayerNameHandler : MonoBehaviour
     public void SetPlayerNameInput(TMP_Text playerName)
     {
         ScoreManager.Instance.playerName = playerName;
-        Debug.Log(playerName.text);
     }
 }

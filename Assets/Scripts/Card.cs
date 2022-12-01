@@ -26,8 +26,6 @@ public class Card : MonoBehaviour
 	public GameObject hollowCircle;
 
 	public GameObject cardDescription;
-	
-	public GameObject parent;
 
 	private GameObject descriptionOnScreen;
 
@@ -122,6 +120,16 @@ public class Card : MonoBehaviour
 	{
 		gameManager.availableTableSlots[tableIndex] = true;
 		gameManager.table.Remove(this);
+
+        if (IsSpecialCard())
+        {
+			gameManager.drawnSpecialCards--;
+
+			if(gameManager.drawnSpecialCards < 0)
+            {
+				gameManager.drawnSpecialCards = 0;
+			}
+        }
 
 		if (hasBeenDrawn)
         {

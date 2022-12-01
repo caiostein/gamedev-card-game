@@ -9,4 +9,6 @@
 	public const int maximumSpecialCards = 2;
 
 	public const int maxTableCards = 8;
+
+	public const int minSpecialCards = 2;
 }

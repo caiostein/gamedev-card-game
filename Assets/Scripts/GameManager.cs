@@ -8,8 +8,6 @@ using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
-	private int specialCardsDrawn;
-
 	//Card
 	public List<Card> deck;
 	public TextMeshProUGUI deckSizeText;
@@ -30,8 +28,10 @@ public class GameManager : MonoBehaviour
 	//CardEffects
 	public Enum.CardEffects? activeCardEffect;
 	public bool shouldUseHalfMana = false;
+	public bool shouldForceDrawSpecialCard;
 	public int cardsToDestroy;
-	
+	public int drawnSpecialCards;
+
 	//Mana
 	public int remainingMana;
 	public TextMeshProUGUI remainingManaText;
@@ -42,11 +42,13 @@ public class GameManager : MonoBehaviour
 	//System
 	private Animator camAnim;
 
-	private void Start()
+    private void Start()
 	{
 		camAnim = Camera.main.GetComponent<Animator>();
 
 		remainingMana = Const.maximumMana;
+
+		shouldForceDrawSpecialCard = true;
 
 		SetLevelDescriptionText();
 
@@ -64,15 +66,12 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator FillTable()
     {
-
 		while (table.Count < Const.maxTableCards)
 		{
 			DrawCard();
 			yield return new WaitForSeconds(0.3f);
 		}		
 	}
-
-
 
 	private void Update()
 	{
@@ -88,7 +87,6 @@ public class GameManager : MonoBehaviour
 		remainingMana--;
 	}
 
-
 	public void DrawCard()
 	{
 		if (deck.Count >= 1)
@@ -100,35 +98,55 @@ public class GameManager : MonoBehaviour
 			for (int i = 0; i < availableTableSlots.Length; i++)
 			{
 				if (availableTableSlots[i] == true)
-				{
-					if (randomCard.IsSpecialCard())
-					{
-						if (specialCardsDrawn <= Const.maximumSpecialCards)
-							{
-								specialCardsDrawn++;
-							}	
-						else
-							{
-								specialCardsDrawn--;
-								return;
-							}
+                {
+                    if (shouldForceDrawSpecialCard && drawnSpecialCards < Const.maximumSpecialCards)
+                    {
+						randomCard = DrawSpecialCard();
+						drawnSpecialCards++;
+
+						SetupCardPosition(randomCard, i);
+						return;
 					}
 
-					randomCard.gameObject.SetActive(true);
-					randomCard.tableIndex = i;
-					randomCard.transform.position = tableSlots[i].position;
-					table.Add(randomCard);
+					shouldForceDrawSpecialCard = false;
 
-					randomCard.hasBeenDrawn = false;
-					deck.Remove(randomCard);
-					availableTableSlots[i] = false;
+					if (randomCard.IsSpecialCard())
+					{
+						if (drawnSpecialCards >= Const.maximumSpecialCards)
+						{							
+							DrawCard();
+							return;
+						}
+						drawnSpecialCards++;
+					}
+
+					SetupCardPosition(randomCard, i);
 					return;
-				}
-			}
+                }
+            }
 		}
 	}
 
-	public void Shuffle()
+	public Card DrawSpecialCard()
+	{
+		List<Card> specialCardList = deck.Where(card => card.IsSpecialCard() == true).ToList();
+
+		return specialCardList[Random.Range(0, specialCardList.Count)];
+	}
+
+    private void SetupCardPosition(Card randomCard, int index)
+    {
+        randomCard.gameObject.SetActive(true);
+        randomCard.tableIndex = index;
+        randomCard.transform.position = tableSlots[index].position;
+        table.Add(randomCard);
+
+        randomCard.hasBeenDrawn = false;
+        deck.Remove(randomCard);
+        availableTableSlots[index] = false;
+    }
+
+    public void Shuffle()
 	{
 		if (discardPile.Count >= 1)
 		{
@@ -142,9 +160,7 @@ public class GameManager : MonoBehaviour
 
     internal void CalculatePoints()
     {
-		Debug.Log(ScoreManager.Instance.level1Score);
 		Invoke(nameof(TriggerNextLevel), 0.2f);
-
 	}
 
 	public void ActivateEffect(int cardEffect)
@@ -166,6 +182,7 @@ public class GameManager : MonoBehaviour
 					shouldUseHalfMana = false;
 					break;
 				case Enum.CardEffects.INSPIRACAO:
+					shouldUseHalfMana = false;
 					ClearCardGroup(table);
 					ClearTableSlots();
 					StartCoroutine(FillTable());
@@ -190,7 +207,10 @@ public class GameManager : MonoBehaviour
 
         remainingMana = Const.maximumMana;
 
-        int levelToSet = ScoreManager.Instance.activeLevel + 1;
+		shouldForceDrawSpecialCard = true;
+		drawnSpecialCards = 0;
+
+		int levelToSet = ScoreManager.Instance.activeLevel + 1;
         ScoreManager.Instance.SetActiveLevel(levelToSet);
 
 		StartCoroutine(FillTable());
