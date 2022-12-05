@@ -808,6 +808,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: card_descriptions_1 1_35
+      rect:
+        serializedVersion: 2
+        x: 5995
+        y: 0
+        width: 574
+        height: 845
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ebd302ec48d2c4fa0955c7c241adf8
+      internalID: 1817478973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -828,6 +849,7 @@ TextureImporter:
       card_descriptions_1 1_7: 1748755561
       card_descriptions_1 1_10: 1646380845
       card_descriptions_1 1_18: -210578820
+      card_descriptions_1 1_33: -2023242094
       card_descriptions_1 1_32: 855052330
       card_descriptions_1 1_0: -1859959550
       card_descriptions_1 1_6: 1894312464
@@ -842,6 +864,7 @@ TextureImporter:
       card_descriptions_1 1_11: 1345067377
       card_descriptions_1 1_31: 977763548
       card_descriptions_1 1_4: 229700318
+      card_descriptions_1 1_34: -1688480452
       card_descriptions_1 1_23: -409362037
       card_descriptions_1 1_17: -244231656
       card_descriptions_1 1_26: 436551451
@@ -851,6 +874,7 @@ TextureImporter:
       card_descriptions_1 1_15: -1406579344
       card_descriptions_1 1_20: 2044416443
       card_descriptions_1 1_9: -1279315726
+      card_descriptions_1 1_35: 1817478973
       card_descriptions_1 1_24: 603407947
   spritePackingTag: 
   pSDRemoveMatte: 0

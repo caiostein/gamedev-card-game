@@ -169,7 +169,7 @@ PrefabInstance:
     - target: {fileID: 232972788841019143, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1051545122, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
+      objectReference: {fileID: 771753888, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
     - target: {fileID: 232972788841019143, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -661,11 +661,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 340165730194025100, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -534.32
+      value: -534.4
       objectReference: {fileID: 0}
     - target: {fileID: 340165730194025100, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -291.8
+      value: -291.88
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
@@ -797,7 +797,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: "Estou me sentindo um G\xEAnio! (+3 Ideias)"
+      value: "Estou me sentindo um verdadeiro G\xEAnio! \n(+3 Ideias)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -2059,7 +2067,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -2179,7 +2187,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Veja! Esp\xF3lios deixados para tr\xE1s! Estamos ricos! Ricos!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -2748,7 +2764,7 @@ PrefabInstance:
     - target: {fileID: 232972788841019143, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1051545122, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
+      objectReference: {fileID: -1282037691, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
     - target: {fileID: 232972788841019143, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -3184,7 +3200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -3308,7 +3324,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: Tudo ganha forma com esses quadradinhos coloridos.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -3341,11 +3365,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 340165730194025100, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -534.32
+      value: -534.53
       objectReference: {fileID: 0}
     - target: {fileID: 340165730194025100, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -291.8
+      value: -291.86
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
@@ -3432,8 +3456,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 3.4248
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -537
+      value: -537.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -300.4581
       objectReference: {fileID: 0}
     - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_Size.x
@@ -3446,7 +3478,7 @@ PrefabInstance:
     - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 2055886501, guid: 8fbaa9a9a27d030488517d81b1966dc4, type: 3}
+      objectReference: {fileID: 542261418, guid: 2320c4942304ae04195385d0e639c2c3, type: 3}
     - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -3477,7 +3509,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: "Pr\xF3xima carta pela metade do custo!"
+      value: "PROMO\xC7\xC3O IMPERD\xCDVEL!\n\nA pr\xF3xima carta \xE9 pela metade
+        do custo!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -4119,7 +4160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -4235,7 +4276,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Um ser de grande sabedoria e experi\xEAncia. Guia seus aprendizes para
+        alcan\xE7arem grandes conquistas em sua jornada."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -4633,7 +4683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -4757,7 +4807,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "ARRR! ATEN\xC7\xC3O MARUJOS! I\xE7ar velas! Preparem os canh\xF5es!
+        Precisamos desse navio se eu quiser me tornar o rei dos piratas!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -4869,7 +4928,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -4993,7 +5052,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tem castelos lindos!
+      value: "Um reino que aparece nas mais \xE9picas hist\xF3rias de fantasia. Lar
+        de bravos guerreiros, uma bela princesa e quem sabe um feiticeiro do mal?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_fontSize
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -5601,7 +5677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -5680,8 +5756,16 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 3.4232
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -537
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -300.4089
       objectReference: {fileID: 0}
     - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_Size.x
@@ -5725,7 +5809,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Com essas asas voc\xEA \xE9 capaz de voar como um p\xE1ssaro ou como
+        um avi\xE3o."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -5977,7 +6070,7 @@ PrefabInstance:
     - target: {fileID: 232972788841019143, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1051545122, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
+      objectReference: {fileID: -1282037691, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
     - target: {fileID: 232972788841019143, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -6158,7 +6251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -6233,8 +6326,16 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 3.3817
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -537.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -300.42966
       objectReference: {fileID: 0}
     - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_Size.x
@@ -6286,7 +6387,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Um objeto de grande valor para jogos. Essa tecnologia entrega uma est\xE9tica
+        incr\xEDvel. Segundo as lendas o portador desse objeto \xE9 capaz de tornar
+        as coisas mais r\xE1pidas e eficientes."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_fontSize
+      value: 0.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -6327,7 +6446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -6439,7 +6558,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Ela faz swoosh swoosh!
+      value: "A arma de um her\xF3i. Escute seu som. Ela faz swoosh swoosh!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -6502,7 +6629,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -6618,7 +6745,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Um tra\xE7o parece marcar um contorno em todas as coisas nesse mundo,
+        fazendo tudo parecer... cartoon?!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -6659,7 +6795,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -6783,7 +6919,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Um mundo que se cria diante dos seus olhos! \xC9 como experienciar
+        a cria\xE7\xE3o do universo em primeira m\xE3o."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -7052,8 +7197,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 5.5921
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 3.428
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -537
+      value: -537.1136
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -300.40652
       objectReference: {fileID: 0}
     - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_Size.x
@@ -7097,7 +7254,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: "Uma troca just\xEDssima! (selecione 3 cartas para trocar)"
+      value: "Uma troca just\xEDssima! \n\n(Voc\xEA troca esta carta e mais outras
+        2 a sua escolha por cartas novinhas)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -7321,15 +7487,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 340165730194025100, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -534.47
+      value: -534.48
       objectReference: {fileID: 0}
     - target: {fileID: 340165730194025100, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -291.774
+      value: -291.77
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -7477,7 +7643,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Shh! Escute esse som! Parece dar mais vida para o jogo. Talvez o seu
+        ritmo tamb\xE9m possa nos dizer algo a mais."
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_fontSize
@@ -7486,6 +7653,14 @@ PrefabInstance:
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_fontSizeBase
       value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -7880,7 +8055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -7996,7 +8171,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Um acess\xF3rio utilizado por reis e rainhas. Um objeto imbu\xEDdo
+        com poder divino, capaz de tornar o portador mais poderoso (ou as vezes enlouquec\xEA-lo)."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_fontSize
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -8277,7 +8469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -8409,7 +8601,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Um portal m\xEDstico que emana energia. \xC9 capaz de nos levar a lugares
+        desconhecidos."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -8589,8 +8790,20 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 5.6089
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 3.4159
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -537.2
+      value: -537.20636
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -300.41254
       objectReference: {fileID: 0}
     - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_Size.x
@@ -8634,7 +8847,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Uma habilidade inusitada que desafia as leis da f\xEDsica."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_margin.z
+      value: 0.035211086
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -8684,7 +8909,7 @@ PrefabInstance:
     - target: {fileID: 232972788841019143, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1051545122, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
+      objectReference: {fileID: 636872101, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
     - target: {fileID: 232972788841019143, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -9180,7 +9405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -9308,7 +9533,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Perfeito para fazer anota\xE7\xF5es. Mas... onde est\xE1 a caneta?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -9353,7 +9586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -9469,7 +9702,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Posicione suas pe\xE7as e que os jogos comecem!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_margin.w
+      value: 0.09215927
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -9948,7 +10193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -10068,7 +10313,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Muitas vezes imbu\xEDdo com magia, pode ser uma excelente op\xE7\xE3o
+        para um mago."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -10389,7 +10643,7 @@ PrefabInstance:
     - target: {fileID: 232972788841019143, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1051545122, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
+      objectReference: {fileID: 1327876332, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
     - target: {fileID: 232972788841019143, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -10574,33 +10828,33 @@ Transform:
   - {fileID: 108532880}
   - {fileID: 800938139}
   - {fileID: 702644004}
-  - {fileID: 1110335562}
-  - {fileID: 1199317563}
-  - {fileID: 2067938951}
-  - {fileID: 1105520196}
-  - {fileID: 694958981}
-  - {fileID: 1857995778}
-  - {fileID: 1236203658}
-  - {fileID: 831153516}
+  - {fileID: 1044442163}
   - {fileID: 552766287}
   - {fileID: 736032213}
   - {fileID: 1299668685}
   - {fileID: 575928590}
+  - {fileID: 897827551}
+  - {fileID: 842103550}
+  - {fileID: 1889397450}
+  - {fileID: 1199317563}
+  - {fileID: 2067938951}
+  - {fileID: 1110335562}
+  - {fileID: 1105520196}
+  - {fileID: 1688126412}
+  - {fileID: 694958981}
   - {fileID: 161815339}
   - {fileID: 21052249}
   - {fileID: 840181190}
   - {fileID: 1116638302}
-  - {fileID: 1989866539}
-  - {fileID: 1044442163}
-  - {fileID: 1545685825}
-  - {fileID: 897827551}
-  - {fileID: 842103550}
-  - {fileID: 1889397450}
-  - {fileID: 1688126412}
   - {fileID: 22624425}
   - {fileID: 433960113}
   - {fileID: 665186204}
   - {fileID: 1941400195}
+  - {fileID: 1857995778}
+  - {fileID: 1545685825}
+  - {fileID: 1236203658}
+  - {fileID: 831153516}
+  - {fileID: 1989866539}
   - {fileID: 68599462}
   - {fileID: 129316259}
   - {fileID: 1441355248}
@@ -10809,7 +11063,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -10937,7 +11191,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Ela gira, as vezes quica e pode ser lan\xE7ada ou colocada em lugares."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -10987,7 +11249,7 @@ PrefabInstance:
     - target: {fileID: 232972788841019143, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1051545122, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
+      objectReference: {fileID: 636872101, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
     - target: {fileID: 232972788841019143, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -11563,7 +11825,7 @@ PrefabInstance:
     - target: {fileID: 232972788841019143, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1051545122, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
+      objectReference: {fileID: 1327876332, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
     - target: {fileID: 232972788841019143, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -11959,7 +12221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -12079,7 +12341,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Esse gato... \nparece t\xE3o... \nreal."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -12427,7 +12697,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 340165730194025100, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -534.32
+      value: -534.44
       objectReference: {fileID: 0}
     - target: {fileID: 340165730194025100, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -12518,21 +12788,33 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 5.5533
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 3.3862
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -537
+      value: -537.12317
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -300.4274
       objectReference: {fileID: 0}
     - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_Size.x
-      value: 5.3206897
+      value: 5.741126
       objectReference: {fileID: 0}
     - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_Size.y
-      value: 7.7300005
+      value: 8.45
       objectReference: {fileID: 0}
     - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 855052330, guid: 2320c4942304ae04195385d0e639c2c3, type: 3}
+      objectReference: {fileID: 1817478973, guid: 2320c4942304ae04195385d0e639c2c3, type: 3}
     - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -12563,7 +12845,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Estou me sentindo inspirado! (Limpa a mesa toda!)
+      value: "Uma pausa para o caf\xE9 sempre \xE9 bom para reorganizar as ideias
+        e se inspirar.\n\n(Limpa a mesa toda!)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -12806,7 +13097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -12922,7 +13213,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Um objeto com v\xE1rios lados e diferentes inscri\xE7\xF5es. O caos
+        decidir\xE1 o resultado!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_fontSize
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -13469,7 +13777,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -13585,7 +13893,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Olha esses raios de luz! A forma como podemos ver o reflexo aqui \xE9
+        simplesmente incr\xEDvel!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -14002,7 +14319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -14114,7 +14431,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Tecnologia desenfreada! Grandes empresas ditam o rumo da sociedade.
+        Quase todas as pessoas usam implantes cibern\xE9ticos."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_fontSize
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -14734,7 +15068,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -14809,8 +15143,16 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 3.4726
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -537.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -300.38422
       objectReference: {fileID: 0}
     - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_Size.x
@@ -14852,9 +15194,31 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2803336737900280656, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "A primeira arma de muitos aventureiros. Com a imagina\xE7\xE3o, \xE9
+        poss\xEDvel fazer de tudo: desde balan\xE7ar sua espada para derrotar monstros
+        at\xE9 criar bonecos de palito!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_fontSize
+      value: 0.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -15097,8 +15461,12 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 5.4999
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003102418726031753, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -537.28
+      value: -537.2828
       objectReference: {fileID: 0}
     - target: {fileID: 2458631708366113813, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_Size.x
@@ -15142,7 +15510,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Esp\xEDritos do fogo, \xE1gua e terra te d\xE3o for\xE7as para que
+        voc\xEA manifeste uma poderosa magia."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -15192,7 +15569,7 @@ PrefabInstance:
     - target: {fileID: 232972788841019143, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1051545122, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
+      objectReference: {fileID: 771753888, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
     - target: {fileID: 232972788841019143, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -15352,7 +15729,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -15476,7 +15853,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Que frio! Algu\xE9m a\xED tem um casaco para me emprestar?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -16166,7 +16551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -16282,7 +16667,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Uma carta... de uma carta. Pode ser pe\xE7a de um baralho ou conter
+        alguma not\xEDcia importante que precisa ser entregue a algu\xE9m distante."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_fontSize
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -16443,7 +16845,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: Um golpe capaz incapacitar oponentes ou destruir objetos em busca de
+        moedas.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -16488,7 +16899,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -16628,7 +17039,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Com seu escudo voc\xEA \xE9 capaz de se proteger dos poderosos golpes
+        de seus oponentes."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8337483817385464268, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_SizeDelta.x
@@ -16710,7 +17130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -16826,11 +17246,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Um mont\xE3o de linhas de c\xF3digo est\xE3o por tr\xE1s dessa ferramenta.
+        Ela \xE9 respons\xE1vel por dar vida aos jogos."
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_margin.x
       value: -0.069067
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
@@ -17460,7 +17889,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1710379005454649380, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -17572,7 +18001,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Tecnologia desenfreada!
+      value: "Um equipamento brilhante que possui uma propriedade m\xE1gica. Certamente
+        \xE9 melhor do que uma bota velha surrada."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257688912428218619, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5528263162753453901, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: cardCost
