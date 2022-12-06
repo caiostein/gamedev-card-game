@@ -66,7 +66,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -853,9 +853,9 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       cards_1_20: 87440837
-      cards_1_24: 500902218
+      cards_1_19: 1118484311
       cards_1_16: 1448004834
-      cards_1_33: 1327876332
+      cards_1_23: -1410266341
       cards_1_0: 129119632
       cards_1_4: 2098701052
       cards_1_32: -1282037691
@@ -881,11 +881,11 @@ TextureImporter:
       cards_1_5: -876514681
       cards_1_31: 771753888
       cards_1_21: 1787180856
-      cards_1_19: 1118484311
-      cards_1_28: 1464365328
+      cards_1_24: 500902218
+      cards_1_33: 1327876332
       cards_1_10: 423396537
       cards_1_25: -1802129605
-      cards_1_23: -1410266341
+      cards_1_28: 1464365328
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
