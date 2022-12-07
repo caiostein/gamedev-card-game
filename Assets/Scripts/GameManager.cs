@@ -83,8 +83,11 @@ public class GameManager : MonoBehaviour
 
 	public void DrawCardUsingMana()
 	{
-		DrawCard();
-		remainingMana--;
+		if (remainingMana > 0 && availableTableSlots.Contains(true))
+        {
+			DrawCard();
+			remainingMana--;
+		}		
 	}
 
 	public void DrawCard()
