@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: RussoOne-Regular SDF
+  m_Name: RussoOne (Gold Outline)
   m_EditorClassIdentifier: 
   hashCode: 417112074
   material: {fileID: -2087017382057321341}

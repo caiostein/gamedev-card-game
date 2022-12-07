@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
-  m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a660441881af56d44880cbacbc9bdab4, type: 2}
+  m_sharedMaterial: {fileID: -2087017382057321341, guid: a660441881af56d44880cbacbc9bdab4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -406,8 +406,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Card description
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
-  m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a660441881af56d44880cbacbc9bdab4, type: 2}
+  m_sharedMaterial: {fileID: -2087017382057321341, guid: a660441881af56d44880cbacbc9bdab4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
