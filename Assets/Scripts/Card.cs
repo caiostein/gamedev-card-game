@@ -50,19 +50,16 @@ public class Card : MonoBehaviour
                 costToUse = cardCost;
             }
 
-            if (IsDestroyingCards())
+            if (IsDestroyingCards() && gameManager.table.Find(card => card == this))
             {
-                if (gameManager.table.Find(card => card == this))
+                hasBeenDrawn = true;
+                DestroyCard();
+                gameManager.cardsToDestroy--;
+                if (gameManager.cardsToDestroy == 0)
                 {
-                    hasBeenDrawn = true;
-                    DestroyCard();
-                    gameManager.cardsToDestroy--;
-                    if (gameManager.cardsToDestroy == 0)
-                    {
-                        gameManager.DrawCard();
-                        gameManager.DrawCard();
-                        gameManager.DrawCard();
-                    }
+                    gameManager.DrawCard();
+                    gameManager.DrawCard();
+                    gameManager.DrawCard();
                 }
             }
 
