@@ -37,75 +37,84 @@ public class Card : MonoBehaviour
 	}
 	private void OnMouseDown()
 	{
-		int costToUse;
-			
-		if (gameManager.shouldUseHalfMana)
+		if (!gameManager.isHandlingCards)
 		{
-			costToUse = (int)Math.Floor((double)cardCost / 2);
-		} 
-		else
-        {
-			costToUse = cardCost;
-        }
+            int costToUse;
 
-		if (IsDestroyingCards())
-		{
-			hasBeenDrawn = true;
-			DestroyCard();
-			gameManager.cardsToDestroy--;
-			if (gameManager.cardsToDestroy == 0)
-			{
-				gameManager.DrawCard();
-				gameManager.DrawCard();
-				gameManager.DrawCard();
-			}
-		}
-
-		if (!hasBeenDrawn && costToUse <= gameManager.remainingMana) 
-		{
-			if (IsSpecialCard())
-			{
-				gameManager.remainingMana -= costToUse;
-				hasBeenDrawn = true;
-				DestroyCard();
-				gameManager.ActivateEffect(cardEffect);
-			}
-			else 
+            if (gameManager.shouldUseHalfMana)
             {
-				for(int i = 0; i < gameManager.availableHandSlots.Length; i++){
-				
-					if(gameManager.availableHandSlots[i]){
-						
-						Instantiate(hollowCircle, transform.position, Quaternion.identity);
-			
-						camAnim.SetTrigger("shake");
-						anim.SetTrigger("move");
+                costToUse = (int)Math.Floor((double)cardCost / 2);
+            }
+            else
+            {
+                costToUse = cardCost;
+            }
 
-						transform.position = gameManager.handSlots[i].position;
-						hasBeenDrawn = true;
-						gameManager.availableTableSlots[tableIndex] = true;
-						gameManager.availableHandSlots[i] = false;
+            if (IsDestroyingCards())
+            {
+                if (gameManager.table.Find(card => card == this))
+                {
+                    hasBeenDrawn = true;
+                    DestroyCard();
+                    gameManager.cardsToDestroy--;
+                    if (gameManager.cardsToDestroy == 0)
+                    {
+                        gameManager.DrawCard();
+                        gameManager.DrawCard();
+                        gameManager.DrawCard();
+                    }
+                }
+            }
 
-						gameManager.remainingMana -= costToUse;
+            if (!hasBeenDrawn && costToUse <= gameManager.remainingMana)
+            {
+                if (IsSpecialCard())
+                {
+                    gameManager.remainingMana -= costToUse;
+                    hasBeenDrawn = true;
+                    DestroyCard();
+                    gameManager.ActivateEffect(cardEffect);
+                }
+                else
+                {
+                    for (int i = 0; i < gameManager.availableHandSlots.Length; i++)
+                    {
 
-						gameManager.shouldUseHalfMana = false;
+                        if (gameManager.availableHandSlots[i])
+                        {
 
-						ScoreManager.Instance.AddPoints(this);
-						
-						gameManager.table.Remove(this);
-						gameManager.hand.Add(this);
+                            Instantiate(hollowCircle, transform.position, Quaternion.identity);
 
-						if (gameManager.hand.Count == Const.handSize)
-						{							
-							gameManager.CalculatePoints();
-						}
+                            camAnim.SetTrigger("shake");
+                            anim.SetTrigger("move");
 
-						return;
-					}
+                            transform.position = gameManager.handSlots[i].position;
+                            hasBeenDrawn = true;
+                            gameManager.availableTableSlots[tableIndex] = true;
+                            gameManager.availableHandSlots[i] = false;
 
-				}			
-			}
+                            gameManager.remainingMana -= costToUse;
+
+                            gameManager.shouldUseHalfMana = false;
+
+                            ScoreManager.Instance.AddPoints(this);
+
+                            gameManager.table.Remove(this);
+                            gameManager.hand.Add(this);
+
+                            if (gameManager.hand.Count == Const.handSize)
+                            {
+                                gameManager.CalculatePoints();
+                            }
+
+                            return;
+                        }
+
+                    }
+                }
+            }
         }
+		
 	}
 
     public bool IsSpecialCard()
@@ -118,26 +127,27 @@ public class Card : MonoBehaviour
 	}
 	public void DestroyCard()
 	{
-		gameManager.availableTableSlots[tableIndex] = true;
-		gameManager.table.Remove(this);
+        gameManager.availableTableSlots[tableIndex] = true;
+        gameManager.table.Remove(this);
 
         if (IsSpecialCard())
         {
-			gameManager.drawnSpecialCards--;
+            gameManager.drawnSpecialCards--;
 
-			if(gameManager.drawnSpecialCards < 0)
+            if (gameManager.drawnSpecialCards < 0)
             {
-				gameManager.drawnSpecialCards = 0;
-			}
+                gameManager.drawnSpecialCards = 0;
+            }
         }
 
-		if (hasBeenDrawn)
+        if (hasBeenDrawn)
         {
-			Invoke(nameof(MoveToDiscardPile), 1f);
+            Invoke(nameof(MoveToDiscardPile), 1f);
         }
 
-		Instantiate(effect, transform.position, Quaternion.identity);
-		gameObject.SetActive(false);
+        Instantiate(effect, transform.position, Quaternion.identity);
+        gameObject.SetActive(false);
+       
 	}
 
 	private void OnMouseEnter()

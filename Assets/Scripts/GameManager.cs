@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
 	public List<Card> table;
 	public List<Card> hand;
 
+	public bool isHandlingCards;
+
 	//CardEffects
 	public Enum.CardEffects? activeCardEffect;
 	public bool shouldUseHalfMana = false;
@@ -50,7 +52,9 @@ public class GameManager : MonoBehaviour
 
 		shouldForceDrawSpecialCard = true;
 
-		SetLevelDescriptionText();
+        isHandlingCards = false;
+
+        SetLevelDescriptionText();
 
 		StartCoroutine(FillTable());
 	}
@@ -66,11 +70,14 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator FillTable()
     {
+		isHandlingCards = true;
 		while (table.Count < Const.maxTableCards)
 		{
 			DrawCard();
 			yield return new WaitForSeconds(0.3f);
-		}		
+		}	
+		isHandlingCards = false;
+		
 	}
 
 	private void Update()
