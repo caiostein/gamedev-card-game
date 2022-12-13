@@ -104,6 +104,9 @@ public class Card : MonoBehaviour
                                 gameManager.CalculatePoints();
                             }
 
+                            if (!gameManager.CheckPickAvailability() && !gameManager.CheckDrawAvailability())
+                                gameManager.TriggerNextLevel();
+
                             return;
                         }
 

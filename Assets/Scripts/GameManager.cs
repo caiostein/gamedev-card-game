@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
 	public List<Card> table;
 	public List<Card> hand;
 
+	private int lowestCost;
+
 	public bool isHandlingCards;
 
 	//CardEffects
@@ -90,12 +92,15 @@ public class GameManager : MonoBehaviour
 
 	public void DrawCardUsingMana()
 	{
-		if (remainingMana > 0 && availableTableSlots.Contains(true))
-        {
-			DrawCard();
+		if (CheckDrawAvailability())
+		{
+            DrawCard();
 			remainingMana--;
-		}		
-	}
+        }
+			
+		if (!CheckPickAvailability())
+           TriggerNextLevel();
+    }
 
 	public void DrawCard()
 	{
@@ -109,6 +114,7 @@ public class GameManager : MonoBehaviour
 			{
 				if (availableTableSlots[i] == true)
                 {
+
                     if (shouldForceDrawSpecialCard && drawnSpecialCards < Const.maximumSpecialCards)
                     {
 						randomCard = DrawSpecialCard();
@@ -203,6 +209,23 @@ public class GameManager : MonoBehaviour
 		}
 
     }
+	
+	public bool CheckPickAvailability()
+	{
+        lowestCost = table.Min(c => c.cardCost);
+		if(lowestCost > remainingMana)
+			return false;
+		else 
+			return true;
+    }
+
+	public bool CheckDrawAvailability()
+	{
+		if (remainingMana > 0 && availableTableSlots.Contains(true))
+			return true;
+		else
+			return false;
+	}
 
 	public void TriggerNextLevel()
     {
