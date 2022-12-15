@@ -42,9 +42,10 @@ public class GameManager : MonoBehaviour
 
 	//Level
 	public TextMeshProUGUI levelDescription;
+    [SerializeField] private GameObject informationBox;
 
-	//System
-	private Animator camAnim;
+    //System
+    private Animator camAnim;
 
     private void Start()
 	{
@@ -287,6 +288,11 @@ public class GameManager : MonoBehaviour
 			discardPile.Remove(card);
 			deck.Add(card);
 		}
+	}
+
+	public void ToggleInformationBox()
+	{
+		informationBox.SetActive(!informationBox.activeInHierarchy);
 	}
 
 }

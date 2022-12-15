@@ -118,9 +118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: RussoOne (Black Outline)
   m_EditorClassIdentifier: 
-  hashCode: 643667022
+  hashCode: 1597185834
   material: {fileID: -2087017382057321341}
-  materialHashCode: 610423214
+  materialHashCode: 1220418250
   m_Version: 1.1.0
   m_SourceFontFileGUID: ef001c31f3b386b41ae0d322ed70d8f8
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: ef001c31f3b386b41ae0d322ed70d8f8, type: 3}
