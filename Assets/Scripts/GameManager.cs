@@ -229,7 +229,9 @@ public class GameManager : MonoBehaviour
 
 	public void TriggerNextLevel()
     {
-        ClearCardGroup(table);
+		//ScoreManager.Instance.SetScore();
+
+		ClearCardGroup(table);
 
         ClearCardGroup(hand);
 
@@ -286,47 +288,5 @@ public class GameManager : MonoBehaviour
 			deck.Add(card);
 		}
 	}
-
-
-	// DB Section
-
-    public void SetScore()
-    {
-		//Debug.Log($"Salvando Pontuação de: {totalScore} no banco de dados");
-
-		//ScoreObject scoreToUpload = new() { scoreValue = totalScore.ToString() };
-
-		//StartCoroutine(UploadScore(scoreToUpload.Stringify()));
-	}
-
-	public IEnumerator UploadScore(string profile, System.Action<bool> callback = null)
-    {
-
-		using (UnityWebRequest request = new UnityWebRequest("https://us-east-1.aws.data.mongodb-api.com/app/dbtest-ivtvy/endpoint/playerData", "POST"))
-		{
-			request.SetRequestHeader("Content-Type", "application/json");
-			byte[] bodyRaw = Encoding.UTF8.GetBytes(profile);
-			request.uploadHandler = new UploadHandlerRaw(bodyRaw);
-			request.downloadHandler = new DownloadHandlerBuffer();
-			yield return request.SendWebRequest();
-
-			if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
-			{
-				Debug.Log(request.error);
-				if (callback != null)
-				{
-					callback.Invoke(false);
-				}
-			}
-			else
-			{
-				if (callback != null)
-				{
-					callback.Invoke(request.downloadHandler.text != "{}");
-				}
-			}
-		}
-	}
-
 
 }

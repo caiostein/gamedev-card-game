@@ -1,5 +1,9 @@
+using System;
+using System.Collections;
+using System.Text;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Networking;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -49,5 +53,64 @@ public class ScoreManager : MonoBehaviour
                 break;
         }
     }
-   
+
+    public void SetScore()
+    {
+        string levelToSet = "";
+        int scoreToSet = 0;
+
+        switch (activeLevel)
+        {
+            case 1: 
+                levelToSet = "mecanica";
+                scoreToSet = level1Score;
+                break;
+            case 2:
+                levelToSet = "narrativa";
+                scoreToSet = level2Score;
+                break;
+            case 3:
+                levelToSet = "estetica";
+                scoreToSet = level3Score;
+                break;
+            case 4:
+                levelToSet = "tecnologia";
+                scoreToSet = level4Score;
+                break;
+        }
+
+        Debug.Log($"Salvando Pontuação de: {scoreToSet} no banco de dados");
+
+        PlayerScore scoreToUpload = new() { pontuacao = scoreToSet, nomeJogador = Instance.playerName.text, nivel = levelToSet, dataJogatina = DateTime.Now.ToString("dd-MM-yyyy HH:mm") };
+
+        StartCoroutine(UploadScore(scoreToUpload.Stringify()));
+    }
+
+    public IEnumerator UploadScore(string scoreToUpload, Action<bool> callback = null)
+    {
+
+        using UnityWebRequest request = new("https://us-east-1.aws.data.mongodb-api.com/app/dbtest-ivtvy/endpoint/score", "POST");
+        request.SetRequestHeader("Content-Type", "application/json");
+        byte[] bodyRaw = Encoding.UTF8.GetBytes(scoreToUpload);
+        request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+        request.downloadHandler = new DownloadHandlerBuffer();
+        yield return request.SendWebRequest();
+
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+            Debug.Log(request.error);
+            if (callback != null)
+            {
+                callback.Invoke(false);
+            }
+        }
+        else
+        {
+            if (callback != null)
+            {
+                callback.Invoke(request.downloadHandler.text != "{}");
+            }
+        }
+    }
+
 }
