@@ -35,7 +35,8 @@ public class Card : MonoBehaviour
 		anim = GetComponent<Animator>();
 		camAnim = Camera.main.GetComponent<Animator>();
 	}
-	private void OnMouseDown()
+
+    private void OnMouseDown()
 	{
 		if (!gameManager.isHandlingCards)
 		{
@@ -84,6 +85,7 @@ public class Card : MonoBehaviour
 
                             camAnim.SetTrigger("shake");
                             anim.SetTrigger("move");
+                            anim.SetBool("onTable", false);
 
                             transform.position = gameManager.handSlots[i].position;
                             hasBeenDrawn = true;
@@ -152,7 +154,8 @@ public class Card : MonoBehaviour
 
 	private void OnMouseEnter()
     {
-		descriptionOnScreen = Instantiate(cardDescription, gameManager.descriptionSlot.transform.position, Quaternion.identity);
+        anim.SetBool("hover", true);
+        descriptionOnScreen = Instantiate(cardDescription, gameManager.descriptionSlot.transform.position, Quaternion.identity);
 		descriptionOnScreen.transform.localScale = new Vector3((float)0.827, (float)0.827, (float)0.827);
 		descriptionOnScreen.SetActive(true);
     }
@@ -160,6 +163,7 @@ public class Card : MonoBehaviour
     private void OnMouseExit()
     {
         Destroy(descriptionOnScreen);
+        anim.SetBool("hover", false);
     }
 
     private void OnBecameInvisible()
