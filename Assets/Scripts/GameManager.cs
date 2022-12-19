@@ -45,6 +45,8 @@ public class GameManager : MonoBehaviour
 	//Level
 	public TextMeshProUGUI levelDescription;
     [SerializeField] private GameObject informationBox;
+	[SerializeField] private GameObject resultsBox;
+	[SerializeField] private TextMeshProUGUI scoreText;
 
     //System
     private Animator camAnim;
@@ -105,7 +107,7 @@ public class GameManager : MonoBehaviour
         }
 			
 		if (!CheckPickAvailability())
-           TriggerNextLevel();
+           ToggleResultsBox(true);
     }
 
 	public void DrawCard()
@@ -180,11 +182,6 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
-    internal void CalculatePoints()
-    {
-		Invoke(nameof(TriggerNextLevel), 0.2f);
-	}
-
 	public void ActivateEffect(int cardEffect)
     {
 		if (activeCardEffect == null)
@@ -236,6 +233,8 @@ public class GameManager : MonoBehaviour
 	public void TriggerNextLevel()
     {
 		//ScoreManager.Instance.SetScore();
+
+		ToggleResultsBox(false);
 
 		ClearCardGroup(table);
 
@@ -316,6 +315,34 @@ public class GameManager : MonoBehaviour
 		}
 
 		informationBox.SetActive(value);
+	}
+
+	public void ToggleResultsBox(bool value)
+	{
+		ToggleHandlingCards(true);
+
+		scoreText.text = ScoreManager.Instance.GetLevelPoints().ToString() + " Pontos";
+
+
+		//TODO: Implementar lógica de exibição de score
+
+		//switch (ScoreManager.Instance.activeLevel)
+		//{
+		//	case (int)Enum.Levels.MECANICA:
+		//		helpText.text = "Descrever mecânica";
+		//		break;
+		//	case (int)Enum.Levels.NARRATIVA:
+		//		helpText.text = "Descrever narrativa";
+		//		break;
+		//	case (int)Enum.Levels.ESTETICA:
+		//		helpText.text = "Descrever estética";
+		//		break;
+		//	case (int)Enum.Levels.TECNOLOGIA:
+		//		helpText.text = "Descrever tecnologia";
+		//		break;
+		//}
+
+		resultsBox.SetActive(value);
 	}
 
 	public void ToggleHandlingCards(bool value)

@@ -3292,6 +3292,8 @@ MonoBehaviour:
   remainingManaText: {fileID: 728832353}
   levelDescription: {fileID: 1740876598}
   informationBox: {fileID: 1742103366}
+  resultsBox: {fileID: 476224411}
+  scoreText: {fileID: 894493026}
 --- !u!4 &301529597
 Transform:
   m_ObjectHideFlags: 0
@@ -8292,7 +8294,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 301529596}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ToggleInformationBox
+        m_MethodName: TriggerNextLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
