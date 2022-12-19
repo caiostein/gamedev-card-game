@@ -7894,7 +7894,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &753192534
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16789,7 +16789,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: -9
   m_Sprite: {fileID: 21300000, guid: 93cb855d974d2f541a1eef831f4df7d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17786,8 +17786,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -106, y: 382}
-  m_SizeDelta: {x: 1381.4, y: 80.4318}
+  m_AnchoredPosition: {x: -266.82, y: 399.96}
+  m_SizeDelta: {x: 939.0094, y: 94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1740876598
 MonoBehaviour:
@@ -17809,7 +17809,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Monte um jogo com a melhor mec\xE2nica"
+  m_text: "Monte a melhor Mec\xE2nica poss\xEDvel para seu jogo!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
   m_sharedMaterial: {fileID: -2087017382057321341, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
@@ -17872,7 +17872,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 310.3277, w: 0}
+  m_margin: {x: 0, y: 0, z: 0.36297607, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -20184,7 +20184,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: -9
   m_Sprite: {fileID: 21300000, guid: 93cb855d974d2f541a1eef831f4df7d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
