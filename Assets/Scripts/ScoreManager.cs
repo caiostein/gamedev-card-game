@@ -61,19 +61,19 @@ public class ScoreManager : MonoBehaviour
 
         switch (activeLevel)
         {
-            case 1: 
+            case (int)Enum.Levels.MECANICA: 
                 levelToSet = "mecanica";
                 scoreToSet = level1Score;
                 break;
-            case 2:
+            case (int)Enum.Levels.NARRATIVA:
                 levelToSet = "narrativa";
                 scoreToSet = level2Score;
                 break;
-            case 3:
+            case (int)Enum.Levels.ESTETICA:
                 levelToSet = "estetica";
                 scoreToSet = level3Score;
                 break;
-            case 4:
+            case (int)Enum.Levels.TECNOLOGIA:
                 levelToSet = "tecnologia";
                 scoreToSet = level4Score;
                 break;

@@ -874,7 +874,19 @@ MonoBehaviour:
       - m_Target: {fileID: 301529596}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ToggleInformationBox
-        m_Mode: 1
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 301529596}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ToggleHandlingCards
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3209,6 +3221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1859a3db9b398e04c8ea2087206af6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deckObject: {fileID: 1809146283}
   deck:
   - {fileID: 855251701}
   - {fileID: 102799634}
@@ -15430,8 +15443,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 737, y: 385}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 252.68, y: 396.96}
+  m_SizeDelta: {x: 81.6339, y: 81.6339}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1486616732
 MonoBehaviour:
@@ -15514,15 +15527,27 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 301529596}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ToggleInformationBox
-        m_Mode: 1
+        m_MethodName: ToggleHandlingCards
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 301529596}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ToggleInformationBox
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1486616735
 MonoBehaviour:
@@ -17504,7 +17529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6717292060567749383, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6717292060567749383, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x

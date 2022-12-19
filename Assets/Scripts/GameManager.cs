@@ -5,10 +5,12 @@ using TMPro;
 using UnityEngine.Networking;
 using System.Text;
 using System.Linq;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
 	//Card
+	public GameObject deckObject;
 	public List<Card> deck;
 	public TextMeshProUGUI deckSizeText;
 
@@ -73,14 +75,17 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator FillTable()
     {
-		isHandlingCards = true;
+		ToggleHandlingCards(true);
 		while (table.Count < Const.maxTableCards)
 		{
 			DrawCard();
 			yield return new WaitForSeconds(0.3f);
-		}	
-		isHandlingCards = false;
-		
+		}
+
+        if (!informationBox.activeInHierarchy)
+        {
+			ToggleHandlingCards(false);
+        }		
 	}
 
 	private void Update()
@@ -290,9 +295,34 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
-	public void ToggleInformationBox()
+	public void ToggleInformationBox(bool value)
 	{
-		informationBox.SetActive(!informationBox.activeInHierarchy);
+		TextMeshProUGUI helpText = informationBox.GetComponentInChildren(typeof(TextMeshProUGUI)) as TextMeshProUGUI;
+
+		switch (ScoreManager.Instance.activeLevel)
+		{
+			case (int)Enum.Levels.MECANICA:
+				helpText.text = "Descrever mecânica";
+				break;
+			case (int)Enum.Levels.NARRATIVA:
+				helpText.text = "Descrever narrativa";
+				break;
+			case (int)Enum.Levels.ESTETICA:
+				helpText.text = "Descrever estética";
+				break;
+			case (int)Enum.Levels.TECNOLOGIA:
+				helpText.text = "Descrever tecnologia";
+				break;
+		}
+
+		informationBox.SetActive(value);
 	}
+
+	public void ToggleHandlingCards(bool value)
+    {
+		Image deckButton = deckObject.GetComponent(typeof(Image)) as Image;
+		deckButton.raycastTarget = !value;
+		isHandlingCards = value;
+    }
 
 }

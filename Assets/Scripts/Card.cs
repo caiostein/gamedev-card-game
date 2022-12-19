@@ -154,10 +154,13 @@ public class Card : MonoBehaviour
 
 	private void OnMouseEnter()
     {
-        anim.SetBool("hover", true);
-        descriptionOnScreen = Instantiate(cardDescription, gameManager.descriptionSlot.transform.position, Quaternion.identity);
-		descriptionOnScreen.transform.localScale = new Vector3((float)0.827, (float)0.827, (float)0.827);
-		descriptionOnScreen.SetActive(true);
+        if (!gameManager.isHandlingCards)
+        {
+            anim.SetBool("hover", true);
+            descriptionOnScreen = Instantiate(cardDescription, gameManager.descriptionSlot.transform.position, Quaternion.identity);
+		    descriptionOnScreen.transform.localScale = new Vector3((float)0.827, (float)0.827, (float)0.827);
+		    descriptionOnScreen.SetActive(true);
+        }
     }
 
     private void OnMouseExit()
