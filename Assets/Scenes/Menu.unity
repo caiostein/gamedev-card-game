@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 315.69998, y: 259.57}
+  m_AnchoredPosition: {x: 315.69998, y: 243.7}
   m_SizeDelta: {x: -307.39462, y: -31.342194}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3593903
@@ -183,8 +183,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 2 de 6
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
-  m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
+  m_sharedMaterial: {fileID: -2087017382057321341, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -192,7 +192,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 1
+  m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -293,7 +293,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 315.70007, y: 259.57}
+  m_AnchoredPosition: {x: 315.70007, y: 243.7}
   m_SizeDelta: {x: -307.39465, y: -31.342194}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4058502
@@ -318,8 +318,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 4 de 6
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
-  m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
+  m_sharedMaterial: {fileID: -2087017382057321341, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -327,7 +327,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 1
+  m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -775,7 +775,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Mec\xE2nicas do jogo: Comprar"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a660441881af56d44880cbacbc9bdab4, type: 2}
   m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -784,7 +784,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 1
+  m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -839,7 +839,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &70195444
@@ -1098,8 +1098,8 @@ MonoBehaviour:
   m_text: "Al\xE9m das normais, existem tamb\xE9m as cartas especiais. Essas cartas
     variam de custo e efeito, e podem ser identificadas por se destacarem das demais:"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
-  m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
+  m_sharedMaterial: {fileID: -2087017382057321341, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1107,7 +1107,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 1
+  m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -1188,7 +1188,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &169573205
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1412,8 +1412,8 @@ MonoBehaviour:
     pela l\xE2mpada no canto superior da descri\xE7\xE3o das cartas.\nEsse custo
     representa o quanto voc\xEA precisa gastar para comprar uma determinada carta"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
-  m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
+  m_sharedMaterial: {fileID: -2087017382057321341, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1421,7 +1421,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 1
+  m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -1476,7 +1476,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0.65143585}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &193645855
@@ -2088,7 +2088,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Mec\xE2nicas do jogo: Ideias"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a660441881af56d44880cbacbc9bdab4, type: 2}
   m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2097,7 +2097,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 1
+  m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -2152,7 +2152,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &259098958
@@ -5247,7 +5247,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Qual o objetivo?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a660441881af56d44880cbacbc9bdab4, type: 2}
   m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5256,7 +5256,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 1
+  m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -5311,7 +5311,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &692682154
@@ -5337,7 +5337,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &749447650
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5470,7 +5470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.60341835, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5557,8 +5557,8 @@ MonoBehaviour:
     gastando 1 Ideia. Para isso, basta clicar no baralho! Por\xE9m, \xE9 preciso
     que a mesa tenha espa\xE7o sobrando. Dessa forma, o jogo nao para!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
-  m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
+  m_sharedMaterial: {fileID: -2087017382057321341, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5566,7 +5566,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 1
+  m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -6852,12 +6852,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "- Preste aten\xE7\xE3o n\xE3o s\xF3 \xE0 imagem, como tamb\xE9m ao nome
-    e descri\xE7\xE3o de cada carta!\n\n- Voce come\xE7a cada nivel com 26 Ideias,
-    mas esse n\xFAmero pode aumentar com a carta \"Ideias a Mil\"\n\n- As duas primeiras
-    cartas de todo n\xEDvel ser\xE3o cartas especiais, ent\xE3o use-as com sabedoria!"
+    e descri\xE7\xE3o de cada carta!\n\n- Voc\xEA come\xE7a cada n\xEDvel com 26
+    Ideias, mas esse n\xFAmero pode aumentar com a carta \"Ideias a Mil\"\n\n- As
+    duas primeiras cartas de todo n\xEDvel ser\xE3o cartas especiais, ent\xE3o use-as
+    com sabedoria!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
-  m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
+  m_sharedMaterial: {fileID: -2087017382057321341, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6865,7 +6866,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 1
+  m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -7801,7 +7802,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 315.7, y: 259.57}
+  m_AnchoredPosition: {x: 315.7, y: 243.7}
   m_SizeDelta: {x: -307.3946, y: -31.3422}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1191349588
@@ -7826,8 +7827,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1 de 6
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
-  m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
+  m_sharedMaterial: {fileID: -2087017382057321341, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7835,7 +7836,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 1
+  m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -8148,7 +8149,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Mec\xE2nicas do jogo: Cartas Especiais"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a660441881af56d44880cbacbc9bdab4, type: 2}
   m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -8157,7 +8158,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 1
+  m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -8212,7 +8213,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1242822489
@@ -8258,7 +8259,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 315.70007, y: 259.57}
+  m_AnchoredPosition: {x: 315.70007, y: 243.7}
   m_SizeDelta: {x: -307.39465, y: -31.342194}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1248964675
@@ -8283,8 +8284,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 5 de 6
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
-  m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
+  m_sharedMaterial: {fileID: -2087017382057321341, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8292,7 +8293,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 1
+  m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -8657,7 +8658,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 315.69998, y: 259.57004}
+  m_AnchoredPosition: {x: 315.7, y: 243.70003}
   m_SizeDelta: {x: -307.39462, y: -31.342194}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1379007447
@@ -8682,8 +8683,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 3 de 6
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
-  m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
+  m_sharedMaterial: {fileID: -2087017382057321341, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8691,7 +8692,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 1
+  m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -9104,8 +9105,8 @@ MonoBehaviour:
     que possam compor um jogo com os 4 elementos da T\xE9trade de Schell, enquanto
     gerencia recursos limitados."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
-  m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
+  m_sharedMaterial: {fileID: -2087017382057321341, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9113,7 +9114,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 1
+  m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -9168,7 +9169,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0.65143585}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1478709615
@@ -9755,7 +9756,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Dicas importantes:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a660441881af56d44880cbacbc9bdab4, type: 2}
   m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -9764,7 +9765,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 1
+  m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -9819,7 +9820,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1588697874
@@ -10078,8 +10079,8 @@ MonoBehaviour:
   m_text: "Cabe a voc\xEA interpretar as cartas e escolher as que melhor representam
     o tema de cada n\xEDvel."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
-  m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
+  m_sharedMaterial: {fileID: -2087017382057321341, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10087,7 +10088,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 1
+  m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -10142,7 +10143,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0.65143585}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1635943973
@@ -10473,8 +10474,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Como o Jogo funciona?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
-  m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a660441881af56d44880cbacbc9bdab4, type: 2}
+  m_sharedMaterial: {fileID: -2087017382057321341, guid: a660441881af56d44880cbacbc9bdab4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10482,7 +10483,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 1
+  m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -11921,7 +11922,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 315.70007, y: 259.57}
+  m_AnchoredPosition: {x: 315.70007, y: 243.7}
   m_SizeDelta: {x: -307.39465, y: -31.342194}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1850180190
@@ -11946,8 +11947,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 6 de 6
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
-  m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
+  m_sharedMaterial: {fileID: -2087017382057321341, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11955,7 +11956,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 1
+  m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -12790,8 +12791,8 @@ MonoBehaviour:
     na mesa e seu custo. Cada carta possui um valor de afinidade para cada elemento
     da T\xE9trade."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
-  m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
+  m_sharedMaterial: {fileID: -2087017382057321341, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12799,7 +12800,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 1
+  m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -12854,7 +12855,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0.65143585}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2054358991
