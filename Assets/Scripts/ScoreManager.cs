@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Text;
 using TMPro;
 using UnityEngine;
@@ -56,19 +57,14 @@ public class ScoreManager : MonoBehaviour
 
     public int GetLevelPoints()
     {
-        switch (activeLevel)
+        return activeLevel switch
         {
-            case (int)Enum.Levels.MECANICA:
-                return level1Score;
-            case (int)Enum.Levels.NARRATIVA:
-                return level2Score;
-            case (int)Enum.Levels.ESTETICA:
-                return level3Score;
-            case (int)Enum.Levels.TECNOLOGIA:
-                return level4Score;
-            default:
-                return 0;
-        }
+            (int)Enum.Levels.MECANICA => level1Score,
+            (int)Enum.Levels.NARRATIVA => level2Score,
+            (int)Enum.Levels.ESTETICA => level3Score,
+            (int)Enum.Levels.TECNOLOGIA => level4Score,
+            _ => 0,
+        };
     }
 
     public void SetScore()

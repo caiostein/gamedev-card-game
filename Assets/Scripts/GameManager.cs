@@ -47,9 +47,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject informationBox;
 	[SerializeField] private GameObject resultsBox;
 	[SerializeField] private TextMeshProUGUI scoreText;
+	[SerializeField] private TextMeshProUGUI resultsText;
 
-    //System
-    private Animator camAnim;
+	//System
+	private Animator camAnim;
 
     private void Start()
 	{
@@ -68,12 +69,11 @@ public class GameManager : MonoBehaviour
 
     private void SetLevelDescriptionText()
     {
-		string levelDescText;
-		if(Enum.levelDescriptionDict.TryGetValue(ScoreManager.Instance.activeLevel, out levelDescText))
+        if (Enum.levelDescriptionDict.TryGetValue(ScoreManager.Instance.activeLevel, out string levelDescText))
         {
-			levelDescription.text = levelDescText;
-		}
-	}
+            levelDescription.text = levelDescText;
+        }
+    }
 
     private IEnumerator FillTable()
     {
@@ -230,7 +230,7 @@ public class GameManager : MonoBehaviour
 			return false;
 	}
 
-	public void TriggerLevelChange(int desiredLevel)
+	public void TriggerLevelChange(int levelsToAdd)
     {
 		//ScoreManager.Instance.SetScore();
 
@@ -250,12 +250,12 @@ public class GameManager : MonoBehaviour
 		shouldForceDrawSpecialCard = true;
 		drawnSpecialCards = 0;
 
-        if(desiredLevel == 0)
+        if(levelsToAdd == 0)
 		{
 			ScoreManager.Instance.ResetPoints();
         }
 		
-		int levelToSet = ScoreManager.Instance.activeLevel + desiredLevel;
+		int levelToSet = ScoreManager.Instance.activeLevel + levelsToAdd;
 		ScoreManager.Instance.SetActiveLevel(levelToSet);
 
 		StartCoroutine(FillTable());
@@ -329,29 +329,52 @@ public class GameManager : MonoBehaviour
 
 		scoreText.text = ScoreManager.Instance.GetLevelPoints().ToString() + " Pontos";
 
+		int	levelScore = ScoreManager.Instance.GetLevelPoints();
+
 
 		//TODO: Implementar lógica de exibição de score
 
-		//switch (ScoreManager.Instance.activeLevel)
-		//{
-		//	case (int)Enum.Levels.MECANICA:
-		//		helpText.text = "Descrever mecânica";
-		//		break;
-		//	case (int)Enum.Levels.NARRATIVA:
-		//		helpText.text = "Descrever narrativa";
-		//		break;
-		//	case (int)Enum.Levels.ESTETICA:
-		//		helpText.text = "Descrever estética";
-		//		break;
-		//	case (int)Enum.Levels.TECNOLOGIA:
-		//		helpText.text = "Descrever tecnologia";
-		//		break;
-		//}
+		switch (ScoreManager.Instance.activeLevel)
+        {
+            case (int)Enum.Levels.MECANICA:
+				resultsText.text = GetResultsText(Enum.MecanicaFeedbackDict, levelScore);
+                break;
+            case (int)Enum.Levels.NARRATIVA:
+				resultsText.text = GetResultsText(Enum.NarrativaFeedbackDict, levelScore);
+				break;
+            case (int)Enum.Levels.ESTETICA:
+				resultsText.text = GetResultsText(Enum.EsteticaFeedbackDict, levelScore);
+				break;
+            case (int)Enum.Levels.TECNOLOGIA:
+				resultsText.text = GetResultsText(Enum.TecnologiaFeedbackDict, levelScore);
+				break;
+        }
 
-		resultsBox.SetActive(value);
+        resultsBox.SetActive(value);
 	}
 
-	public void ToggleHandlingCards(bool value)
+    private string GetResultsText(IDictionary<int, string> resultsDict, int Levelscore)
+    {
+		if(Levelscore < 10)
+        {
+			return resultsDict[1];
+        }
+		if(Levelscore >= 10 && Levelscore < 15)
+        {
+			return resultsDict[2];
+        }
+		if(Levelscore >= 15 && Levelscore < 20)
+        {
+			return resultsDict[3];
+        }
+		if(Levelscore >= 20)
+        {
+			return resultsDict[4];
+        }
+		return null;
+    }
+
+    public void ToggleHandlingCards(bool value)
     {
 		Image deckButton = deckObject.GetComponent(typeof(Image)) as Image;
 		deckButton.raycastTarget = !value;
