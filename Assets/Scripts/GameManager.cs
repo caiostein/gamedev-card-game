@@ -230,7 +230,7 @@ public class GameManager : MonoBehaviour
 			return false;
 	}
 
-	public void TriggerNextLevel()
+	public void TriggerLevelChange(int desiredLevel)
     {
 		//ScoreManager.Instance.SetScore();
 
@@ -250,12 +250,18 @@ public class GameManager : MonoBehaviour
 		shouldForceDrawSpecialCard = true;
 		drawnSpecialCards = 0;
 
-		int levelToSet = ScoreManager.Instance.activeLevel + 1;
-        ScoreManager.Instance.SetActiveLevel(levelToSet);
+        if(desiredLevel == 0)
+		{
+			ScoreManager.Instance.ResetPoints();
+        }
+		
+		int levelToSet = ScoreManager.Instance.activeLevel + desiredLevel;
+		ScoreManager.Instance.SetActiveLevel(levelToSet);
 
 		StartCoroutine(FillTable());
 		SetLevelDescriptionText();
 	}
+	
 
 	private void ClearHandSlots()
 	{

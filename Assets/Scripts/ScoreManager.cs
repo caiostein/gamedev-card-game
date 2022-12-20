@@ -11,10 +11,10 @@ public class ScoreManager : MonoBehaviour
 
     public int activeLevel;
 
-    public int level1Score;
-    public int level2Score;
-    public int level3Score;
-    public int level4Score;
+    public int level1Score = 0;
+    public int level2Score = 0;
+    public int level3Score = 0;
+    public int level4Score = 0;
 
     public TMP_Text playerName;
 
@@ -127,6 +127,26 @@ public class ScoreManager : MonoBehaviour
             {
                 callback.Invoke(request.downloadHandler.text != "{}");
             }
+        }
+    }
+
+
+    public void ResetPoints()
+    {
+        switch (activeLevel)
+        {
+            case (int)Enum.Levels.MECANICA:
+                level1Score = 0;
+                break;
+            case (int)Enum.Levels.NARRATIVA:
+                level2Score = 0;
+                break;
+            case (int)Enum.Levels.ESTETICA:
+                level3Score = 0;
+                break;
+            case (int)Enum.Levels.TECNOLOGIA:
+                level4Score = 0;
+                break;
         }
     }
 
