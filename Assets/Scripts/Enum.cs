@@ -25,35 +25,44 @@ public class Enum
 		{4, "Monte a melhor tecnologia possível para seu jogo!" },
 	};
 
+	public static IDictionary<int, string> levelHintDict = new Dictionary<int, string>()
+	{
+		{1, "Descrever Mecânica" },
+		{2, "Descrever Narrativa" },
+		{3, "Descrever Estética" },
+		{4, "Descrever Tecnologia" },
+	};
+
+
 	public static IDictionary<int, string> MecanicaFeedbackDict = new Dictionary<int, string>()
 	{
-		{1, "LIXO filho" },
-		{2, "Médio filho" },
-		{3, "OK filho" },
-		{4, "Brabo PICA FODA" },
+		{1, "Parece que suas ideias não estavam muito claras e você não conseguiu pensar em bons elementos para sua mecânica." },
+		{2, "Bateu na trave! Você ficou perto de pensar em bons elementos para sua mecânica." },
+		{3, "Boa! Você pensou em bons elementos para sua mecânica. Mas ainda poderia ter sido um pouco melhor." },
+		{4, "Parabéns! Você teve ideias brilhantes para a mecânica do seu jogo. Você é um verdadeiro mestre das mecânicas" },
 	};
 
 	public static IDictionary<int, string> NarrativaFeedbackDict = new Dictionary<int, string>()
 	{
-		{1, "Ruim narra" },
-		{2, "Médio narra" },
-		{3, "OK narra" },
-		{4, "Brabo narra" },
+		{1, "Parece que suas ideias não estavam muito claras e você não conseguiu pensar em bons elementos para sua narrativa." },
+		{2, "Bateu na trave! Você ficou perto de pensar em bons elementos para sua narrativa." },
+		{3, "Boa! Você pensou em bons elementos para sua narrativa. Mas ainda poderia ter sido um pouco melhor." },
+		{4, "Parabéns! Você teve ideias brilhantes para a narrativa do seu jogo. Você é um excelente contador de histórias" },
 	};
 
 	public static IDictionary<int, string> EsteticaFeedbackDict = new Dictionary<int, string>()
 	{
-		{1, "Ruim estet" },
-		{2, "Médio estet" },
-		{3, "OK estet" },
-		{4, "Brabo estet" },
+		{1, "Parece que suas ideias não estavam muito claras e você não conseguiu pensar em bons elementos para sua estética." },
+		{2, "Bateu na trave! Você ficou perto de pensar em bons elementos para sua estética." },
+		{3, "Boa! Você pensou em bons elementos para sua estética. Mas ainda poderia ter sido um pouco melhor." },
+		{4, "Parabéns! Você teve ideias brilhantes para a estética do seu jogo. Você é um artista nato" },
 	};
 
 	public static IDictionary<int, string> TecnologiaFeedbackDict = new Dictionary<int, string>()
 	{
-		{1, "Ruim tec" },
-		{2, "Médio tec" },
-		{3, "OK tec" },
-		{4, "Brabo tec" },
+		{1, "Parece que suas ideias não estavam muito claras e você não conseguiu pensar em bons elementos para sua tecnologia." },
+		{2, "Bateu na trave! Você ficou perto de pensar em bons elementos para sua tecnologia." },
+		{3, "Boa! Você pensou em bons elementos para sua tecnologia. Mas ainda poderia ter sido um pouco melhor." },
+		{4, "Parabéns! Você teve ideias brilhantes para a tecnologia do seu jogo. Você é o verdadeiro gênio da tecnologia" },
 	};
 }

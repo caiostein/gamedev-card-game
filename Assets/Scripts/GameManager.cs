@@ -307,16 +307,16 @@ public class GameManager : MonoBehaviour
 		switch (ScoreManager.Instance.activeLevel)
 		{
 			case (int)Enum.Levels.MECANICA:
-				helpText.text = "Descrever mecânica";
+				helpText.text = Enum.levelHintDict[1];
 				break;
 			case (int)Enum.Levels.NARRATIVA:
-				helpText.text = "Descrever narrativa";
+				helpText.text = Enum.levelHintDict[2];
 				break;
 			case (int)Enum.Levels.ESTETICA:
-				helpText.text = "Descrever estética";
+				helpText.text = Enum.levelHintDict[3];
 				break;
 			case (int)Enum.Levels.TECNOLOGIA:
-				helpText.text = "Descrever tecnologia";
+				helpText.text = Enum.levelHintDict[4];
 				break;
 		}
 
