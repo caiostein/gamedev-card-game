@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
 	[SerializeField] private GameObject resultsBox;
 	[SerializeField] private TextMeshProUGUI scoreText;
 	[SerializeField] private TextMeshProUGUI resultsText;
+	[SerializeField] private Image[] scoreImages;
 
 	//System
 	private Animator camAnim;
@@ -245,6 +246,11 @@ public class GameManager : MonoBehaviour
         ClearTableSlots();
 		ClearHandSlots();
 
+		foreach(Image image in scoreImages)
+        {
+			image.sprite = Resources.Load<Sprite>("off_lamp");
+        }
+
         remainingMana = Const.startingMana;
 
 		shouldForceDrawSpecialCard = true;
@@ -331,9 +337,6 @@ public class GameManager : MonoBehaviour
 
 		int	levelScore = ScoreManager.Instance.GetLevelPoints();
 
-
-		//TODO: Implementar lógica de exibição de score
-
 		switch (ScoreManager.Instance.activeLevel)
         {
             case (int)Enum.Levels.MECANICA:
@@ -361,14 +364,20 @@ public class GameManager : MonoBehaviour
         }
 		if(Levelscore >= 10 && Levelscore < 15)
         {
+			scoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
 			return resultsDict[2];
         }
 		if(Levelscore >= 15 && Levelscore < 20)
         {
+			scoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
+			scoreImages[1].sprite = Resources.Load<Sprite>("on_lamp");
 			return resultsDict[3];
         }
 		if(Levelscore >= 20)
         {
+			scoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
+			scoreImages[1].sprite = Resources.Load<Sprite>("on_lamp");
+			scoreImages[2].sprite = Resources.Load<Sprite>("on_lamp");
 			return resultsDict[4];
         }
 		return null;

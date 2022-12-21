@@ -3295,6 +3295,10 @@ MonoBehaviour:
   resultsBox: {fileID: 476224411}
   scoreText: {fileID: 894493026}
   resultsText: {fileID: 967721651}
+  scoreImages:
+  - {fileID: 1952700341}
+  - {fileID: 1066639676}
+  - {fileID: 512425734}
 --- !u!4 &301529597
 Transform:
   m_ObjectHideFlags: 0
@@ -5120,6 +5124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 476224412}
+  - component: {fileID: 476224413}
   m_Layer: 0
   m_Name: Level Result Box
   m_TagString: Untagged
@@ -5148,6 +5153,18 @@ Transform:
   m_Father: {fileID: 761915728}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &476224413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476224411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12d8d995dd221524291f8e626eb448d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &484965980
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5407,7 +5424,7 @@ GameObject:
   - component: {fileID: 512425733}
   - component: {fileID: 512425732}
   m_Layer: 5
-  m_Name: ManaImage3
+  m_Name: ScoreImage3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5446,7 +5463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
-  m_EffectDistance: {x: 5, y: 5}
+  m_EffectDistance: {x: 2, y: 2}
   m_UseGraphicAlpha: 1
 --- !u!95 &512425733
 Animator:
@@ -5488,7 +5505,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0218e05c3b6ad174bb86d1762e9bf7a5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ea0592412d65cfd41ada313948e5276f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10590,7 +10607,7 @@ GameObject:
   - component: {fileID: 1066639675}
   - component: {fileID: 1066639674}
   m_Layer: 5
-  m_Name: ManaImage2
+  m_Name: ScoreImage2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10629,7 +10646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
-  m_EffectDistance: {x: 5, y: 5}
+  m_EffectDistance: {x: 2, y: 2}
   m_UseGraphicAlpha: 1
 --- !u!95 &1066639675
 Animator:
@@ -10671,7 +10688,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0218e05c3b6ad174bb86d1762e9bf7a5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ea0592412d65cfd41ada313948e5276f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20269,7 +20286,7 @@ GameObject:
   - component: {fileID: 1952700340}
   - component: {fileID: 1952700339}
   m_Layer: 5
-  m_Name: ManaImage1
+  m_Name: ScoreImage1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20308,7 +20325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
-  m_EffectDistance: {x: 5, y: 5}
+  m_EffectDistance: {x: 2, y: 2}
   m_UseGraphicAlpha: 1
 --- !u!95 &1952700340
 Animator:
@@ -20350,7 +20367,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0218e05c3b6ad174bb86d1762e9bf7a5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ea0592412d65cfd41ada313948e5276f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
