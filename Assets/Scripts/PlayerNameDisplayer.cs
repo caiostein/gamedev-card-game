@@ -17,7 +17,7 @@ public class PlayerNameDisplayer : MonoBehaviour
 
     private void SetTextValue(string nameToUse)
     {
-        playerNameDisplayerUI.text = "Olá, " + nameToUse;
+        playerNameDisplayerUI.text = "Usar o nome: '" + nameToUse + "'?";
     }
 
 }
