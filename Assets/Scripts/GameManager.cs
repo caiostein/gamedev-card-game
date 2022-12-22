@@ -6,6 +6,7 @@ using UnityEngine.Networking;
 using System.Text;
 using System.Linq;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -48,7 +49,17 @@ public class GameManager : MonoBehaviour
 	[SerializeField] private GameObject resultsBox;
 	[SerializeField] private TextMeshProUGUI scoreText;
 	[SerializeField] private TextMeshProUGUI resultsText;
-	[SerializeField] private Image[] scoreImages;
+	[SerializeField] private Image[] levelScoreImages;
+
+	//FinalResults
+	[SerializeField] private Image[] level1ScoreImages;
+	[SerializeField] private Image[] level2ScoreImages;
+	[SerializeField] private Image[] level3ScoreImages;
+	[SerializeField] private Image[] level4ScoreImages;
+	[SerializeField] private Image[] finalScoreImages;
+	[SerializeField] private GameObject finalResultsBox;
+	[SerializeField] private TextMeshProUGUI finalResultsText;
+
 
 	//System
 	private Animator camAnim;
@@ -67,8 +78,13 @@ public class GameManager : MonoBehaviour
 
 		StartCoroutine(FillTable());
 	}
+	public void EndGame()
+	{
+		ScoreManager.Instance.ResetAll();
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+	}
 
-    private void SetLevelDescriptionText()
+	private void SetLevelDescriptionText()
     {
         if (Enum.levelDescriptionDict.TryGetValue(ScoreManager.Instance.activeLevel, out string levelDescText))
         {
@@ -108,7 +124,7 @@ public class GameManager : MonoBehaviour
         }
 			
 		if (!CheckPickAvailability())
-           ToggleResultsBox(true);
+           ToggleLevelResultBox(true);
     }
 
 	public void DrawCard()
@@ -235,7 +251,7 @@ public class GameManager : MonoBehaviour
     {
 		//ScoreManager.Instance.SetScore();
 
-		ToggleResultsBox(false);
+		ToggleLevelResultBox(false);
 
 		ClearCardGroup(table);
 
@@ -246,7 +262,7 @@ public class GameManager : MonoBehaviour
         ClearTableSlots();
 		ClearHandSlots();
 
-		foreach(Image image in scoreImages)
+		foreach(Image image in levelScoreImages)
         {
 			image.sprite = Resources.Load<Sprite>("off_lamp");
         }
@@ -259,10 +275,18 @@ public class GameManager : MonoBehaviour
         if(levelsToAdd == 0)
 		{
 			ScoreManager.Instance.ResetPoints();
+        } else
+        {
+			ScoreManager.Instance.AddToTotal();
         }
 		
 		int levelToSet = ScoreManager.Instance.activeLevel + levelsToAdd;
 		ScoreManager.Instance.SetActiveLevel(levelToSet);
+
+		if(ScoreManager.Instance.activeLevel > 4)
+        {
+			ShowFinalResultsBox();
+		}
 
 		StartCoroutine(FillTable());
 		SetLevelDescriptionText();
@@ -329,61 +353,161 @@ public class GameManager : MonoBehaviour
 		informationBox.SetActive(value);
 	}
 
-	public void ToggleResultsBox(bool value)
+	public void ToggleLevelResultBox(bool value)
 	{
 		ToggleHandlingCards(true);
 
 		scoreText.text = ScoreManager.Instance.GetLevelPoints().ToString() + " Pontos";
 
-		int	levelScore = ScoreManager.Instance.GetLevelPoints();
+		int levelScore = ScoreManager.Instance.GetLevelPoints();
 
 		switch (ScoreManager.Instance.activeLevel)
-        {
-            case (int)Enum.Levels.MECANICA:
+		{
+			case (int)Enum.Levels.MECANICA:
 				resultsText.text = GetResultsText(Enum.MecanicaFeedbackDict, levelScore);
-                break;
-            case (int)Enum.Levels.NARRATIVA:
+				break;
+			case (int)Enum.Levels.NARRATIVA:
 				resultsText.text = GetResultsText(Enum.NarrativaFeedbackDict, levelScore);
 				break;
-            case (int)Enum.Levels.ESTETICA:
+			case (int)Enum.Levels.ESTETICA:
 				resultsText.text = GetResultsText(Enum.EsteticaFeedbackDict, levelScore);
 				break;
-            case (int)Enum.Levels.TECNOLOGIA:
+			case (int)Enum.Levels.TECNOLOGIA:
 				resultsText.text = GetResultsText(Enum.TecnologiaFeedbackDict, levelScore);
 				break;
-        }
+		}
 
-        resultsBox.SetActive(value);
+		resultsBox.SetActive(value);
 	}
 
-    private string GetResultsText(IDictionary<int, string> resultsDict, int Levelscore)
-    {
-		if(Levelscore < 10)
-        {
+	private string GetResultsText(IDictionary<int, string> resultsDict, int Levelscore)
+	{
+		if (Levelscore < 10)
+		{
 			return resultsDict[1];
-        }
-		if(Levelscore >= 10 && Levelscore < 15)
-        {
-			scoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
+		}
+		if (Levelscore >= 10 && Levelscore < 15)
+		{
+			levelScoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
 			return resultsDict[2];
-        }
-		if(Levelscore >= 15 && Levelscore < 20)
-        {
-			scoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
-			scoreImages[1].sprite = Resources.Load<Sprite>("on_lamp");
+		}
+		if (Levelscore >= 15 && Levelscore < 20)
+		{
+			levelScoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
+			levelScoreImages[1].sprite = Resources.Load<Sprite>("on_lamp");
 			return resultsDict[3];
-        }
-		if(Levelscore >= 20)
-        {
-			scoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
-			scoreImages[1].sprite = Resources.Load<Sprite>("on_lamp");
-			scoreImages[2].sprite = Resources.Load<Sprite>("on_lamp");
+		}
+		if (Levelscore >= 20)
+		{
+			levelScoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
+			levelScoreImages[1].sprite = Resources.Load<Sprite>("on_lamp");
+			levelScoreImages[2].sprite = Resources.Load<Sprite>("on_lamp");
 			return resultsDict[4];
-        }
+		}
 		return null;
-    }
+	}
 
-    public void ToggleHandlingCards(bool value)
+    private void ShowFinalResultsBox()
+    {
+		int level1Score = ScoreManager.Instance.level1Score;
+
+		if (level1Score >= 10 && level1Score < 15)
+		{
+			level1ScoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");			
+		}
+		if (level1Score >= 15 && level1Score < 20)
+		{
+			level1ScoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
+			level1ScoreImages[1].sprite = Resources.Load<Sprite>("on_lamp");			
+		}
+		if (level1Score >= 20)
+		{
+			level1ScoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
+			level1ScoreImages[1].sprite = Resources.Load<Sprite>("on_lamp");
+			level1ScoreImages[2].sprite = Resources.Load<Sprite>("on_lamp");			
+		}
+
+		int level2Score = ScoreManager.Instance.level2Score;
+
+		if (level2Score >= 10 && level2Score < 15)
+		{
+			level2ScoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
+		}
+		if (level2Score >= 15 && level2Score < 20)
+		{
+			level2ScoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
+			level2ScoreImages[1].sprite = Resources.Load<Sprite>("on_lamp");
+		}
+		if (level2Score >= 20)
+		{
+			level2ScoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
+			level2ScoreImages[1].sprite = Resources.Load<Sprite>("on_lamp");
+			level2ScoreImages[2].sprite = Resources.Load<Sprite>("on_lamp");
+		}
+
+		int level3Score = ScoreManager.Instance.level3Score;
+
+		if (level3Score >= 10 && level3Score < 15)
+		{
+			level3ScoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
+		}
+		if (level3Score >= 15 && level3Score < 20)
+		{
+			level3ScoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
+			level3ScoreImages[1].sprite = Resources.Load<Sprite>("on_lamp");
+		}
+		if (level3Score >= 20)
+		{
+			level3ScoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
+			level3ScoreImages[1].sprite = Resources.Load<Sprite>("on_lamp");
+			level3ScoreImages[2].sprite = Resources.Load<Sprite>("on_lamp");
+		}
+
+		int level4Score = ScoreManager.Instance.level4Score;
+
+		if (level4Score >= 10 && level4Score < 15)
+		{
+			level4ScoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
+		}
+		if (level4Score >= 15 && level4Score < 20)
+		{
+			level4ScoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
+			level4ScoreImages[1].sprite = Resources.Load<Sprite>("on_lamp");
+		}
+		if (level4Score >= 20)
+		{
+			level4ScoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
+			level4ScoreImages[1].sprite = Resources.Load<Sprite>("on_lamp");
+			level4ScoreImages[2].sprite = Resources.Load<Sprite>("on_lamp");
+		}
+
+		float finalScore = ScoreManager.Instance.finalScore / 4;
+
+		if (finalScore >= 10 && finalScore < 15)
+		{
+			finalScoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
+		}
+		if (finalScore >= 15 && finalScore < 20)
+		{
+			finalScoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
+			finalScoreImages[1].sprite = Resources.Load<Sprite>("on_lamp");
+		}
+		if (finalScore >= 20)
+		{
+			finalScoreImages[0].sprite = Resources.Load<Sprite>("on_lamp");
+			finalScoreImages[1].sprite = Resources.Load<Sprite>("on_lamp");
+			finalScoreImages[2].sprite = Resources.Load<Sprite>("on_lamp");
+		}
+
+		int scoreToUse = (int)System.Math.Floor(finalScore);
+
+		finalResultsText.text = GetResultsText(Enum.FinalFeedbackDict, scoreToUse);
+
+		finalResultsBox.SetActive(true);
+
+	}
+
+	public void ToggleHandlingCards(bool value)
     {
 		Image deckButton = deckObject.GetComponent(typeof(Image)) as Image;
 		deckButton.raycastTarget = !value;

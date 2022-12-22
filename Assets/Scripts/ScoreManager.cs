@@ -16,6 +16,7 @@ public class ScoreManager : MonoBehaviour
     public int level2Score = 0;
     public int level3Score = 0;
     public int level4Score = 0;
+    public int finalScore = 0;
 
     public TMP_Text playerName;
 
@@ -146,4 +147,18 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
+    public void ResetAll()
+    {
+        level1Score = 0;
+        level2Score = 0;
+        level3Score = 0;
+        level4Score = 0;
+        finalScore = 0;
+        activeLevel = 1;
+    }
+
+    internal void AddToTotal()
+    {
+        finalScore += GetLevelPoints();
+    }
 }

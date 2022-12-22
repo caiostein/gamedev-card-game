@@ -65,4 +65,12 @@ public class Enum
 		{3, "Boa! Você pensou em bons elementos para sua tecnologia. Mas ainda poderia ter sido um pouco melhor." },
 		{4, "Parabéns! Você teve ideias brilhantes para a tecnologia do seu jogo. Você é o verdadeiro gênio da tecnologia" },
 	};
+
+	public static IDictionary<int, string> FinalFeedbackDict = new Dictionary<int, string>()
+	{
+		{1, "LIXO SAFADO SE MATA BABACA." },
+		{2, "Médio Gamer." },
+		{3, "Bom Gamer." },
+		{4, "Deus Gamer." },
+	};
 }

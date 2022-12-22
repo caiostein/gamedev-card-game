@@ -103,11 +103,11 @@ public class Card : MonoBehaviour
 
                             if (gameManager.hand.Count == Const.handSize)
                             {
-                                gameManager.ToggleResultsBox(true);
+                                gameManager.ToggleLevelResultBox(true);
                             }
 
                             if (!gameManager.CheckPickAvailability() && !gameManager.CheckDrawAvailability())
-                                gameManager.ToggleResultsBox(true);
+                                gameManager.ToggleLevelResultBox(true);
 
                             return;
                         }
