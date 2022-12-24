@@ -61,6 +61,9 @@ public class Card : MonoBehaviour
                     gameManager.DrawCard();
                     gameManager.DrawCard();
                     gameManager.DrawCard();
+                    gameManager.setDeckInteraction(true);
+                    if (!gameManager.CheckPickAvailability() && !gameManager.CheckDrawAvailability())
+                        gameManager.ToggleLevelResultBox(true);
                 }
             }
 

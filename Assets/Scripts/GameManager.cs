@@ -98,7 +98,9 @@ public class GameManager : MonoBehaviour
 		while (table.Count < Const.maxTableCards)
 		{
 			DrawCard();
-			yield return new WaitForSeconds(0.3f);
+            if (!CheckPickAvailability() && !CheckDrawAvailability())
+                ToggleLevelResultBox(true);
+            yield return new WaitForSeconds(0.3f);
 		}
 
         if (!informationBox.activeInHierarchy)
@@ -117,14 +119,15 @@ public class GameManager : MonoBehaviour
 
 	public void DrawCardUsingMana()
 	{
-		if (CheckDrawAvailability())
-		{
-            DrawCard();
-			remainingMana--;
-        }
-			
-		if (!CheckPickAvailability())
-           ToggleLevelResultBox(true);
+	if (CheckDrawAvailability())
+    {
+		DrawCard();
+        remainingMana--;
+    }
+
+	if (!CheckPickAvailability())
+		ToggleLevelResultBox(true);
+	
     }
 
 	public void DrawCard()
@@ -216,6 +219,7 @@ public class GameManager : MonoBehaviour
 				case Enum.CardEffects.TROCA:
 					cardsToDestroy = 2;
 					shouldUseHalfMana = false;
+					setDeckInteraction(false);
 					break;
 				case Enum.CardEffects.INSPIRACAO:
 					shouldUseHalfMana = false;
@@ -233,6 +237,8 @@ public class GameManager : MonoBehaviour
 	public bool CheckPickAvailability()
 	{
         lowestCost = table.Min(c => c.cardCost);
+		if(activeCardEffect == Enum.CardEffects.METADINHA)
+			lowestCost = lowestCost / 2;
 		if(lowestCost > remainingMana)
 			return false;
 		else 
@@ -268,6 +274,9 @@ public class GameManager : MonoBehaviour
         }
 
         remainingMana = Const.startingMana;
+
+		activeCardEffect = null;
+		setDeckInteraction(true);
 
 		shouldForceDrawSpecialCard = true;
 		drawnSpecialCards = 0;
@@ -509,9 +518,14 @@ public class GameManager : MonoBehaviour
 
 	public void ToggleHandlingCards(bool value)
     {
-		Image deckButton = deckObject.GetComponent(typeof(Image)) as Image;
-		deckButton.raycastTarget = !value;
+		setDeckInteraction(!value);
 		isHandlingCards = value;
+    }
+
+	public void setDeckInteraction(bool value)
+	{
+        Image deckButton = deckObject.GetComponent(typeof(Image)) as Image;
+        deckButton.raycastTarget = value;
     }
 
 }
