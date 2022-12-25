@@ -27,10 +27,10 @@ public class Enum
 
 	public static IDictionary<int, string> levelHintDict = new Dictionary<int, string>()
 	{
-		{1, "Descrever Mecânica" },
-		{2, "Descrever Narrativa" },
-		{3, "Descrever Estética" },
-		{4, "Descrever Tecnologia" },
+		{1, "Neste nível você deve escolher cartas que possuam uma maior afinidade com Mecânica" },
+		{2, "Neste nível você deve escolher cartas que possuam uma maior afinidade com Narrativa" },
+		{3, "Neste nível você deve escolher cartas que possuam uma maior afinidade com Estética" },
+		{4, "Neste nível você deve escolher cartas que possuam uma maior afinidade com Tecnologia" },
 	};
 
 

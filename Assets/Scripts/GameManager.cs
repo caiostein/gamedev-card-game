@@ -60,6 +60,8 @@ public class GameManager : MonoBehaviour
 	[SerializeField] private GameObject finalResultsBox;
 	[SerializeField] private TextMeshProUGUI finalResultsText;
 
+	//Information
+	[SerializeField] private Image schellLevelIcon;
 
 	//System
 	private Animator camAnim;
@@ -346,19 +348,23 @@ public class GameManager : MonoBehaviour
 		switch (ScoreManager.Instance.activeLevel)
 		{
 			case (int)Enum.Levels.MECANICA:
-				helpText.text = Enum.levelHintDict[1];
+                helpText.text = Enum.levelHintDict[1];
+				schellLevelIcon.sprite = Resources.Load<Sprite>("Schell_mec");
 				break;
 			case (int)Enum.Levels.NARRATIVA:
-				helpText.text = Enum.levelHintDict[2];
-				break;
+                helpText.text = Enum.levelHintDict[2];
+                schellLevelIcon.sprite = Resources.Load<Sprite>("Schell_narrativa");
+                break;
 			case (int)Enum.Levels.ESTETICA:
-				helpText.text = Enum.levelHintDict[3];
-				break;
+                helpText.text = Enum.levelHintDict[3];
+                schellLevelIcon.sprite = Resources.Load<Sprite>("Schell_estetica");
+                break;
 			case (int)Enum.Levels.TECNOLOGIA:
-				helpText.text = Enum.levelHintDict[4];
-				break;
+                helpText.text = Enum.levelHintDict[4];
+                schellLevelIcon.sprite = Resources.Load<Sprite>("Schell_tec");
+                break;
 		}
-
+		
 		informationBox.SetActive(value);
 	}
 
