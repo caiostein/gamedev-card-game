@@ -63,7 +63,7 @@ public class Card : MonoBehaviour
                     gameManager.DrawCard();
                     gameManager.setDeckInteraction(true);
                     if (!gameManager.CheckPickAvailability() && !gameManager.CheckDrawAvailability())
-                        gameManager.ToggleLevelResultBox(true);
+                        gameManager.ToggleEarlyResultsBox(true);
                 }
             }
 
@@ -110,7 +110,7 @@ public class Card : MonoBehaviour
                             }
 
                             if (!gameManager.CheckPickAvailability() && !gameManager.CheckDrawAvailability())
-                                gameManager.ToggleLevelResultBox(true);
+                                gameManager.ToggleEarlyResultsBox(true);
 
                             return;
                         }

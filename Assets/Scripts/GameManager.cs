@@ -57,6 +57,7 @@ public class GameManager : MonoBehaviour
 	[SerializeField] private Image[] level3ScoreImages;
 	[SerializeField] private Image[] level4ScoreImages;
 	[SerializeField] private Image[] finalScoreImages;
+    [SerializeField] private GameObject earlyResultsBox;
 	[SerializeField] private GameObject finalResultsBox;
 	[SerializeField] private TextMeshProUGUI finalResultsText;
 
@@ -101,7 +102,7 @@ public class GameManager : MonoBehaviour
 		{
 			DrawCard();
             if (!CheckPickAvailability() && !CheckDrawAvailability())
-                ToggleLevelResultBox(true);
+                ToggleEarlyResultsBox(true);
             yield return new WaitForSeconds(0.3f);
 		}
 
@@ -127,8 +128,8 @@ public class GameManager : MonoBehaviour
         remainingMana--;
     }
 
-	if (!CheckPickAvailability())
-		ToggleLevelResultBox(true);
+	if (!CheckPickAvailability() && !CheckDrawAvailability())
+		ToggleEarlyResultsBox(true);
 	
     }
 
@@ -394,6 +395,12 @@ public class GameManager : MonoBehaviour
 
 		resultsBox.SetActive(value);
 	}
+
+    public void ToggleEarlyResultsBox(bool value)
+    {
+        ToggleHandlingCards(value);
+        earlyResultsBox.SetActive(value);        
+    }
 
 	private string GetResultsText(IDictionary<int, string> resultsDict, int Levelscore)
 	{
