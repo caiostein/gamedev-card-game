@@ -107,9 +107,9 @@ public class Card : MonoBehaviour
                             if (gameManager.hand.Count == Const.handSize)
                             {
                                 gameManager.ToggleLevelResultBox(true);
-                            }
+                            } 
 
-                            if (!gameManager.CheckPickAvailability() && !gameManager.CheckDrawAvailability())
+                            else if (!gameManager.CheckPickAvailability() && !gameManager.CheckDrawAvailability())
                                 gameManager.ToggleEarlyResultsBox(true);
 
                             return;
