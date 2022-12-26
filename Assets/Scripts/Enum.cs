@@ -68,10 +68,10 @@ public class Enum
 
 	public static IDictionary<int, string> FinalFeedbackDict = new Dictionary<int, string>()
 	{
-		{1, "LIXO SAFADO SE MATA BABACA." },
-		{2, "Médio Gamer." },
-		{3, "Bom Gamer." },
-		{4, "Deus Gamer." },
+		{1, "Eita! Parece que você não conseguiu ir bem na etapa de brainstorming." },
+		{2, "Você foi bem, mas poderia ter sido melhor. Mais um pouco e você teria pensado em bons elementos para compor o seu jogo." },
+		{3, "Muito bem! Você teve boas ideias para o seu jogo!" },
+		{4, "Incrível!\r\nVocê mostrou que entende a Tétrade de Schell e foi brilhante nessa etapa de brainstorming. Você está pronto para começar a desenvolver o seu jogo." },
 	};
 
 	public static readonly IDictionary<int, string> dialogLines = new Dictionary<int, string>()
