@@ -301,7 +301,7 @@ TextureImporter:
         width: 378
         height: 383
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -309,6 +309,27 @@ TextureImporter:
       bones: []
       spriteID: f3c486572616f65149a4a8d697797425
       internalID: 1414058252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Card-Game-UI_10
+      rect:
+        serializedVersion: 2
+        x: 2769
+        y: 1832
+        width: 967
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f381a9bc8a3a2439db37295e8b3f4f
+      internalID: 112077622
       vertices: []
       indices: 
       edges: []
@@ -857,6 +878,7 @@ TextureImporter:
       Card-Game-UI_1: -41956413
       Card-Game-UI_4: -1237646178
       Card-Game-UI_8: 83282293
+      Card-Game-UI_10: 112077622
       Card-Game-UI_6: 706396870
       Card-Game-UI_9: 1414058252
       Card-Game-UI_7: 614822182

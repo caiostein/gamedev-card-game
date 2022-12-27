@@ -24,18 +24,18 @@ public class Enum
 
 	public static IDictionary<int, string> levelDescriptionDict = new Dictionary<int, string>()
 	{
-		{1, "Monte a melhor mecânica possível para seu jogo!" },
-		{2, "Monte a melhor narrativa possível para seu jogo!" },
-		{3, "Monte a melhor estética possível para seu jogo!" },
-		{4, "Monte a melhor tecnologia possível para seu jogo!" },
+		{1, "Monte a melhor MECÂNICA possível para seu jogo!" },
+		{2, "Monte a melhor NARRATIVA possível para seu jogo!" },
+		{3, "Monte a melhor ESTÉTICA possível para seu jogo!" },
+		{4, "Monte a melhor TECNOLOGIA possível para seu jogo!" },
 	};
 
 	public static IDictionary<int, string> levelHintDict = new Dictionary<int, string>()
 	{
-		{1, "Neste nível você deve escolher cartas que possuam uma maior afinidade com Mecânica" },
-		{2, "Neste nível você deve escolher cartas que possuam uma maior afinidade com Narrativa" },
-		{3, "Neste nível você deve escolher cartas que possuam uma maior afinidade com Estética" },
-		{4, "Neste nível você deve escolher cartas que possuam uma maior afinidade com Tecnologia" },
+		{1, "Neste nível você deve escolher cartas que possuam uma maior afinidade com MECÂNICA" },
+		{2, "Neste nível você deve escolher cartas que possuam uma maior afinidade com NARRATIVA" },
+		{3, "Neste nível você deve escolher cartas que possuam uma maior afinidade com ESTÉTICA" },
+		{4, "Neste nível você deve escolher cartas que possuam uma maior afinidade com TECNOLOGIA" },
 	};
 
 

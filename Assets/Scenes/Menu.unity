@@ -776,7 +776,7 @@ MonoBehaviour:
   m_text: "Mec\xE2nicas do jogo: Comprar"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a660441881af56d44880cbacbc9bdab4, type: 2}
-  m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_sharedMaterial: {fileID: -2087017382057321341, guid: a660441881af56d44880cbacbc9bdab4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1072,7 +1072,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.5999756, y: 155.4}
+  m_AnchoredPosition: {x: 0.5999756, y: 145.7}
   m_SizeDelta: {x: 166.3861, y: 65.0911}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &146455785
@@ -1096,7 +1096,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Al\xE9m das normais, existem tamb\xE9m as cartas especiais. Essas cartas
-    variam de custo e efeito, e podem ser identificadas por se destacarem das demais:"
+    ativam um efeito especial e n\xE3o v\xE3o para sua m\xE3o. Podem ser identificadas
+    pelo contorno dourado:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
   m_sharedMaterial: {fileID: -2087017382057321341, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
@@ -5274,7 +5275,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 231.59903, y: 15.510002}
+  m_AnchoredPosition: {x: 231.59903, y: 4.2100067}
   m_SizeDelta: {x: 121.9318, y: 139.5186}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &599563227
@@ -5783,7 +5784,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 84.4, y: -4.9000015}
+  m_AnchoredPosition: {x: 84.4, y: -16.199997}
   m_SizeDelta: {x: 182.4198, y: 230.3062}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &666227608
@@ -6399,6 +6400,7 @@ GameObject:
   - component: {fileID: 782747591}
   - component: {fileID: 782747593}
   - component: {fileID: 782747592}
+  - component: {fileID: 782747594}
   m_Layer: 5
   m_Name: Arrow
   m_TagString: Untagged
@@ -6421,10 +6423,10 @@ RectTransform:
   m_Father: {fileID: 749447650}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.3, y: 0}
-  m_SizeDelta: {x: 73.628, y: 74.5954}
+  m_AnchorMin: {x: 0.483, y: 0.5}
+  m_AnchorMax: {x: 0.483, y: 0.5}
+  m_AnchoredPosition: {x: 0.70000005, y: -0.100250244}
+  m_SizeDelta: {x: 94.984, y: 56.705}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &782747592
 MonoBehaviour:
@@ -6439,14 +6441,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.60341835, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 706396870, guid: 21b395fece20b394f8f233babad900d2, type: 3}
+  m_Sprite: {fileID: 112077622, guid: 21b395fece20b394f8f233babad900d2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6464,6 +6466,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 782747590}
   m_CullTransparentMesh: 1
+--- !u!95 &782747594
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782747590}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 75c8ad00ea8c9464eb43d7d0f7c62b27, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &784387480
 GameObject:
   m_ObjectHideFlags: 0
@@ -7443,7 +7465,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -90.9, y: -4.9000015}
+  m_AnchoredPosition: {x: -90.9, y: -16.2}
   m_SizeDelta: {x: 238.6282, y: 238.7621}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1007653304
@@ -9589,7 +9611,7 @@ MonoBehaviour:
   m_text: "Mec\xE2nicas do jogo: Cartas Especiais"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a660441881af56d44880cbacbc9bdab4, type: 2}
-  m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
+  m_sharedMaterial: {fileID: -2087017382057321341, guid: a660441881af56d44880cbacbc9bdab4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13908,7 +13930,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -233.66464, y: 15.510002}
+  m_AnchoredPosition: {x: -233.66464, y: 4.2100067}
   m_SizeDelta: {x: 121.9318, y: 139.5186}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1879624761
