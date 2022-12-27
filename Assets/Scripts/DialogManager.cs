@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
 {
@@ -15,7 +16,11 @@ public class DialogManager : MonoBehaviour
     public GameObject skipButton;
     public GameObject playButton;
     public GameObject tutorialButton;
-
+    [SerializeField] private GameObject bgDropText;
+    [SerializeField] private GameObject bgDropFull;
+    [SerializeField] private GameObject npcObject;
+    [SerializeField] private Image npcSprite;
+    [SerializeField] private Image scenario;
 
 
     private void Start()
@@ -40,22 +45,40 @@ public class DialogManager : MonoBehaviour
 
             switch (currentLineNumber)
             {
+                case 3:
+                    scenario.sprite = Resources.Load<Sprite>("bg1");
+                    break;
+                case 4:
+                    npcObject.SetActive(true);
+                    break;
                 case 5:
+                    npcSprite.sprite = Resources.Load<Sprite>("funcionario_2");
+                    break;
+                case 6:
+                    bgDropFull.SetActive(true);
+                    bgDropText.SetActive(false);
                     nextButton.SetActive(false);
                     nameInputField.SetActive(true);
                     submitNameButton.SetActive(true);
                     break;
-                case 6:
+                case 7:
+                    bgDropFull.SetActive(false);
+                    bgDropText.SetActive(true);
+                    npcSprite.sprite = Resources.Load<Sprite>("funcionario_3");
                     lineToShow = lineToShow.Replace("[PlayerName]", ScoreManager.Instance.playerName.text);
                     break;
-                case 7:
+                case 8:
                     skipButton.SetActive(true);
+                    tutorialButton.SetActive(true);
                     break;
-                case 11:
+                case 9:
+                    npcSprite.sprite = Resources.Load<Sprite>("funcionario_2");
+                    break;
+                case 12:
                     nextButton.SetActive(false);
                     skipButton.SetActive(false);
                     playButton.SetActive(true);
-                    tutorialButton.SetActive(true);
+
                     break;
             }
 

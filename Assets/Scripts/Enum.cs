@@ -81,16 +81,17 @@ public class Enum
 
 	public static readonly IDictionary<int, string> dialogLines = new Dictionary<int, string>()
 	{
-		{1, "- ... -" },
+		{1, "" },
 		{2, "- Você chega à Feira de Games da sua região -" },
 		{3, "- Você está ansioso para participar de sua primeira Game Jam e mostrar ao mundo a sua capacidade de criar jogos incríveis -" },
 		{4, "- Logo você encontra um funcionário que te recebe para a competição -" },
 		{5, "Olá! Que bom que você chegou! Me diga: como você se chama?" },
-		{6, "Olá [PlayerName]! Bem vindo ao game jam. Logo logo você já vai estar criando o seu jogo. Mas antes vamos falar sobre as regras da competição." },
-		{7, "Caso deseje pular essa explicação, clique em 'Pular'." },
-		{8, "Você deve criar seu jogo a partir de certos elementos de jogo que estarão relacionados com 4 categorias distintas. Essas categorias são os pilares da tétrade de Schell." },
-		{9, "Para isso você fará um brainstorm a partir de cartas que te apresentarão diferentes elementos de jogos. Você deve escolher 4 cartas para cada categoria." },
-		{10, "Mas fique ligado, as cartas tem mais ou menos afinidade com uma categoria da tétrade. Você será avaliado de acordo com as cartas que você escolher, portanto escolha com sabedoria." },
-		{11, "Recomendo que, caso nunca tenha jogado, leia as regras mais detalhadas clicando em 'Como Jogar'. Boa sorte e bom jogo!"},
+		{6, ""  },
+		{7, "Olá [PlayerName]! Bem vindo ao game jam. Logo logo você já vai estar criando o seu jogo. Mas antes vamos falar sobre as regras da competição." },
+		{8, "Recomendo que, caso nunca tenha participado, leia as regras mais detalhadas neste panfleto de 'Regras'." },
+		{9, "Você deve criar seu jogo a partir de certos elementos de jogo que estarão relacionados com 4 categorias distintas. Essas categorias são os pilares da tétrade de Schell." },
+		{10, "Para isso você fará um brainstorm a partir de cartas que te apresentarão diferentes elementos de jogos. Você deve escolher 4 cartas para cada categoria." },
+		{11, "Mas fique ligado, as cartas tem mais ou menos afinidade com uma categoria da tétrade. Você será avaliado de acordo com as cartas que você escolher, portanto escolha com sabedoria." },
+		{12, "Boa sorte e bom jogo!"},
 	};
 }
