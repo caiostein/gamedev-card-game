@@ -1409,8 +1409,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "O custo de cada carta \xE9 conhecido como \"Ideia\". Ele \xE9 representado
-    pela l\xE2mpada no canto superior da descri\xE7\xE3o das cartas.\nEsse custo
-    representa o quanto voc\xEA precisa gastar para comprar uma determinada carta"
+    pela l\xE2mpada no canto superior direito das cartas.\nEsse custo representa
+    o quanto voc\xEA precisa gastar para comprar uma determinada carta"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
   m_sharedMaterial: {fileID: -2087017382057321341, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
