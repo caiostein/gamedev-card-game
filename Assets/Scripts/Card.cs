@@ -63,7 +63,9 @@ public class Card : MonoBehaviour
                     gameManager.DrawCard();
                     gameManager.SetDeckInteraction(true);
                     if (!gameManager.CheckPickAvailability() && !gameManager.CheckDrawAvailability())
+                    {
                         gameManager.ToggleEarlyResultsBox(true);
+                    }                        
                 }
             }
 
@@ -75,6 +77,11 @@ public class Card : MonoBehaviour
                     hasBeenDrawn = true;
                     DestroyCard();
                     gameManager.ActivateEffect(cardEffect);
+                    
+                    if (!IsDestroyingCards() && !gameManager.CheckPickAvailability() && !gameManager.CheckDrawAvailability())
+                    {
+                        gameManager.ToggleEarlyResultsBox(true);
+                    }
                 }
                 else
                 {
@@ -110,7 +117,9 @@ public class Card : MonoBehaviour
                             } 
 
                             else if (!gameManager.CheckPickAvailability() && !gameManager.CheckDrawAvailability())
+                            {
                                 gameManager.ToggleEarlyResultsBox(true);
+                            }                               
 
                             return;
                         }

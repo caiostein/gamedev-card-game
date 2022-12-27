@@ -5819,7 +5819,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 476224412}
-  - component: {fileID: 476224413}
   m_Layer: 0
   m_Name: Level Result Box
   m_TagString: Untagged
@@ -5848,18 +5847,6 @@ Transform:
   m_Father: {fileID: 761915728}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &476224413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 476224411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12d8d995dd221524291f8e626eb448d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &479108649
 GameObject:
   m_ObjectHideFlags: 0
@@ -6524,7 +6511,6 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  - component: {fileID: 519420033}
   - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
@@ -6599,18 +6585,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519420033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &519420034
 Animator:
   serializedVersion: 4
@@ -8548,7 +8522,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1926142833172295769, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_text
-      value: Cell Shading
+      value: Cel Shading
       objectReference: {fileID: 0}
     - target: {fileID: 1926142833172295769, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_fontSize
@@ -8604,7 +8578,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2461831492913637501, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_Name
-      value: CellShading
+      value: Cel Shading
       objectReference: {fileID: 0}
     - target: {fileID: 2461831492913637501, guid: aacf4230a60e98f4da753571bc73a0c4, type: 3}
       propertyPath: m_IsActive
@@ -11928,7 +11902,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Jesse Schell dividiu os jogos em 4 componentes: \nMec\xE2nica, Est\xE9tica,
-    Narrativa e Tecnologia.\nEsses componentes devem trabalham em conjunto para entregar
+    Narrativa e Tecnologia.\nEsses componentes devem trabalhar em conjunto para entregar
     um jogo coeso.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
@@ -13545,7 +13519,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 544, y: 26}
+  m_AnchoredPosition: {x: -466, y: 26}
   m_SizeDelta: {x: 70.8596, y: 70.8596}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1187672751
@@ -20520,7 +20494,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 196572362281845334, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_Name
-      value: Cell Shading
+      value: Cel Shading
       objectReference: {fileID: 0}
     - target: {fileID: 196572362281845334, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
       propertyPath: m_IsActive
@@ -21987,7 +21961,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1782245894}
-  - component: {fileID: 1782245895}
   m_Layer: 0
   m_Name: Final Result Screen
   m_TagString: Untagged
@@ -22015,18 +21988,6 @@ Transform:
   m_Father: {fileID: 761915728}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1782245895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1782245893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12d8d995dd221524291f8e626eb448d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1794204024 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 196572362281845334, guid: ad587e0b70be0bb4880d92617c9575a7, type: 3}
@@ -22107,7 +22068,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1798903875}
-  - component: {fileID: 1798903876}
   m_Layer: 0
   m_Name: Early Result Box
   m_TagString: Untagged
@@ -22134,18 +22094,6 @@ Transform:
   m_Father: {fileID: 761915728}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1798903876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1798903874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12d8d995dd221524291f8e626eb448d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1809146283
 GameObject:
   m_ObjectHideFlags: 0

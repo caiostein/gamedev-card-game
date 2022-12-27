@@ -6268,8 +6268,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Outro recurso que est\xE1 a seu alcance \xE9 o de comprar cartas manualmente
-    gastando 1 Ideia. Para isso, basta clicar no baralho! Por\xE9m, \xE9 preciso
-    que a mesa tenha espa\xE7o sobrando. Dessa forma, o jogo nao para!"
+    gastando 1 Ideia. Para isso, basta clicar no baralho. Por\xE9m, \xE9 preciso
+    que a mesa tenha espa\xE7o sobrando."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
   m_sharedMaterial: {fileID: -2087017382057321341, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
@@ -11141,7 +11141,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Cabe a voc\xEA interpretar as cartas e escolher as que melhor representam
-    o tema de cada n\xEDvel."
+    o que est\xE1 sendo pedido."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
   m_sharedMaterial: {fileID: -2087017382057321341, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
@@ -14233,10 +14233,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Seu objetivo \xE9 montar uma \"m\xE3o\" de at\xE9 4 cartas, levando em
-    considera\xE7\xE3o o que for solicitado em cada n\xEDvel, as cartas presentes
-    na mesa e seu custo. Cada carta possui um valor de afinidade para cada elemento
-    da T\xE9trade."
+  m_text: "Seu objetivo \xE9 montar uma \"M\xE3o\" de at\xE9 4 cartas levando em
+    considera\xE7\xE3o o que for solicitado em cada n\xEDvel. Cada carta da mesa
+    possui um valor de afinidade em rela\xE7\xE3o a cada elemento da T\xE9trade."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
   m_sharedMaterial: {fileID: -2087017382057321341, guid: 30bfb29f89b025546859cebcb661a294, type: 2}

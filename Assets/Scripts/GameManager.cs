@@ -278,6 +278,7 @@ public class GameManager : MonoBehaviour
 
         remainingMana = Const.startingMana;
 
+		shouldUseHalfMana = false;
 		activeCardEffect = null;
 		SetDeckInteraction(true);
 

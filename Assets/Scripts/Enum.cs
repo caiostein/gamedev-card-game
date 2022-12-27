@@ -73,10 +73,10 @@ public class Enum
 
 	public static IDictionary<int, string> FinalFeedbackDict = new Dictionary<int, string>()
 	{
-		{1, "Eita! Parece que você não conseguiu ir bem na etapa de brainstorming." },
+		{1, "Eita! Parece que você não conseguiu ir bem na etapa de brainstorm." },
 		{2, "Você foi bem, mas poderia ter sido melhor. Mais um pouco e você teria pensado em bons elementos para compor o seu jogo." },
 		{3, "Muito bem! Você teve boas ideias para o seu jogo!" },
-		{4, "Incrível!\r\nVocê mostrou que entende a Tétrade de Schell e foi brilhante nessa etapa de brainstorming. Você está pronto para começar a desenvolver o seu jogo." },
+		{4, "Incrível!\r\nVocê mostrou que entende a Tétrade de Schell e foi brilhante nessa etapa de brainstorm. Você está pronto para começar a desenvolver o seu jogo." },
 	};
 
 	public static readonly IDictionary<int, string> dialogLines = new Dictionary<int, string>()
@@ -89,7 +89,7 @@ public class Enum
 		{6, "Olá [PlayerName]! Bem vindo ao game jam. Logo logo você já vai estar criando o seu jogo. Mas antes vamos falar sobre as regras da competição." },
 		{7, "Caso deseje pular essa explicação, clique em 'Pular'." },
 		{8, "Você deve criar seu jogo a partir de certos elementos de jogo que estarão relacionados com 4 categorias distintas. Essas categorias são os pilares da tétrade de Schell." },
-		{9, "Para isso você fará um brainstorming a partir de cartas que te apresentarão diferentes elementos de jogos. Você deve escolher 4 cartas para cada categoria." },
+		{9, "Para isso você fará um brainstorm a partir de cartas que te apresentarão diferentes elementos de jogos. Você deve escolher 4 cartas para cada categoria." },
 		{10, "Mas fique ligado, as cartas tem mais ou menos afinidade com uma categoria da tétrade. Você será avaliado de acordo com as cartas que você escolher, portanto escolha com sabedoria." },
 		{11, "Recomendo que, caso nunca tenha jogado, leia as regras mais detalhadas clicando em 'Como Jogar'. Boa sorte e bom jogo!"},
 	};
