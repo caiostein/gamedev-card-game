@@ -14,6 +14,7 @@ public class DialogManager : MonoBehaviour
     public GameObject submitNameButton;
     public GameObject skipButton;
     public GameObject playButton;
+    public GameObject tutorialButton;
 
 
 
@@ -50,10 +51,11 @@ public class DialogManager : MonoBehaviour
                 case 7:
                     skipButton.SetActive(true);
                     break;
-                case 10:
+                case 11:
                     nextButton.SetActive(false);
                     skipButton.SetActive(false);
                     playButton.SetActive(true);
+                    tutorialButton.SetActive(true);
                     break;
             }
 

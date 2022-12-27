@@ -222,7 +222,7 @@ public class GameManager : MonoBehaviour
 				case Enum.CardEffects.TROCA:
 					cardsToDestroy = 2;
 					shouldUseHalfMana = false;
-					setDeckInteraction(false);
+					SetDeckInteraction(false);
 					break;
 				case Enum.CardEffects.INSPIRACAO:
 					shouldUseHalfMana = false;
@@ -279,7 +279,7 @@ public class GameManager : MonoBehaviour
         remainingMana = Const.startingMana;
 
 		activeCardEffect = null;
-		setDeckInteraction(true);
+		SetDeckInteraction(true);
 
 		shouldForceDrawSpecialCard = true;
 		drawnSpecialCards = 0;
@@ -531,11 +531,11 @@ public class GameManager : MonoBehaviour
 
 	public void ToggleHandlingCards(bool value)
     {
-		setDeckInteraction(!value);
+		SetDeckInteraction(!value);
 		isHandlingCards = value;
     }
 
-	public void setDeckInteraction(bool value)
+	public void SetDeckInteraction(bool value)
 	{
         Image deckButton = deckObject.GetComponent(typeof(Image)) as Image;
         deckButton.raycastTarget = value;
