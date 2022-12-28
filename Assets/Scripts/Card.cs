@@ -58,6 +58,7 @@ public class Card : MonoBehaviour
                 gameManager.cardsToDestroy--;
                 Renderer cardRenderer = this.GetComponent<Renderer>();
                 cardRenderer.material.color = Color.white;
+                gameManager.clickSound.Play();
                 if (gameManager.cardsToDestroy == 0)
                 {
                     gameManager.DrawCard();
@@ -77,6 +78,7 @@ public class Card : MonoBehaviour
                 {
                     gameManager.remainingMana -= costToUse;
                     hasBeenDrawn = true;
+                    gameManager.clickSound.Play();
                     DestroyCard();
                     gameManager.ActivateEffect(cardEffect);
                     
@@ -107,6 +109,8 @@ public class Card : MonoBehaviour
                             gameManager.remainingMana -= costToUse;
 
                             gameManager.shouldUseHalfMana = false;
+
+                            gameManager.clickSound.Play();
 
                             ScoreManager.Instance.AddPoints(this);
 
@@ -170,6 +174,7 @@ public class Card : MonoBehaviour
     {
         if (!gameManager.isHandlingCards)
         {
+            gameManager.hoverSound.Play();
             anim.SetBool("hover", true);
             descriptionOnScreen = Instantiate(cardDescription, gameManager.descriptionSlot.transform.position, Quaternion.identity);
 		    descriptionOnScreen.transform.localScale = new Vector3((float)0.827, (float)0.827, (float)0.827);

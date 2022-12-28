@@ -51,6 +51,9 @@ public class GameManager : MonoBehaviour
 	[SerializeField] private TextMeshProUGUI resultsText;
 	[SerializeField] private Image[] levelScoreImages;
 	[SerializeField] private GameObject ideaGain;
+    public AudioSource hoverSound;
+    public AudioSource clickSound;
+	[SerializeField] private AudioSource drawSound;
 
     //FinalResults
     [SerializeField] private Image[] level1ScoreImages;
@@ -141,7 +144,7 @@ public class GameManager : MonoBehaviour
 			camAnim.SetTrigger("shake");
 
 			Card randomCard = deck[Random.Range(0, deck.Count)];
-
+			drawSound.Play();
 			for (int i = 0; i < availableTableSlots.Length; i++)
 			{
 				if (availableTableSlots[i] == true)
@@ -304,8 +307,11 @@ public class GameManager : MonoBehaviour
 			ShowFinalResultsBox();
 		}
 
-		StartCoroutine(FillTable());
-		SetLevelDescriptionText();
+		if(ScoreManager.Instance.activeLevel <= 4)
+		{
+		    StartCoroutine(FillTable());
+			SetLevelDescriptionText();
+        }
 	}
 	
 
