@@ -50,9 +50,10 @@ public class GameManager : MonoBehaviour
 	[SerializeField] private TextMeshProUGUI scoreText;
 	[SerializeField] private TextMeshProUGUI resultsText;
 	[SerializeField] private Image[] levelScoreImages;
+	[SerializeField] private GameObject ideaGain;
 
-	//FinalResults
-	[SerializeField] private Image[] level1ScoreImages;
+    //FinalResults
+    [SerializeField] private Image[] level1ScoreImages;
 	[SerializeField] private Image[] level2ScoreImages;
 	[SerializeField] private Image[] level3ScoreImages;
 	[SerializeField] private Image[] level4ScoreImages;
@@ -218,10 +219,12 @@ public class GameManager : MonoBehaviour
 					break;
 				case Enum.CardEffects.IDEIA:
 					remainingMana += Const.manaToIncrease;
+                    ideaGain.SetActive(false);
+                    ideaGain.SetActive(true);
 					break;
 				case Enum.CardEffects.TROCA:
 					cardsToDestroy = 2;
-					shouldUseHalfMana = false;
+                    shouldUseHalfMana = false;
 					SetDeckInteraction(false);
 					break;
 				case Enum.CardEffects.INSPIRACAO:

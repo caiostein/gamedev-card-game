@@ -56,6 +56,8 @@ public class Card : MonoBehaviour
                 hasBeenDrawn = true;
                 DestroyCard();
                 gameManager.cardsToDestroy--;
+                Renderer cardRenderer = this.GetComponent<Renderer>();
+                cardRenderer.material.color = Color.white;
                 if (gameManager.cardsToDestroy == 0)
                 {
                     gameManager.DrawCard();
@@ -172,6 +174,19 @@ public class Card : MonoBehaviour
             descriptionOnScreen = Instantiate(cardDescription, gameManager.descriptionSlot.transform.position, Quaternion.identity);
 		    descriptionOnScreen.transform.localScale = new Vector3((float)0.827, (float)0.827, (float)0.827);
 		    descriptionOnScreen.SetActive(true);
+            if (IsDestroyingCards())
+            {
+
+                Renderer cardRenderer = this.GetComponent<Renderer>();
+                
+                Renderer renderer = descriptionOnScreen.GetComponent<Renderer>();
+                Color color;
+                if (ColorUtility.TryParseHtmlString("#FF7777", out color))
+                {
+                    renderer.material.color = color;
+                    cardRenderer.material.color = color;
+                }
+            }
         }
     }
 
@@ -179,6 +194,8 @@ public class Card : MonoBehaviour
     {
         Destroy(descriptionOnScreen);
         anim.SetBool("hover", false);
+        Renderer cardRenderer = this.GetComponent<Renderer>();
+        cardRenderer.material.color = Color.white;
     }
 
     private void OnBecameInvisible()
