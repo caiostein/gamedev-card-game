@@ -1439,7 +1439,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0.65143585}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &193645855
@@ -2103,7 +2103,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &259098958
@@ -7417,8 +7417,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "A afinidade de cada carta n\xE3o \xE9 apenas para um determinado elemento
-    da t\xE9trade, ou seja, uma carta pode ter boa rela\xE7\xE3o com mais de um pilar.\nVoc\xEA
-    pode checar o que o n\xEDvel est\xE1 pedindo clicando no bot\xE3o de INFORMA\xC7\xC3O"
+    da t\xE9trade, ou seja, uma carta pode ter boa rela\xE7\xE3o com mais de um pilar."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
   m_sharedMaterial: {fileID: -2087017382057321341, guid: 30bfb29f89b025546859cebcb661a294, type: 2}
@@ -11519,7 +11518,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0.65143585}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1478709615
