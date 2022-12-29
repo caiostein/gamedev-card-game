@@ -51,6 +51,7 @@ public class GameManager : MonoBehaviour
 	[SerializeField] private TextMeshProUGUI resultsText;
 	[SerializeField] private Image[] levelScoreImages;
 	[SerializeField] private GameObject ideaGain;
+	public AudioSource cardHoverSound;
     public AudioSource hoverSound;
     public AudioSource clickSound;
 	[SerializeField] private AudioSource drawSound;

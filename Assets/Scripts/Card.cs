@@ -174,19 +174,27 @@ public class Card : MonoBehaviour
     {
         if (!gameManager.isHandlingCards)
         {
-            gameManager.hoverSound.Play();
+            gameManager.cardHoverSound.Play();
             anim.SetBool("hover", true);
             descriptionOnScreen = Instantiate(cardDescription, gameManager.descriptionSlot.transform.position, Quaternion.identity);
 		    descriptionOnScreen.transform.localScale = new Vector3((float)0.827, (float)0.827, (float)0.827);
 		    descriptionOnScreen.SetActive(true);
-            if (IsDestroyingCards())
-            {
 
-                Renderer cardRenderer = this.GetComponent<Renderer>();
-                
+            Renderer cardRenderer = this.GetComponent<Renderer>();
+
+            if (IsDestroyingCards())
+            {    
                 Renderer renderer = descriptionOnScreen.GetComponent<Renderer>();
-                Color color;
-                if (ColorUtility.TryParseHtmlString("#FF7777", out color))
+                if (ColorUtility.TryParseHtmlString("#FF7777", out Color color))
+                {
+                    renderer.material.color = color;
+                    cardRenderer.material.color = color;
+                }
+            }
+            if (gameManager.shouldUseHalfMana)
+            {
+                Renderer renderer = descriptionOnScreen.GetComponent<Renderer>();
+                if (ColorUtility.TryParseHtmlString("#7BCEE2", out Color color))
                 {
                     renderer.material.color = color;
                     cardRenderer.material.color = color;
