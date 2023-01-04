@@ -265,7 +265,7 @@ public class GameManager : MonoBehaviour
 
 	public void TriggerLevelChange(int levelsToAdd)
     {
-		//ScoreManager.Instance.SetScore();
+		ScoreManager.Instance.SetScore();
 
 		ToggleLevelResultBox(false);
 

@@ -16,6 +16,7 @@ public class DialogManager : MonoBehaviour
     public GameObject skipButton;
     public GameObject playButton;
     public GameObject tutorialButton;
+    [SerializeField] private GameObject npcName;
     [SerializeField] private GameObject bgDropText;
     [SerializeField] private GameObject bgDropFull;
     [SerializeField] private GameObject npcObject;
@@ -53,6 +54,7 @@ public class DialogManager : MonoBehaviour
                     break;
                 case 5:
                     npcSprite.sprite = Resources.Load<Sprite>("funcionario_2");
+                    npcName.SetActive(true);
                     break;
                 case 6:
                     bgDropFull.SetActive(true);
@@ -60,10 +62,12 @@ public class DialogManager : MonoBehaviour
                     nextButton.SetActive(false);
                     nameInputField.SetActive(true);
                     submitNameButton.SetActive(true);
+                    npcName.SetActive(false);
                     break;
                 case 7:
                     bgDropFull.SetActive(false);
                     bgDropText.SetActive(true);
+                    npcName.SetActive(true);
                     npcSprite.sprite = Resources.Load<Sprite>("funcionario_3");
                     lineToShow = lineToShow.Replace("[PlayerName]", ScoreManager.Instance.playerName.text);
                     break;
