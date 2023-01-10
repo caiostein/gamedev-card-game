@@ -15,7 +15,7 @@ public class PlayerNameHandler : MonoBehaviour
 
     private void Update()
     {
-        if (string.IsNullOrWhiteSpace(nameField.text))
+        if (nameField.text.Length < 5 || !nameField.text.Contains(" "))
         {
             submitButton.interactable = false;
             submitButton.GetComponentInChildren<TMP_Text>().color = new Color32(0, 0, 0, 100);
