@@ -1,3 +1,4 @@
+using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,7 +16,7 @@ public class PlayerNameHandler : MonoBehaviour
 
     private void Update()
     {
-        if (nameField.text.Length < 5 || !nameField.text.Contains(" "))
+        if (!Regex.IsMatch(nameField.text, @"[a-zA-Z]+\d"))
         {
             submitButton.interactable = false;
             submitButton.GetComponentInChildren<TMP_Text>().color = new Color32(0, 0, 0, 100);

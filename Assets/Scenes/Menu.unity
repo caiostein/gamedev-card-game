@@ -2570,7 +2570,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: 30}
+  m_AnchoredPosition: {x: 3, y: -3.3999872}
   m_SizeDelta: {x: 344.88, y: 51.6296}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &307397840
@@ -2621,14 +2621,14 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 5
+  m_ContentType: 0
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
-  m_CharacterValidation: 5
+  m_CharacterValidation: 0
   m_RegexValue: 
   m_GlobalPointSize: 28
   m_CharacterLimit: 20
@@ -2967,7 +2967,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Insira seu Nome e Sobrenome
+  m_text: Insira seu Nickname
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a660441881af56d44880cbacbc9bdab4, type: 2}
   m_sharedMaterial: {fileID: -2087017382057321341, guid: a660441881af56d44880cbacbc9bdab4, type: 2}
@@ -4055,7 +4055,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -85.491, y: -37.00001}
+  m_AnchoredPosition: {x: -85.491, y: -70.4}
   m_SizeDelta: {x: 132.34, y: 57.786}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &487961644
@@ -5001,6 +5001,7 @@ MonoBehaviour:
   currentLineNumber: 0
   nextButton: {fileID: 782572244}
   nameInputField: {fileID: 307397838}
+  nameObservation: {fileID: 1643671793}
   submitNameButton: {fileID: 587595548}
   skipButton: {fileID: 413700039}
   playButton: {fileID: 2106850436}
@@ -5070,7 +5071,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u200B"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a660441881af56d44880cbacbc9bdab4, type: 2}
   m_sharedMaterial: {fileID: -2087017382057321341, guid: a660441881af56d44880cbacbc9bdab4, type: 2}
@@ -5199,7 +5200,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.5, y: -47.380043}
+  m_AnchoredPosition: {x: 7.5, y: -80.78003}
   m_SizeDelta: {x: 128.9728, y: 73.5867}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &587595550
@@ -12061,7 +12062,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 76.49, y: -37}
+  m_AnchoredPosition: {x: 76.49, y: -70.39999}
   m_SizeDelta: {x: 132.3415, y: 57.7865}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1529671807
@@ -13172,7 +13173,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Obs: Esse nome ser\xE1 utilizado para identificar sua pontua\xE7\xE3o!"
+  m_text: "Obs: Utilize o mesmo Nickname informado no formul\xE1rio da pesquisa.
+    Esse nome ser\xE1 utilizado na investiga\xE7\xE3o dos resultados coletados no
+    jogo."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
   m_sharedMaterial: {fileID: -2087017382057321341, guid: 3ae8a347c3dcea248aa0c43223f87cf4, type: 2}
@@ -13816,7 +13819,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.5, y: 39}
+  m_AnchoredPosition: {x: -4.5, y: 5.600013}
   m_SizeDelta: {x: 359.8842, y: 104.8051}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1701638434

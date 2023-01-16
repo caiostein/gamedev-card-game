@@ -12,6 +12,7 @@ public class DialogManager : MonoBehaviour
     //Screen Elements
     public GameObject nextButton;
     public GameObject nameInputField;
+    public GameObject nameObservation;
     public GameObject submitNameButton;
     public GameObject skipButton;
     public GameObject playButton;
@@ -60,6 +61,7 @@ public class DialogManager : MonoBehaviour
                     bgDropFull.SetActive(true);
                     bgDropText.SetActive(false);
                     nextButton.SetActive(false);
+                    nameObservation.SetActive(true);
                     nameInputField.SetActive(true);
                     submitNameButton.SetActive(true);
                     npcName.SetActive(false);
